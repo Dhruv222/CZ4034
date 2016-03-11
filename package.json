@@ -1,0 +1,31 @@
+{
+  "name": "cz4034",
+  "version": "1.0.0",
+  "description": "An information retrieval system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "restify": "^4.0.4",
+    "node-env-file": "^0.1.8",
+    "twitter": "^1.2.5",
+    "promise": ">=7.1.1",
+    "solr-client": ">=0.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dhruv222/CZ4034.git"
+  },
+  "keywords": [
+    "cz4034",
+    "search",
+    "information"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dhruv222/CZ4034/issues"
+  },
+  "homepage": "https://github.com/Dhruv222/CZ4034#readme"
+}
