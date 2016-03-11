@@ -27,6 +27,11 @@ server.get('/ping', function (req, res, next) {
   next();
 });
 
+// Backend API endpoints
+server.post('/search', controllers.search.doSearch);
+server.post('/data/:screen_name', controllers.data.addTwitterHandle);
+
+// Serve static content from the ./frontend directory
 server.get(/.*/, restify.serveStatic({
   directory: './frontend',
   default: 'index.html'
