@@ -1,8 +1,6 @@
 var Promise = require('promise'),
   dateHelper = require(process.cwd() + '/lib/date_helper'),
-  twitterClient = require(process.cwd() + '/lib/twitter'),
-  bignum = require('bignum');
-
+  twitterClient = require(process.cwd() + '/lib/twitter');
 var Tweet = function() {};
 
 var NUM_TWEETS_TO_FETCH = 1000;
@@ -35,8 +33,7 @@ var _fetch = function(screen_name, offset, max_id, fulfill, reject, tweets_list)
     var numTweets = tweets.length;
     if (numTweets !== 0) {
       var max_id = tweets[numTweets - 1].id;
-      max_id = bignum(max_id.toString());
-      _fetch(screen_name, offset + numTweets, max_id.sub(1).toString(), fulfill, reject, tweets_list.concat(tweets));
+      _fetch(screen_name, offset + numTweets, max_id, fulfill, reject, tweets_list.concat(tweets));
     } else {
       fulfill(numTweets);
     }
