@@ -28,6 +28,14 @@ server.get('/ping', function (req, res, next) {
 });
 
 // Backend API endpoints
+/*
+  GET /search
+  sample data
+  {
+    q: "any query"
+    page: 1
+  }
+*/
 server.get('/search', controllers.search.doSearch);
 server.post('/data/:screen_name', controllers.data.addTwitterHandle);
 
