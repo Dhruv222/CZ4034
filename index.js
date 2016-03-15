@@ -4,7 +4,7 @@ var restify = require('restify'),
   fs = require('fs'),
   env = require('node-env-file');
 
-// env(process.cwd() + '/.env');
+env(process.cwd() + '/.env');
 
 var controllers = {};
 var controllers_path = process.cwd() + '/app/controllers';
@@ -28,7 +28,7 @@ server.get('/ping', function (req, res, next) {
 });
 
 // Backend API endpoints
-server.post('/search', controllers.search.doSearch);
+server.get('/search', controllers.search.doSearch);
 server.post('/data/:screen_name', controllers.data.addTwitterHandle);
 
 // Serve static content from the ./frontend directory
