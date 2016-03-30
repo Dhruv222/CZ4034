@@ -37,9 +37,14 @@ server.get('/ping', function (req, res, next) {
   }
 */
 server.get('/search', controllers.search.doSearch);
+server.get('/imageSearch', controllers.search.imageSearch);
 server.post('/data/:screen_name', controllers.data.addTwitterHandle);
 
 // Serve static content from the ./frontend directory
+server.get(/images\/?.*/, restify.serveStatic({
+  directory: "/tmp"
+}));
+
 server.get(/.*/, restify.serveStatic({
   directory: './frontend',
   default: 'search.html'
