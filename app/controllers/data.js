@@ -4,7 +4,8 @@ var twitterClient = require(process.cwd() + '/lib/twitter'),
   image_download = require(process.cwd() + '/lib/image_download'),
   fs = require('fs'),
   shell = require(process.cwd() + '/lib/shell'),
-  Promise = require('promise');
+  Promise = require('promise'),
+  Sentiment = require(process.cwd() + '/app/models/sentimentAnalysis');
 
 var indexImages = function(url_tweet_mapping) {
   var image_promises = [];
@@ -44,9 +45,35 @@ exports.addTwitterHandle = function(req, res, next) {
     var url_tweet_mapping = {};
 
     for (var i = 0; i < numTweets; i++) {
+
+      //Calculate the sentiment of the tweet
+      var ss = Sentiment(tweets[i].text);
+      if (ss.score >= 0.5){
+        var polarity = 'positive';
+      }
+      else if(ss.score <= -0.5){
+        var polarity ='negative';
+      }
+      else{
+        var polarity = 'neutral';
+      }
+
+      //Find the location of the tweet[i]
+      if(tweets[i].coordinates != null){
+        var coord = tweets[i].coordinates.coordinates.reverse().toString();
+      }
+      else if(tweets[i].place != null){
+        var coord = tweets[i].place.coordinates[1][1].reverse().toString();
+      }
+      else {
+        var coord = "0,0";
+      }
+
       tweets_trimmed.push({
         id: tweets[i].id,
-        tweet_text: tweets[i].text
+        tweet_text: tweets[i].text,
+        sentiment: polarity,
+        coordinates:coord
       });
       if (tweets[i].entities.media && tweets[i].entities.media.length > 0) {
         url_tweet_mapping[tweets[i].id] = tweets[i].entities.media[0].media_url;
