@@ -1,0 +1,241 @@
+2016-03-29 03:56:18.604 INFO  (main) [   ] o.e.j.u.log Logging initialized @1246ms
+2016-03-29 03:56:19.147 INFO  (main) [   ] o.e.j.s.Server jetty-9.2.13.v20150730
+2016-03-29 03:56:19.184 WARN  (main) [   ] o.e.j.s.h.RequestLogHandler !RequestLog
+2016-03-29 03:56:19.189 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:/home/ubuntu/workspace/solr-5.5.0/server/contexts/] at interval 0
+2016-03-29 03:56:20.303 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2016-03-29 03:56:20.324 WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@14e7fa43{/solr,file:/home/ubuntu/workspace/solr-5.5.0/server/solr-webapp/webapp/,STARTING}{/home/ubuntu/workspace/solr-5.5.0/server/solr-webapp/webapp} has uncovered http methods for path: /
+2016-03-29 03:56:20.345 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=932060097@378e1bc1
+2016-03-29 03:56:20.398 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-03-29 03:56:20.398 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /home/ubuntu/workspace/solr-5.5.0/server/solr
+2016-03-29 03:56:20.400 INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/ubuntu/workspace/solr-5.5.0/server/solr'
+2016-03-29 03:56:20.400 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-03-29 03:56:20.400 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /home/ubuntu/workspace/solr-5.5.0/server/solr
+2016-03-29 03:56:20.431 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/ubuntu/workspace/solr-5.5.0/server/solr/solr.xml
+2016-03-29 03:56:20.647 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Config-defined core root directory: /home/ubuntu/workspace/solr-5.5.0/server/solr
+2016-03-29 03:56:20.685 INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 1533026400
+2016-03-29 03:56:20.686 INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/home/ubuntu/workspace/solr-5.5.0/server/solr]
+2016-03-29 03:56:20.687 WARN  (main) [   ] o.a.s.c.CoreContainer Couldn't add files from /home/ubuntu/workspace/solr-5.5.0/server/solr/lib to classpath: /home/ubuntu/workspace/solr-5.5.0/server/solr/lib
+2016-03-29 03:56:20.705 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,
+2016-03-29 03:56:21.216 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2016-03-29 03:56:21.220 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2016-03-29 03:56:21.221 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2016-03-29 03:56:21.224 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2016-03-29 03:56:21.224 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2016-03-29 03:56:21.273 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Looking for core definitions underneath /home/ubuntu/workspace/solr-5.5.0/server/solr
+2016-03-29 03:56:21.295 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions
+2016-03-29 03:56:21.304 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/home/ubuntu/workspace/solr-5.5.0/server
+2016-03-29 03:56:21.305 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2016-03-29 03:56:21.326 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@14e7fa43{/solr,file:/home/ubuntu/workspace/solr-5.5.0/server/solr-webapp/webapp/,AVAILABLE}{/home/ubuntu/workspace/solr-5.5.0/server/solr-webapp/webapp}
+2016-03-29 03:56:21.359 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@b68a450{HTTP/1.1}{0.0.0.0:8983}
+2016-03-29 03:56:21.360 INFO  (main) [   ] o.e.j.s.Server Started @4006ms
+2016-03-29 03:57:05.712 INFO  (qtp697858765-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=101
+2016-03-29 03:57:05.845 INFO  (qtp697858765-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=20
+2016-03-29 03:57:05.865 INFO  (qtp697858765-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={action=STATUS&core=tweets&wt=json} status=0 QTime=2
+2016-03-29 03:57:05.875 INFO  (qtp697858765-18) [   ] o.a.s.h.a.CoreAdminOperation core create command action=CREATE&wt=json&instanceDir=tweets&name=tweets
+2016-03-29 03:57:05.880 INFO  (qtp697858765-18) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=tweets, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data/}
+2016-03-29 03:57:05.882 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/ubuntu/workspace/solr-5.5.0/server/solr/tweets'
+2016-03-29 03:57:05.882 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-03-29 03:57:05.882 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /home/ubuntu/workspace/solr-5.5.0/server/solr
+2016-03-29 03:57:05.977 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2016-03-29 03:57:05.989 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2016-03-29 03:57:06.007 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+2016-03-29 03:57:06.007 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2016-03-29 03:57:06.007 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+2016-03-29 03:57:06.007 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/poi-3.11.jar' to classloader
+2016-03-29 03:57:06.007 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+2016-03-29 03:57:06.008 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2016-03-29 03:57:06.008 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2016-03-29 03:57:06.008 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/rome-1.0.jar' to classloader
+2016-03-29 03:57:06.008 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2016-03-29 03:57:06.008 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+2016-03-29 03:57:06.008 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2016-03-29 03:57:06.009 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2016-03-29 03:57:06.009 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/icu4j-54.1.jar' to classloader
+2016-03-29 03:57:06.009 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2016-03-29 03:57:06.009 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+2016-03-29 03:57:06.009 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2016-03-29 03:57:06.009 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2016-03-29 03:57:06.010 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2016-03-29 03:57:06.010 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2016-03-29 03:57:06.010 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2016-03-29 03:57:06.010 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+2016-03-29 03:57:06.010 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/xz-1.5.jar' to classloader
+2016-03-29 03:57:06.010 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+2016-03-29 03:57:06.010 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2016-03-29 03:57:06.011 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+2016-03-29 03:57:06.011 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+2016-03-29 03:57:06.011 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+2016-03-29 03:57:06.011 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+2016-03-29 03:57:06.011 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+2016-03-29 03:57:06.011 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2016-03-29 03:57:06.011 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2016-03-29 03:57:06.012 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+2016-03-29 03:57:06.012 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+2016-03-29 03:57:06.012 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/dist/solr-cell-5.5.0.jar' to classloader
+2016-03-29 03:57:06.025 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+2016-03-29 03:57:06.025 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2016-03-29 03:57:06.025 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+2016-03-29 03:57:06.025 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/clustering/lib/carrot2-mini-3.10.4.jar' to classloader
+2016-03-29 03:57:06.026 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2016-03-29 03:57:06.026 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/clustering/lib/attributes-binder-1.2.3.jar' to classloader
+2016-03-29 03:57:06.026 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2016-03-29 03:57:06.026 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2016-03-29 03:57:06.026 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/dist/solr-clustering-5.5.0.jar' to classloader
+2016-03-29 03:57:06.027 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2016-03-29 03:57:06.027 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2016-03-29 03:57:06.027 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/dist/solr-langid-5.5.0.jar' to classloader
+2016-03-29 03:57:06.027 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/velocity/lib/commons-collections-3.2.2.jar' to classloader
+2016-03-29 03:57:06.027 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2016-03-29 03:57:06.027 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2016-03-29 03:57:06.028 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2016-03-29 03:57:06.028 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/ubuntu/workspace/solr-5.5.0/dist/solr-velocity-5.5.0.jar' to classloader
+2016-03-29 03:57:06.692 WARN  (qtp697858765-18) [   ] o.a.s.c.Config Beginning with Solr 5.5, <maxMergeDocs> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2016-03-29 03:57:06.693 WARN  (qtp697858765-18) [   ] o.a.s.c.Config Beginning with Solr 5.5, <mergeFactor> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2016-03-29 03:57:06.725 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.5.0
+2016-03-29 03:57:07.303 INFO  (qtp697858765-18) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2016-03-29 03:57:07.669 INFO  (qtp697858765-18) [   ] o.a.s.s.IndexSchema [tweets] Schema name=example-data-driven-schema
+2016-03-29 03:57:08.835 INFO  (qtp697858765-18) [   ] o.a.s.s.IndexSchema unique key field: id
+2016-03-29 03:57:09.276 INFO  (qtp697858765-18) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-03-29 03:57:09.289 INFO  (qtp697858765-18) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-03-29 03:57:09.436 INFO  (qtp697858765-18) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/home/ubuntu/workspace/solr-5.5.0/server/solr/tweets'
+2016-03-29 03:57:09.437 INFO  (qtp697858765-18) [   ] o.a.s.c.CoreContainer Creating SolrCore 'tweets' using configuration from instancedir /home/ubuntu/workspace/solr-5.5.0/server/solr/tweets
+2016-03-29 03:57:09.438 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2016-03-29 03:57:09.455 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.SolrCore [[tweets] ] Opening new SolrCore at [/home/ubuntu/workspace/solr-5.5.0/server/solr/tweets], dataDir=[/home/ubuntu/workspace/solr-5.5.0/server/solr/tweets/data/]
+2016-03-29 03:57:09.458 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2016-03-29 03:57:09.465 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.SolrCore [[tweets] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-03-29 03:57:09.466 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.SolrCore [[tweets] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-03-29 03:57:09.472 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2016-03-29 03:57:09.490 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.CachingDirectoryFactory return new directory for /home/ubuntu/workspace/solr-5.5.0/server/solr/tweets/data
+2016-03-29 03:57:09.491 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.SolrCore New index directory detected: old=null new=/home/ubuntu/workspace/solr-5.5.0/server/solr/tweets/data/index/
+2016-03-29 03:57:09.493 WARN  (qtp697858765-18) [   x:tweets] o.a.s.c.SolrCore [tweets] Solr index directory '/home/ubuntu/workspace/solr-5.5.0/server/solr/tweets/data/index' doesn't exist. Creating new index...
+2016-03-29 03:57:09.509 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.CachingDirectoryFactory return new directory for /home/ubuntu/workspace/solr-5.5.0/server/solr/tweets/data/index
+2016-03-29 03:57:09.584 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/ubuntu/workspace/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@58791b11; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+2016-03-29 03:57:09.585 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.SolrDeletionPolicy newest commit generation = 1
+2016-03-29 03:57:09.587 INFO  (OldIndexDirectoryCleanupThreadForCore-tweets) [   x:tweets] o.a.s.c.SolrCore Looking for old index directories to cleanup for core tweets in /home/ubuntu/workspace/solr-5.5.0/server/solr/tweets/data/
+2016-03-29 03:57:09.594 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2016-03-29 03:57:09.600 INFO  (qtp697858765-18) [   x:tweets] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-03-29 03:57:09.763 INFO  (qtp697858765-18) [   x:tweets] o.a.s.u.p.UpdateRequestProcessorChain creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+2016-03-29 03:57:09.886 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2016-03-29 03:57:09.939 INFO  (qtp697858765-18) [   x:tweets] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-03-29 03:57:09.942 INFO  (qtp697858765-18) [   x:tweets] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-03-29 03:57:09.943 INFO  (qtp697858765-18) [   x:tweets] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-03-29 03:57:09.944 INFO  (qtp697858765-18) [   x:tweets] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-03-29 03:57:09.967 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2016-03-29 03:57:09.968 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2016-03-29 03:57:09.968 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2016-03-29 03:57:09.972 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2016-03-29 03:57:09.972 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2016-03-29 03:57:09.972 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2016-03-29 03:57:09.972 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2016-03-29 03:57:09.973 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.RequestHandlers Registered paths: /admin/logging,/admin/plugins,/admin/system,/admin/segments,/admin/file,/admin/luke,/update,/terms,/admin/threads,/schema,/query,/replication,/analysis/field,/browse,/admin/ping,/update/json/docs,/analysis/document,/select,/admin/mbeans,/update/csv,/elevate,/get,/update/json,/export,/update/extract,/admin/properties,/tvrh,/spell,/config,/debug/dump
+2016-03-29 03:57:10.013 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2016-03-29 03:57:10.029 INFO  (qtp697858765-18) [   x:tweets] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-03-29 03:57:10.029 INFO  (qtp697858765-18) [   x:tweets] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-03-29 03:57:10.040 INFO  (qtp697858765-18) [   x:tweets] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-03-29 03:57:10.040 INFO  (qtp697858765-18) [   x:tweets] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-03-29 03:57:10.051 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/ubuntu/workspace/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@58791b11; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+2016-03-29 03:57:10.051 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.SolrDeletionPolicy newest commit generation = 1
+2016-03-29 03:57:10.069 INFO  (qtp697858765-18) [   x:tweets] o.a.s.s.SolrIndexSearcher Opening Searcher@53cd9646[tweets] main
+2016-03-29 03:57:10.081 INFO  (qtp697858765-18) [   x:tweets] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/ubuntu/workspace/solr-5.5.0/server/solr/tweets/conf
+2016-03-29 03:57:10.081 INFO  (qtp697858765-18) [   x:tweets] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/home/ubuntu/workspace/solr-5.5.0/server/solr/tweets/conf}
+2016-03-29 03:57:10.099 INFO  (qtp697858765-18) [   x:tweets] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/home/ubuntu/workspace/solr-5.5.0/server/solr/tweets/conf
+2016-03-29 03:57:10.099 INFO  (qtp697858765-18) [   x:tweets] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2016-03-29 03:57:10.112 INFO  (qtp697858765-18) [   x:tweets] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-03-29 03:57:10.126 INFO  (qtp697858765-18) [   x:tweets] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-03-29 03:57:10.127 INFO  (qtp697858765-18) [   x:tweets] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2016-03-29 03:57:10.131 INFO  (qtp697858765-18) [   x:tweets] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/ubuntu/workspace/solr-5.5.0/server/solr/tweets/conf/elevate.xml
+2016-03-29 03:57:10.168 INFO  (qtp697858765-18) [   x:tweets] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-03-29 03:57:10.170 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@53cd9646[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-03-29 03:57:10.170 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-03-29 03:57:10.170 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-03-29 03:57:10.177 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.SolrCore [tweets] Registered new searcher Searcher@53cd9646[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-03-29 03:57:10.178 INFO  (qtp697858765-18) [   x:tweets] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2016-03-29 03:57:10.179 INFO  (qtp697858765-18) [   x:tweets] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2016-03-29 03:57:10.179 INFO  (qtp697858765-18) [   x:tweets] o.a.s.u.VersionInfo No terms found for _version_, cannot seed version bucket highest value from index
+2016-03-29 03:57:10.179 INFO  (qtp697858765-18) [   x:tweets] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1530107086953775104
+2016-03-29 03:57:10.184 INFO  (qtp697858765-18) [   x:tweets] o.a.s.u.UpdateLog Took 5.0ms to seed version buckets with highest version 1530107086953775104
+2016-03-29 03:57:10.186 INFO  (qtp697858765-18) [   x:tweets] o.a.s.c.CoreContainer registering core: tweets
+2016-03-29 03:57:10.193 INFO  (qtp697858765-18) [   x:tweets] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={instanceDir=tweets&name=tweets&action=CREATE&wt=json} status=0 QTime=4318
+2016-03-29 04:14:00.108 INFO  (qtp697858765-18) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={}{} 0 81
+2016-03-29 04:14:00.112 ERROR (qtp697858765-18) [   x:tweets] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Point must be in 'lat, lon' or 'x y' format: null
+	at org.apache.solr.util.SpatialUtils.parsePointSolrException(SpatialUtils.java:112)
+	at org.apache.solr.schema.LatLonType.createFields(LatLonType.java:76)
+	at org.apache.solr.update.DocumentBuilder.addField(DocumentBuilder.java:47)
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:122)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:82)
+	at org.apache.solr.update.DirectUpdateHandler2.doNormalUpdate(DirectUpdateHandler2.java:280)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc0(DirectUpdateHandler2.java:214)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:169)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:68)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:48)
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:335)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:48)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:117)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:48)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:117)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:48)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:117)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:48)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:117)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:48)
+	at org.apache.solr.update.processor.FieldNameMutatingUpdateProcessorFactory$1.processAdd(FieldNameMutatingUpdateProcessorFactory.java:74)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:48)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:117)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:48)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:931)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:1086)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:709)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:48)
+	at org.apache.solr.update.processor.AbstractDefaultValueUpdateProcessorFactory$DefaultValueUpdateProcessor.processAdd(AbstractDefaultValueUpdateProcessorFactory.java:93)
+	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:250)
+	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:177)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:94)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:69)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:155)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2082)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:670)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:458)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:225)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:183)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.spatial4j.core.exception.InvalidShapeException: Point must be in 'lat, lon' or 'x y' format: null
+	at org.apache.solr.util.SpatialUtils.parsePoint(SpatialUtils.java:73)
+	at org.apache.solr.util.SpatialUtils.parsePointSolrException(SpatialUtils.java:107)
+	... 59 more
+
+2016-03-29 04:16:22.055 INFO  (ShutdownMonitor) [   ] o.e.j.s.ServerConnector Stopped ServerConnector@b68a450{HTTP/1.1}{0.0.0.0:8983}
+2016-03-29 04:16:22.056 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1533026400
+2016-03-29 04:16:22.063 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.c.SolrCore [tweets]  CLOSING SolrCore org.apache.solr.core.SolrCore@2f823052
+2016-03-29 04:16:22.066 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.u.DirectUpdateHandler2 closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=1,deletesById=0,deletesByQuery=0,errors=1,cumulative_adds=1,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=1,transaction_logs_total_size=0,transaction_logs_total_number=0}
+2016-03-29 04:16:22.066 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.u.SolrCoreState Closing SolrCoreState
+2016-03-29 04:16:22.067 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.u.DefaultSolrCoreState SolrCoreState ref count has reached 0 - closing IndexWriter
+2016-03-29 04:16:22.067 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.u.DefaultSolrCoreState closing IndexWriter with IndexWriterCloser
+2016-03-29 04:16:22.077 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.c.SolrCore [tweets] Closing main searcher on request.
+2016-03-29 04:16:22.079 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+2016-03-29 04:16:22.081 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory looking to close /home/ubuntu/workspace/solr-5.5.0/server/solr/tweets/data/index [CachedDir<<refCount=0;path=/home/ubuntu/workspace/solr-5.5.0/server/solr/tweets/data/index;done=false>>]
+2016-03-29 04:16:22.081 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory Closing directory: /home/ubuntu/workspace/solr-5.5.0/server/solr/tweets/data/index
+2016-03-29 04:16:22.081 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory looking to close /home/ubuntu/workspace/solr-5.5.0/server/solr/tweets/data [CachedDir<<refCount=0;path=/home/ubuntu/workspace/solr-5.5.0/server/solr/tweets/data;done=false>>]
+2016-03-29 04:16:22.081 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory Closing directory: /home/ubuntu/workspace/solr-5.5.0/server/solr/tweets/data
+2016-03-29 04:16:22.088 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@14e7fa43{/solr,file:/home/ubuntu/workspace/solr-5.5.0/server/solr-webapp/webapp/,UNAVAILABLE}{/home/ubuntu/workspace/solr-5.5.0/server/solr-webapp/webapp}
