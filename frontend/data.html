@@ -33,5 +33,26 @@
       </div>
     </nav>
 
+    <div class="container">
+      <h2>Select a data source</h2>
+      <h4>(Tweets from the selected handle will be crawled, indexed and made available for searching subsequently)</h4>
+      <br/>
+      <form id="chooseHandle">
+        <div class="radio">
+          <label><input type="radio" name="optradio" id="nytimes">The New York Times (@nytimes)</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio" id="wsj">Wall Street Journal (@wsj)</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="optradio" id="HuffingtonPost">Huffington Post (@HuffingtonPost)</label>
+        </div>
+        <br/>
+        <button id="add_btn" class="btn btn-default disabled" type="button">
+          <i class="glyphicon glyphicon-level-up"></i>&nbsp;&nbsp;Add Data
+        </button>
+      </form>
+    </div>
+
   </body>
 </html>
