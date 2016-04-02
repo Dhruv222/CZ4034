@@ -8,6 +8,8 @@ $(document).ready(function(){
     $latitude = 0;
     $longitude = 0;
 
+    $("#mixed").prop("checked", true);
+
     function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
@@ -24,6 +26,7 @@ $(document).ready(function(){
     getLocation();
 
     $("#search_btn").click(function(){
+        $page = 0;
         $("#main").empty();
         $page++;
         $query = $("#search_box").val();
@@ -33,7 +36,17 @@ $(document).ready(function(){
             console.log($result);
             for($i = 0; $i < $result.response.docs.length; $i++){
                 $tweet = $result.response.docs[$i].tweet_text;
-                $newDiv = "<div class='row'>" +
+                $sentiment = $result.response.docs[$i].sentiment[0];
+                if ($sentiment == "positive"){
+                    $color = "yellow";
+                }
+                else if ($sentiment == "neutral") {
+                    $color = "lightblue";
+                }
+                else if ($sentiment == "negative") {
+                    $color = "pink";
+                }
+                $newDiv = "<div style='background-color:"+ $color + "' class='row'>" +
                     "<div class='col-md-7'>" + "<h3>The New York Times</h3>" + "<h4>10th March 2016</h4>" +
                     "<p id='p1'>" + $tweet + "</p>" +
                     "</div></div> <hr/>";
@@ -53,7 +66,17 @@ $(document).ready(function(){
             $result = JSON.parse(data);
             for($i = 0; $i < $result.response.docs.length; $i++){
                 $tweet = $result.response.docs[$i].tweet_text;
-                $newDiv = "<div class='row'>" +
+                $sentiment = $result.response.docs[$i].sentiment[0];
+                if ($sentiment == "positive"){
+                    $color = "yellow";
+                }
+                else if ($sentiment == "neutral") {
+                    $color = "lightblue";
+                }
+                else if ($sentiment == "negative") {
+                    $color = "pink";
+                }
+                $newDiv = "<div style='background-color:"+ $color + "' class='row'>" +
                     "<div class='col-md-7'>" + "<h3>The New York Times</h3>" + "<h4>10th March 2016</h4>" +
                     "<p id='p1'>" + $tweet + "</p>" +
                     "</div></div> <hr/>";
@@ -76,7 +99,17 @@ $(document).ready(function(){
             $result = JSON.parse(data);
             for($i = 0; $i < $result.response.docs.length; $i++){
                 $tweet = $result.response.docs[$i].tweet_text;
-                $newDiv = "<div class='row'>" +
+                $sentiment = $result.response.docs[$i].sentiment[0];
+                if ($sentiment == "positive"){
+                    $color = "yellow";
+                }
+                else if ($sentiment == "neutral") {
+                    $color = "lightblue";
+                }
+                else if ($sentiment == "negative") {
+                    $color = "pink";
+                }
+                $newDiv = "<div style='background-color:"+ $color + "' class='row'>" +
                     "<div class='col-md-7'>" + "<h3>The New York Times</h3>" + "<h4>10th March 2016</h4>" +
                     "<p id='p1'>" + $tweet + "</p>" +
                     "</div></div> <hr/>";
