@@ -38,7 +38,7 @@ $(document).ready(function(){
             console.log($result);
             for($i = 0; $i < $result.response.docs.length; $i++){
                 $tweet = $result.response.docs[$i].tweet_text;
-                $sentiment = $result.response.docs[$i].sentiment[0];
+                $sentiment = $result.response.docs[$i].sentiment;
                 if ($sentiment == "positive"){
                     $color = "yellow";
                 }
