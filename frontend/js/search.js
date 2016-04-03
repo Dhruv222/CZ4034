@@ -3,7 +3,7 @@ $("#results").hide();
 $(document).ready(function(){
 
     $page = 0;
-    $sentiment = "mixed";
+    $sentiment_query = "mixed";
     $location = "worldwide";
 
     $(".previous").hide();
@@ -12,35 +12,17 @@ $(document).ready(function(){
     $("#worldwide").attr("checked", true);
     $("#mixed").attr("checked", true);
 
-    $latitude = 0;
-    $longitude = 0;
-
-    function getLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition);
-        } else {
-            console.log("Geolocation is not supported by this browser.");
-        }
-    }
-
-    function showPosition(position) {
-        $latitude = position.coords.latitude;
-        $longitude = position.coords.longitude;
-    }
-
-    getLocation();
-
     $("#search_btn").click(function(){
         $t1 = $.now();
-        $sentiment = $('#form1 input[name="optradio"]:checked').attr("id");
+        $sentiment_query = $('#form1 input[name="optradio"]:checked').attr("id");
         $location = $('#form2 input[name="optradio"]:checked').attr("id");
         $page = 0;
         $("#main").empty();
         $page++;
         $query = $("#search_box").val();
         $i = 0;
-        if ($sentiment == "mixed"){
-          $sentiment = "*";
+        if ($sentiment_query == "mixed"){
+          $sentiment_query = "*";
         }
         if ($location == "local"){
           $location = "('STcom' OR 'thenewpaper')";
@@ -48,13 +30,13 @@ $(document).ready(function(){
         else if ($location == "worldwide"){
           $location="*";
         }
-        $.get("/search", {q: $query, sentiment: $sentiment, location: $location}, function(data, status){
+        $.get("/search", {q: $query, sentiment: $sentiment_query, location: $location}, function(data, status){
             if(status == success){
-                $t1 = $.now();
+                $t2 = $.now();
                 console.log(status);
             }
             $result = JSON.parse(data);
-            $("#num_results").html($result.response.docs.length);
+            $("#num_results").html($result.response.numFound);
             $("#time").html(($t2 - $t1)/1000);
             $("#results").show();
             console.log($result);
@@ -87,7 +69,8 @@ $(document).ready(function(){
         $page--;
         $query = $("#search_box").val();
         $i = 0;
-        $.get("/search", {q: $query, sentiment: $sentiment, location: $location}, function(data, status){
+        $.get("/search", {q: $query, page: $page, q: $query, sentiment: $sentiment_query, location: $location}, function(data, status){
+
             $result = JSON.parse(data);
             for($i = 0; $i < $result.response.docs.length; $i++){
                 $tweet = $result.response.docs[$i].tweet_text;
@@ -121,12 +104,14 @@ $(document).ready(function(){
         $page++;
         $query = $("#search_box").val();
         $i = 0;
-        $.get("/search", {q: $query, sentiment: $sentiment, location: $location}, function(data, status){
+
+        $.get("/search", {q: $query, page: $page, q: $query, sentiment: $sentiment_query, location: $location}, function(data, status){
+
             $result = JSON.parse(data);
             for($i = 0; $i < $result.response.docs.length; $i++){
                 $tweet = $result.response.docs[$i].tweet_text;
                 $handle = $result.response.docs[$i].twitter_handle;
-                $sentiment = $result.response.docs[$i].sentiment[0];
+                $sentiment = $result.response.docs[$i].sentiment;
                 if ($sentiment == "positive"){
                     $color = "yellow";
                 }
