@@ -2,9 +2,13 @@ $(document).ready(function(){
 
     $page = 0;
     $sentiment = "mixed";
+    $location = "worldwide";
 
     $(".previous").hide();
     $(".next").hide();
+
+    $("#worldwide").attr("checked", true);
+    $("#mixed").attr("checked", true);
 
     $latitude = 0;
     $longitude = 0;
