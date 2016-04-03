@@ -39,6 +39,9 @@ server.get('/ping', function (req, res, next) {
 server.get('/search', controllers.search.doSearch);
 server.get('/imageSearch', controllers.search.imageSearch);
 server.post('/data/:screen_name', controllers.data.addTwitterHandle);
+server.get('/search/:param/:num/:tweet_text', controllers.search.sortByParam);
+server.get('/all', controllers.search.retrieveQueries);
+server.get('/generateArff', controllers.search.generateArff);
 
 // Serve static content from the ./frontend directory
 server.get(/images\/?.*/, restify.serveStatic({

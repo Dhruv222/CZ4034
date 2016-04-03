@@ -68,18 +68,20 @@ exports.addTwitterHandle = function(req, res, next) {
       else {
         var coord = "0,0";
       }
-
+     
+      // var temp = tweets[i].text.replace(/(?:https?|ftp):\/\/[\n\S]+/g, '');
+    
       tweets_trimmed.push({
         id: tweets[i].id,
         tweet_text: tweets[i].text,
         sentiment: polarity,
         coordinates:coord
       });
-      if (tweets[i].entities.media && tweets[i].entities.media.length > 0) {
-        url_tweet_mapping[tweets[i].id] = tweets[i].entities.media[0].media_url;
-      }
+      // if (tweets[i].entities.media && tweets[i].entities.media.length > 0) {
+      //   url_tweet_mapping[tweets[i].id] = tweets[i].entities.media[0].media_url;
+      // }
     }
-    indexImages(url_tweet_mapping);
+    // indexImages(url_tweet_mapping);
     solrClient.add(tweets_trimmed, {
       overwrite: true,
       commitWithin: 1000

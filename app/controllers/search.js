@@ -1,6 +1,10 @@
 var solrClient = require(process.cwd() + '/lib/solr'),
   request = require('request'),
   Promise = require('promise');
+  fs = require('fs');
+  Arff = require('arff-utils');
+  iconv = require('iconv-lite');
+  _ = require('lodash');
 
 exports.doSearch = function(req, res, next) {
   var qText = "tweet_text:" + encodeURIComponent(req.params.q).replace(/%20/g, '+');
@@ -59,3 +63,92 @@ var getTweetById = function(tweet_id) {
     });
   });
 };
+
+exports.sortByParam = function(req, res, next) {
+
+  var sortParam = req.params.param;
+  var numOfDocs = req.params.num;
+  var tweet_text = req.params.tweet_text;
+  var sortObj = {};
+  var reg = /and|for|the|in|or|do|with|by|to|https*/ig;
+
+  tweet_text = tweet_text.replace(reg, " ").split(/\s+/);
+  tweet_text = tweet_text.join("* OR ") + "*";
+
+  var query = solrClient.createQuery()
+          .q('*:*')
+          .start(0)
+          .rows(numOfDocs);
+
+  solrClient.search(query,function(err,obj){
+    
+    if(err){
+      res.send(err);
+    }
+    else {
+      res.send(obj);
+    }
+  
+  });
+
+};
+
+exports.retrieveQueries = function(req, res, next) {
+  
+  var query = solrClient.createQuery()
+          .q('*:*')
+          .start(0)
+          .rows(3103)
+          .fl('tweet_text,sentiment');
+
+  solrClient.search(query,function(err,obj){
+    if(err){
+      res.send(err);
+    }
+    else {
+      var tweets = obj.response.docs;
+      var tweets = JSON.stringify(tweets);
+
+      fs.writeFile('file.txt', tweets, function(err) {
+        if (err) throw err;
+        console.log('file saved');
+      });
+    }
+    res.send(obj.response.docs);
+  });
+};
+
+exports.generateArff = function(req, res, next) {
+
+  var preprocess= fs.readFileSync('file.txt', 'utf8', function(err) {
+        if (err) throw err;
+        console.log('file read');
+      });
+  
+  var obj = JSON.parse(preprocess);
+  var size = Object.keys(obj).length;
+
+  var processed = '@DATA';
+  var processed_tweet_text;
+  var processed_sentiment;
+  
+  while(size > 0) {
+    processed_tweet_text= obj[size-1].tweet_text;
+    processed_sentiment= obj[size-1].sentiment;
+    processed = processed +'\n' + "'" + processed_tweet_text.replace(/\s@\w+|\s#\w+|http.*|:|["'’]+|(\r\n|\n|\r)/g, '')
+                .trim()  + "'," + processed_sentiment;
+    size--;
+  }
+
+  processed = "@RELATION sentiment" + "\n@ATTRIBUTE tweet STRING" + "\n@ATTRIBUTE class {positive, negative, neutral}" + '\n\n' + processed;
+
+  fs.writeFile('twitter.arff', processed, function(err) {
+        if (err) throw err;
+        console.log('file saved');
+      });
+
+    res.send("Arff file created!");
+  };
+
+
+
