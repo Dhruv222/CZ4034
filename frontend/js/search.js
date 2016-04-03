@@ -31,7 +31,7 @@ $(document).ready(function(){
           $location="*";
         }
         $.get("/search", {q: $query, sentiment: $sentiment_query, location: $location}, function(data, status){
-            if(status == success){
+            if(status == "success"){
                 $t2 = $.now();
                 console.log(status);
             }
