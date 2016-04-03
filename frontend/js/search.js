@@ -2,6 +2,7 @@ $(document).ready(function(){
 
     $page = 0;
     $sentiment = "mixed";
+    $location = "worldwide"
 
     $(".previous").hide();
     $(".next").hide();
@@ -25,16 +26,27 @@ $(document).ready(function(){
     getLocation();
 
     $("#search_btn").click(function(){
-        $sentiment = $('input[name="optradio"]:checked').attr("id");
+        $sentiment = $('#form1 input[name="optradio"]:checked').attr("id");
+        $location = $('#form2 input[name="optradio"]:checked').attr("id");
         $page = 0;
         $("#main").empty();
         $page++;
         $query = $("#search_box").val();
         $i = 0;
-        $.get("/search", {q: $query, latitude: $latitude, longitude: $longitude, sentiment: $sentiment}, function(data, status){
+        if ($sentiment == "mixed"){
+          $sentiment = "*";
+        }
+        if ($location == "local"){
+          $location = "('STcom' OR 'thenewpaper')";
+        }
+        else if ($location == "worldwide"){
+          $location="*";
+        }
+        $.get("/search", {q: $query, sentiment: $sentiment, location: $location}, function(data, status){
             $result = JSON.parse(data);
             console.log($result);
             for($i = 0; $i < $result.response.docs.length; $i++){
+                $handle = $result.response.docs[$i].twitter_handle;
                 $tweet = $result.response.docs[$i].tweet_text;
                 $sentiment = $result.response.docs[$i].sentiment;
                 if ($sentiment == "positive"){
@@ -47,7 +59,7 @@ $(document).ready(function(){
                     $color = "pink";
                 }
                 $newDiv = "<div style='background-color:"+ $color + "' class='row'>" +
-                    "<div class='col-md-7'>" + "<h3>The New York Times</h3>" + "<h4>10th March 2016</h4>" +
+                    "<div class='col-md-7'>" + "<h3>@"+$handle+"</h3>" + "<h4>10th March 2016</h4>" +
                     "<p id='p1'>" + $tweet + "</p>" +
                     "</div></div> <hr/>";
                 $("#main").append($newDiv);

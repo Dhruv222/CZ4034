@@ -7,7 +7,8 @@ var solrClient = require(process.cwd() + '/lib/solr'),
   _ = require('lodash');
 
 exports.doSearch = function(req, res, next) {
-  var qText = "tweet_text:" + encodeURIComponent(req.params.q).replace(/%20/g, '+');
+  var qText = "tweet_text:" + encodeURIComponent(req.params.q).replace(/%20/g, '+') + " AND sentiment:" + encodeURIComponent(req.params.sentiment).replace(/%20/g, '+') +" AND twitter_handle:" + encodeURIComponent(req.params.location).replace(/%20/g, '+');
+
   var page = parseInt(req.params.page);
   page = isNaN(page) ? 1 : page;
   var page_size = parseInt(req.params.page_size);
