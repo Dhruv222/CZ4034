@@ -4,6 +4,10 @@ var solrClient = require(process.cwd() + '/lib/solr'),
 
 exports.doSearch = function(req, res, next) {
   var qText = "tweet_text:" + encodeURIComponent(req.params.q).replace(/%20/g, '+');
+  if (req.params.sentiment != "mixed"){
+    var qText = qText + " AND sentiment:" + encodeURIComponent(req.params.q).replace(/%20/g, '+');
+  }
+  
   var page = parseInt(req.params.page);
   page = isNaN(page) ? 1 : page;
   var page_size = parseInt(req.params.page_size);

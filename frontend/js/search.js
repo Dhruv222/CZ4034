@@ -33,7 +33,7 @@ $(document).ready(function(){
         $page++;
         $query = $("#search_box").val();
         $i = 0;
-        $.get("/search", {q: $query, latitude: $latitude, longitude: $longitude, sentiment: $sentiment}, function(data, status){
+        $.get("/search", {q: $query, sentiment: $sentiment, twitter_handle:"STcom"}, function(data, status){
             $result = JSON.parse(data);
             console.log($result);
             for($i = 0; $i < $result.response.docs.length; $i++){
