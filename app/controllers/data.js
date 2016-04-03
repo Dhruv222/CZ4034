@@ -90,7 +90,7 @@ exports.addTwitterHandle = function(req, res, next) {
       }
     });
     indexImages(url_tweet_mapping);
-    
+
   }).catch(function(error) {
     res.send(500, error);
   });
