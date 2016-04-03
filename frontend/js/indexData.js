@@ -5,7 +5,8 @@ $(document).ready(function(){
 
     $("#add_btn").click( function(){
         $handle = $('input[name="optradio"]:checked', '#chooseHandle').attr("id");
-        $.post("/data/" + $handle, function(data, status){
+        $coordinate = $('input[name="optradio"]:checked', '#chooseHandle').attr("coordinate");
+        $.post("/data/" + $handle +"/"+ $coordinate, function(data, status){
             if(status == "success"){
                 alert("Tweets indexed successfully!");
             }

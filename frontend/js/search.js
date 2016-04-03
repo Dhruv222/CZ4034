@@ -1,14 +1,13 @@
 $(document).ready(function(){
 
     $page = 0;
+    $sentiment = "mixed";
 
     $(".previous").hide();
     $(".next").hide();
 
     $latitude = 0;
     $longitude = 0;
-
-    $("#mixed").prop("checked", true);
 
     function getLocation() {
         if (navigator.geolocation) {
@@ -26,17 +25,18 @@ $(document).ready(function(){
     getLocation();
 
     $("#search_btn").click(function(){
+        $sentiment = $('input[name="optradio"]:checked').attr("id");
         $page = 0;
         $("#main").empty();
         $page++;
         $query = $("#search_box").val();
         $i = 0;
-        $.get("/search", {q: $query, latitude: $latitude, longitude: $longitude}, function(data, status){
+        $.get("/search", {q: $query, latitude: $latitude, longitude: $longitude, sentiment: $sentiment}, function(data, status){
             $result = JSON.parse(data);
             console.log($result);
             for($i = 0; $i < $result.response.docs.length; $i++){
                 $tweet = $result.response.docs[$i].tweet_text;
-                $sentiment = $result.response.docs[$i].sentiment[0];
+                $sentiment = $result.response.docs[$i].sentiment;
                 if ($sentiment == "positive"){
                     $color = "yellow";
                 }
@@ -62,7 +62,7 @@ $(document).ready(function(){
         $page--;
         $query = $("#search_box").val();
         $i = 0;
-        $.get("/search", {q: $query, page: $page, latitude: $latitude, longitude: $longitude}, function(data, status){
+        $.get("/search", {q: $query, page: $page, latitude: $latitude, longitude: $longitude, sentiment: $sentiment}, function(data, status){
             $result = JSON.parse(data);
             for($i = 0; $i < $result.response.docs.length; $i++){
                 $tweet = $result.response.docs[$i].tweet_text;
@@ -95,7 +95,7 @@ $(document).ready(function(){
         $page++;
         $query = $("#search_box").val();
         $i = 0;
-        $.get("/search", {q: $query, page: $page, latitude: $latitude, longitude: $longitude}, function(data, status){
+        $.get("/search", {q: $query, page: $page, latitude: $latitude, longitude: $longitude, sentiment: $sentiment}, function(data, status){
             $result = JSON.parse(data);
             for($i = 0; $i < $result.response.docs.length; $i++){
                 $tweet = $result.response.docs[$i].tweet_text;
