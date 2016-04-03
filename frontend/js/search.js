@@ -9,8 +9,6 @@ $(document).ready(function(){
     $latitude = 0;
     $longitude = 0;
 
-    $("#mixed").prop("checked", true);
-
     function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
