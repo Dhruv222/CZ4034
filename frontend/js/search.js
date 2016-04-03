@@ -81,6 +81,7 @@ $(document).ready(function(){
             $result = JSON.parse(data);
             for($i = 0; $i < $result.response.docs.length; $i++){
                 $tweet = $result.response.docs[$i].tweet_text;
+                $handle = $result.response.docs[$i].twitter_handle;
                 $sentiment = $result.response.docs[$i].sentiment[0];
                 if ($sentiment == "positive"){
                     $color = "yellow";
@@ -92,7 +93,7 @@ $(document).ready(function(){
                     $color = "pink";
                 }
                 $newDiv = "<div style='background-color:"+ $color + "' class='row'>" +
-                    "<div class='col-md-7'>" + "<h3>The New York Times</h3>" + "<h4>10th March 2016</h4>" +
+                    "<div class='col-md-7'>" + "<h3>@" + $handle + "</h3>" + "<h4>10th March 2016</h4>" +
                     "<p id='p1'>" + $tweet + "</p>" +
                     "</div></div> <hr/>";
                 $("#main").append($newDiv);
@@ -114,6 +115,7 @@ $(document).ready(function(){
             $result = JSON.parse(data);
             for($i = 0; $i < $result.response.docs.length; $i++){
                 $tweet = $result.response.docs[$i].tweet_text;
+                $handle = $result.response.docs[$i].twitter_handle;
                 $sentiment = $result.response.docs[$i].sentiment[0];
                 if ($sentiment == "positive"){
                     $color = "yellow";
@@ -125,7 +127,7 @@ $(document).ready(function(){
                     $color = "pink";
                 }
                 $newDiv = "<div style='background-color:"+ $color + "' class='row'>" +
-                    "<div class='col-md-7'>" + "<h3>The New York Times</h3>" + "<h4>10th March 2016</h4>" +
+                    "<div class='col-md-7'>" + "<h3>@" + $handle + "</h3>" + "<h4>10th March 2016</h4>" +
                     "<p id='p1'>" + $tweet + "</p>" +
                     "</div></div> <hr/>";
                 $("#main").append($newDiv);
