@@ -59,9 +59,6 @@ exports.addTwitterHandle = function(req, res, next) {
         var polarity = 'neutral';
       }
 
-      //Find the location of the tweet[i]
-
-
       tweets_trimmed.push({
         id: tweets[i].id,
         tweet_text: tweets[i].text,
@@ -73,6 +70,7 @@ exports.addTwitterHandle = function(req, res, next) {
         url_tweet_mapping[tweets[i].id] = tweets[i].entities.media[0].media_url;
       }
     }
+
     solrClient.add(tweets_trimmed, {
       overwrite: true,
       commitWithin: 1000
