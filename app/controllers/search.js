@@ -1,8 +1,7 @@
 var solrClient = require(process.cwd() + '/lib/solr'),
   request = require('request'),
-  Promise = require('promise');
+  Promise = require('promise'),
   fs = require('fs');
-
 
 exports.doSearch = function(req, res, next) {
   var qText = "tweet_text:" + encodeURIComponent(req.params.q).replace(/%20/g, '+') + " AND sentiment:" + encodeURIComponent(req.params.sentiment).replace(/%20/g, '+') +" AND twitter_handle:" + encodeURIComponent(req.params.location).replace(/%20/g, '+');
