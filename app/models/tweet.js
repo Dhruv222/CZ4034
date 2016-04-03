@@ -3,7 +3,7 @@ var Promise = require('promise'),
   twitterClient = require(process.cwd() + '/lib/twitter');
 var Tweet = function() {};
 
-var NUM_TWEETS_TO_FETCH = 1000;
+var NUM_TWEETS_TO_FETCH = 2000;
 var TWEETS_IN_ONE_API_CALL = 200; // 200 tweets is the Twitter API limit
 
 var _fetch = function(screen_name, offset, max_id, fulfill, reject, tweets_list) {

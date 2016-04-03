@@ -9,30 +9,46 @@ var twitterClient = require(process.cwd() + '/lib/twitter'),
 
 var indexImages = function(url_tweet_mapping) {
   var image_promises = [];
+  var filenames = [];
   var filenames_str = "";
   var tweet_ids = Object.keys(url_tweet_mapping);
 
   for (var i = 0; i < tweet_ids.length; i++) {
     var filename = tweet_ids[i] + '.jpg';
     var filepath = "/tmp/images/" + filename;
-    image_promises.push(image_download.download(url_tweet_mapping[tweet_ids[i]], filepath));
-    filenames_str = filenames_str + filepath + "\n";
+    filenames.push(filepath);
   }
-  console.log("starting download");
-  Promise.all(image_promises).then(function() {
-    console.log("downloaded " + image_promises.length + " images");
-    if (fs.existsSync("/tmp/infile.txt"))
-      fs.unlinkSync("/tmp/infile.txt");
-    fs.writeFile("/tmp/infile.txt", filenames_str, function(err) {
-      if (err) {
-        console.log("error writing to file");
-      }
-      console.log("created infile.txt");
 
-      console.log("indexing images");
-      shell.execute("sh " + process.cwd() + "/index_images.sh");
+  console.log("starting download");
+  var download_image = function(index) {
+    if (index >= filenames.length) {
+      console.log("downloaded " + filenames.length + " images");
+      if (fs.existsSync("/tmp/infile.txt"))
+        fs.unlinkSync("/tmp/infile.txt");
+      fs.writeFile("/tmp/infile.txt", filenames_str, function(err) {
+        if (err) {
+          console.log("error writing to file");
+        }
+        console.log("created infile.txt");
+
+        console.log("indexing images");
+        shell.execute("sh " + process.cwd() + "/index_images.sh");
+      });
+      return;
+    }
+
+    image_download.download(url_tweet_mapping[tweet_ids[index]], filenames[index]).then(function() {
+      filenames_str = filenames_str + filenames[index] + "\n";
+      console.log("Downloaded " + filenames[index]);
+      download_image(index + 1);
+    }).catch(function(error) {
+      console.log("Download error: ")
+      console.log(error);
+      download_image(index + 1);
     });
-  });
+  };
+
+  download_image(0);
 };
 
 exports.addTwitterHandle = function(req, res, next) {
@@ -85,11 +101,11 @@ exports.addTwitterHandle = function(req, res, next) {
             res.send(500, err);
           } else {
             res.send({ ok: "true", message: "Tweets were successfully indexed" });
+            indexImages(url_tweet_mapping);
           }
         });
       }
     });
-    indexImages(url_tweet_mapping);
 
   }).catch(function(error) {
     res.send(500, error);
