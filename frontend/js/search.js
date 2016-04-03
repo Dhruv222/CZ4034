@@ -1,3 +1,5 @@
+$("#results").hide();
+
 $(document).ready(function(){
 
     $page = 0;
@@ -29,6 +31,7 @@ $(document).ready(function(){
     getLocation();
 
     $("#search_btn").click(function(){
+        $t1 = $.now();
         $sentiment = $('#form1 input[name="optradio"]:checked').attr("id");
         $location = $('#form2 input[name="optradio"]:checked').attr("id");
         $page = 0;
@@ -46,7 +49,14 @@ $(document).ready(function(){
           $location="*";
         }
         $.get("/search", {q: $query, sentiment: $sentiment, location: $location}, function(data, status){
+            if(status == success){
+                $t1 = $.now();
+                console.log(status);
+            }
             $result = JSON.parse(data);
+            $("#num_results").html($result.response.docs.length);
+            $("#time").html(($t2 - $t1)/1000);
+            $("#results").show();
             console.log($result);
             for($i = 0; $i < $result.response.docs.length; $i++){
                 $handle = $result.response.docs[$i].twitter_handle;
