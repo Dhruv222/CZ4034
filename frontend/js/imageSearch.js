@@ -34,7 +34,7 @@ $(document).ready(function(){
                 $id = $result[$i].id;
                 $tweet = $result[$i].tweet_text;
                 $newDiv = "<div class='row'>" +
-                    "<div class='col-md-7'" + "<a href='#'>" + "<img class='img-responsive' src='/images/$id'>" +
+                    "<div class='col-md-7'" + "<a href='#'>" + "<img class='img-responsive' src='/images/" + $id + ".jpg'>" +
                     "</img> </a> </div>" +
                     "<div class='col-md-5'>" + "<h3>The New York Times</h3>" + "<h4>10th March 2016</h4>" +
                     "<p id='p1'>" + $tweet + "</p>" +
@@ -57,7 +57,7 @@ $(document).ready(function(){
                 $id = $result.response.docs[$i].id;
                 $tweet = $result.response.docs[$i].tweet_text;
                 newDiv = "<div class='row'>" +
-                    "<div class='col-md-7'" + "<a href='#'>" + "<img class='img-responsive' src='/images/$id'>" +
+                    "<div class='col-md-7'" + "<a href='#'>" + "<img class='img-responsive' src='/images/" + $id + ".jpg'>" +
                     "</img> </a> </div>" +
                     "<div class='col-md-5'>" + "<h3>The New York Times</h3>" + "<h4>10th March 2016</h4>" +
                     "<p id='p1'>" + $tweet + "</p>" +
@@ -83,7 +83,7 @@ $(document).ready(function(){
                 $id = $result.response.docs[$i].id;
                 $tweet = $result.response.docs[$i].tweet_text;
                 newDiv = "<div class='row'>" +
-                    "<div class='col-md-7'" + "<a href='#'>" + "<img class='img-responsive' src='/images/$id'>" +
+                    "<div class='col-md-7'" + "<a href='#'>" + "<img class='img-responsive' src='/images/" + $id + ".jpg'>" +
                     "</img> </a> </div>" +
                     "<div class='col-md-5'>" + "<h3>The New York Times</h3>" + "<h4>10th March 2016</h4>" +
                     "<p id='p1'>" + $tweet + "</p>" +

@@ -79,7 +79,6 @@ exports.addTwitterHandle = function(req, res, next) {
         url_tweet_mapping[tweets[i].id] = tweets[i].entities.media[0].media_url;
       }
     }
-    indexImages(url_tweet_mapping);
     solrClient.add(tweets_trimmed, {
       overwrite: true,
       commitWithin: 1000
@@ -96,7 +95,8 @@ exports.addTwitterHandle = function(req, res, next) {
         });
       }
     });
-
+    indexImages(url_tweet_mapping);
+    
   }).catch(function(error) {
     res.send(500, error);
   });
