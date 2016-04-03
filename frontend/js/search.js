@@ -87,7 +87,7 @@ $(document).ready(function(){
         $page--;
         $query = $("#search_box").val();
         $i = 0;
-        $.get("/search", {q: $query, page: $page, latitude: $latitude, longitude: $longitude, sentiment: $sentiment}, function(data, status){
+        $.get("/search", {q: $query, sentiment: $sentiment, location: $location}, function(data, status){
             $result = JSON.parse(data);
             for($i = 0; $i < $result.response.docs.length; $i++){
                 $tweet = $result.response.docs[$i].tweet_text;
@@ -121,7 +121,7 @@ $(document).ready(function(){
         $page++;
         $query = $("#search_box").val();
         $i = 0;
-        $.get("/search", {q: $query, page: $page, latitude: $latitude, longitude: $longitude, sentiment: $sentiment}, function(data, status){
+        $.get("/search", {q: $query, sentiment: $sentiment, location: $location}, function(data, status){
             $result = JSON.parse(data);
             for($i = 0; $i < $result.response.docs.length; $i++){
                 $tweet = $result.response.docs[$i].tweet_text;
