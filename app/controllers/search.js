@@ -4,17 +4,36 @@ var solrClient = require(process.cwd() + '/lib/solr'),
   fs = require('fs');
 
 exports.doSearch = function(req, res, next) {
-  var qText = "tweet_text:" + encodeURIComponent(req.params.q).replace(/%20/g, '+') + " AND sentiment:" + encodeURIComponent(req.params.sentiment).replace(/%20/g, '+') +" AND twitter_handle:" + encodeURIComponent(req.params.location).replace(/%20/g, '+');
+  var filler = "";
 
+  var qText = "tweet_text:" + encodeURIComponent(req.params.q).replace(/%20/g, '+') + " AND sentiment:\"" + encodeURIComponent(req.params.sentiment).replace(/%20/g, '+') + "\"" ;
+  console.log(qText);
   var page = parseInt(req.params.page);
   page = isNaN(page) ? 1 : page;
   var page_size = parseInt(req.params.page_size);
   page_size = isNaN(page_size) ? 10 : page_size;
 
-  solrClient.query(qText, {
-    start: (page - 1) * page_size,
-    rows: page_size
-  }, function(err, result) {
+  console.log(req.params.location);
+  if (req.params.location === "1"){
+  var  obj = {
+      start: (page - 1) * page_size,
+      rows: page_size,
+      fq: "{!geofilt sfield=coordinates}",
+      pt:"1.3521,103.8198",
+      d:40
+   }
+  }
+   else{
+  var  obj = {
+       start: (page - 1) * page_size,
+       rows: page_size,
+    }
+   }
+
+
+
+  solrClient.query(qText, obj, function(err, result) {
+    console.log(result);
     if (err) {
       res.send(500, err);
     } else {
@@ -79,20 +98,20 @@ exports.sortByParam = function(req, res, next) {
           .rows(numOfDocs);
 
   solrClient.search(query,function(err,obj){
-    
+
     if(err){
       res.send(err);
     }
     else {
       res.send(obj);
     }
-  
+
   });
 
 };
 
 exports.retrieveQueries = function(req, res, next) {
-  
+
   var query = solrClient.createQuery()
           .q('*:*')
           .start(0)
@@ -122,14 +141,14 @@ exports.generateArff = function(req, res, next) {
         if (err) throw err;
         console.log('file read');
       });
-  
+
   var obj = JSON.parse(preprocess);
   var size = Object.keys(obj).length;
 
   var processed = '@DATA';
   var processed_tweet_text;
   var processed_sentiment;
-  
+
   while(size > 0) {
     processed_tweet_text= obj[size-1].tweet_text;
     processed_sentiment= obj[size-1].sentiment;
@@ -147,6 +166,3 @@ exports.generateArff = function(req, res, next) {
 
     res.send("Arff file created!");
   };
-
-
-

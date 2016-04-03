@@ -26,10 +26,10 @@ $(document).ready(function(){
           $sentiment_query = "*";
         }
         if ($location == "local"){
-          $location = "('STcom' OR 'thenewpaper')";
+          $location = 1;
         }
         else if ($location == "worldwide"){
-          $location="*";
+          $location=0;
         }
         $.get("/search", {q: $query, sentiment: $sentiment_query, location: $location}, function(data, status){
             if(status == "success"){
