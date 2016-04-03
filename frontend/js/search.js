@@ -49,12 +49,12 @@ $(document).ready(function(){
           $location="*";
         }
         $.get("/search", {q: $query, sentiment: $sentiment, location: $location}, function(data, status){
-            if(status == success){
-                $t1 = $.now();
+            if(status === 'success'){
+                $t2 = $.now();
                 console.log(status);
             }
             $result = JSON.parse(data);
-            $("#num_results").html($result.response.docs.length);
+            $("#num_results").html($result.response.numFound);
             $("#time").html(($t2 - $t1)/1000);
             $("#results").show();
             console.log($result);
@@ -87,7 +87,7 @@ $(document).ready(function(){
         $page--;
         $query = $("#search_box").val();
         $i = 0;
-        $.get("/search", {q: $query, page: $page, latitude: $latitude, longitude: $longitude, sentiment: $sentiment}, function(data, status){
+        $.get("/search", {q: $query, sentiment: $sentiment, location: $location, page: $page}, function(data, status){
             $result = JSON.parse(data);
             for($i = 0; $i < $result.response.docs.length; $i++){
                 $tweet = $result.response.docs[$i].tweet_text;
@@ -121,12 +121,12 @@ $(document).ready(function(){
         $page++;
         $query = $("#search_box").val();
         $i = 0;
-        $.get("/search", {q: $query, page: $page, latitude: $latitude, longitude: $longitude, sentiment: $sentiment}, function(data, status){
+        $.get("/search", {q: $query, sentiment: $sentiment, location: $location, page: $page}, function(data, status){
             $result = JSON.parse(data);
             for($i = 0; $i < $result.response.docs.length; $i++){
                 $tweet = $result.response.docs[$i].tweet_text;
                 $handle = $result.response.docs[$i].twitter_handle;
-                $sentiment = $result.response.docs[$i].sentiment[0];
+                $sentiment = $result.response.docs[$i].sentiment;
                 if ($sentiment == "positive"){
                     $color = "yellow";
                 }
