@@ -1,4 +1,5 @@
 $("#results").hide();
+$("#page_numbers").hide();
 
 $(document).ready(function(){
 
@@ -39,6 +40,7 @@ $(document).ready(function(){
             $("#num_results").html($result.response.numFound);
             $("#time").html(($t2 - $t1)/1000);
             $("#results").show();
+            $("#page_numbers").show();
             console.log($result);
             for($i = 0; $i < $result.response.docs.length; $i++){
                 $handle = $result.response.docs[$i].twitter_handle;
@@ -72,6 +74,7 @@ $(document).ready(function(){
         $.get("/search", {q: $query, page: $page, q: $query, sentiment: $sentiment_query, location: $location}, function(data, status){
 
             $result = JSON.parse(data);
+            $("#p_no").html($page);
             for($i = 0; $i < $result.response.docs.length; $i++){
                 $tweet = $result.response.docs[$i].tweet_text;
                 $handle = $result.response.docs[$i].twitter_handle;
@@ -108,6 +111,7 @@ $(document).ready(function(){
         $.get("/search", {q: $query, page: $page, q: $query, sentiment: $sentiment_query, location: $location}, function(data, status){
 
             $result = JSON.parse(data);
+            $("#p_no").html($page);
             for($i = 0; $i < $result.response.docs.length; $i++){
                 $tweet = $result.response.docs[$i].tweet_text;
                 $handle = $result.response.docs[$i].twitter_handle;
