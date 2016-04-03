@@ -37,6 +37,7 @@ var indexImages = function(url_tweet_mapping) {
 
 exports.addTwitterHandle = function(req, res, next) {
   var screen_name = req.params.screen_name;
+  var coordinate = req.params.coordinate;
 
   Tweet.fetchTweets(screen_name).then(function(tweets) {
     var tweets_trimmed = [];
@@ -59,27 +60,19 @@ exports.addTwitterHandle = function(req, res, next) {
       }
 
       //Find the location of the tweet[i]
-      if(tweets[i].coordinates != null){
-        var coord = tweets[i].coordinates.coordinates.reverse().toString();
-      }
-      else if(tweets[i].place != null){
-        var coord = tweets[i].place.coordinates[1][1].reverse().toString();
-      }
-      else {
-        var coord = "0,0";
-      }
+
 
       tweets_trimmed.push({
         id: tweets[i].id,
         tweet_text: tweets[i].text,
         sentiment: polarity,
-        coordinates:coord
+        coordinates:coordinate || "0,0",
+        twitter_handle:screen_name
       });
       if (tweets[i].entities.media && tweets[i].entities.media.length > 0) {
         url_tweet_mapping[tweets[i].id] = tweets[i].entities.media[0].media_url;
       }
     }
-    indexImages(url_tweet_mapping);
     solrClient.add(tweets_trimmed, {
       overwrite: true,
       commitWithin: 1000
@@ -96,6 +89,7 @@ exports.addTwitterHandle = function(req, res, next) {
         });
       }
     });
+    indexImages(url_tweet_mapping);
 
   }).catch(function(error) {
     res.send(500, error);
