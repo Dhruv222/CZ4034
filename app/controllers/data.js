@@ -80,7 +80,8 @@ exports.addTwitterHandle = function(req, res, next) {
         tweet_text: tweets[i].text,
         sentiment: polarity,
         coordinates:coordinate || "0,0",
-        twitter_handle:screen_name
+        twitter_handle: screen_name,
+        timestamp: tweets[i].created_at
       });
       if (tweets[i].entities.media && tweets[i].entities.media.length > 0) {
         url_tweet_mapping[tweets[i].id] = tweets[i].entities.media[0].media_url;

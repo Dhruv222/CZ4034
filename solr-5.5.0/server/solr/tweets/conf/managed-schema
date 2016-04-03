@@ -123,6 +123,7 @@
     <field name="tweet_text" type="text_en" indexed="true" stored="true"/>
     <field name="coordinates" type="location" indexed="true" stored="true"/>
     <field name="sentiment" type="text_en" indexed="true" stored="true"/>
+    <field name="timestamp" type="text_en" indexed="true" stored="true"/>
     <!-- Dynamic field definitions allow using convention over configuration
        for fields via the specification of patterns to match field names.
        EXAMPLE:  name="*_i" will match any field ending in _i (like myid_i, z_i)
