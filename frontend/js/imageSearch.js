@@ -29,10 +29,10 @@ $(document).ready(function(){
         $query = $("#search_box").val();
         $i = 0;
         $.get("/imageSearch", {img_url: $query, latitude: $latitude, longitude: $longitude}, function(data, status){
-            $result = JSON.parse(data);
-            for($i = 0; $i < $result.response.docs.length; $i++){
-                $id = $result.response.docs[$i].id;
-                $tweet = $result.response.docs[$i].tweet_text;
+            $result = data;
+            for($i = 0; $i < $result.length; $i++){
+                $id = $result[$i].id;
+                $tweet = $result[$i].tweet_text;
                 $newDiv = "<div class='row'>" +
                     "<div class='col-md-7'" + "<a href='#'>" + "<img class='img-responsive' src='/images/$id'>" +
                     "</img> </a> </div>" +
