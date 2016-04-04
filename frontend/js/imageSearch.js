@@ -2,6 +2,8 @@ $("#results").hide();
 
 $(document).ready(function(){
 
+    $months = ["January", "February", "March", "April", "May", "June","July","August","September","October","November","December"];
+
     $page = 0;
 
     $(".previous").hide();
@@ -41,11 +43,14 @@ $(document).ready(function(){
             for($i = 0; $i < $result.length; $i++){
                 $id = $result[$i].id;
                 $tweet = $result[$i].tweet_text;
+                $handle = $result.response.docs[$i].twitter_handle;
+                $date = new Date($result.response.docs[$i].timestamp);
+                $date_format = $months[$date.getMonth()] + " " + $date.getDate() + ", " + $date.getFullYear() ;
                 $newDiv = "<div class='row'>" +
 
                     "<div class='col-md-7'" + "<a href='#'>" + "<img class='img-responsive' src='/images/" + $id + ".jpg'>" +
                     "</img> </a> </div>" +
-                    "<div class='col-md-5'>" + "<h3>The New York Times</h3>" + "<h4>10th March 2016</h4>" +
+                    "<div class='col-md-5'>" + "<h3>@"+$handle+"</h3>" + "<h4>"+$date_format+"</h4>" +
                     "<p id='p1'>" + $tweet + "</p>" +
                     "</div></div> <hr/>";
                 $("#main").append($newDiv);
