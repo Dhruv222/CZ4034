@@ -43,8 +43,8 @@ $(document).ready(function(){
             for($i = 0; $i < $result.length; $i++){
                 $id = $result[$i].id;
                 $tweet = $result[$i].tweet_text;
-                $handle = $result.response.docs[$i].twitter_handle;
-                $date = new Date($result.response.docs[$i].timestamp);
+                $handle = $result[$i].twitter_handle;
+                $date = new Date($result[$i].timestamp);
                 $date_format = $months[$date.getMonth()] + " " + $date.getDate() + ", " + $date.getFullYear() ;
                 $newDiv = "<div class='row'>" +
 
