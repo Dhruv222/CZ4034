@@ -1,3 +1,5 @@
+$("#results").hide();
+
 $(document).ready(function(){
 
     $page = 0;
@@ -24,12 +26,18 @@ $(document).ready(function(){
     getLocation();
 
     $("#search_btn").click(function(){
+        $t1 = $.now();
         $("#main").empty();
         $page++;
         $query = $("#search_box").val();
         $i = 0;
         $.get("/imageSearch", {img_url: $query, latitude: $latitude, longitude: $longitude}, function(data, status){
+            if(status == "success"){
+                $t2 = $.now();
+            }
             $result = data;
+            $("#time").html(($t2 - $t1)/1000);
+            $("#results").show();
             for($i = 0; $i < $result.length; $i++){
                 $id = $result[$i].id;
                 $tweet = $result[$i].tweet_text;
