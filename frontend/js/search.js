@@ -6,6 +6,7 @@ $(document).ready(function(){
     $page = 0;
     $sentiment_query = "mixed";
     $location = "worldwide";
+    $months = ["January", "February", "March", "April", "May", "June","July","August","September","October","November","December"];
 
     $(".previous").hide();
     $(".next").hide();
@@ -46,8 +47,10 @@ $(document).ready(function(){
                 $handle = $result.response.docs[$i].twitter_handle;
                 $tweet = $result.response.docs[$i].tweet_text;
                 $sentiment = $result.response.docs[$i].sentiment;
+                $date = new Date($result.response.docs[$i].timestamp);
+                $date_format = $months[$date.getMonth()] + " " + $date.getDate() + ", " + $date.getFullYear() ;
                 if ($sentiment == "positive"){
-                    $color = "yellow";
+                    $color = "green";
                 }
                 else if ($sentiment == "neutral") {
                     $color = "lightblue";
@@ -56,9 +59,10 @@ $(document).ready(function(){
                     $color = "pink";
                 }
                 $newDiv = "<div style='background-color:"+ $color + "' class='row'>" +
-                    "<div class='col-md-7'>" + "<h3>@"+$handle+"</h3>" + "<h4>10th March 2016</h4>" +
+                    "<div class='col-md-7'>" + "<h3>@"+$handle+"</h3>" + "<h4>" + $date_format +"</h4>" +
                     "<p id='p1'>" + $tweet + "</p>" +
                     "</div></div> <hr/>";
+                console.log($newDiv);
                 $("#main").append($newDiv);
             }
             if($result.response.numFound > 10)
@@ -79,6 +83,8 @@ $(document).ready(function(){
                 $tweet = $result.response.docs[$i].tweet_text;
                 $handle = $result.response.docs[$i].twitter_handle;
                 $sentiment = $result.response.docs[$i].sentiment;
+                $date = new Date($result.response.docs[$i].timestamp);
+                $date_format = $months[$date.getMonth()] + " " + $date.getDate() + ", " + $date.getFullYear() ;
                 if ($sentiment == "positive"){
                     $color = "yellow";
                 }
@@ -89,7 +95,7 @@ $(document).ready(function(){
                     $color = "pink";
                 }
                 $newDiv = "<div style='background-color:"+ $color + "' class='row'>" +
-                    "<div class='col-md-7'>" + "<h3>@" + $handle + "</h3>" + "<h4>10th March 2016</h4>" +
+                    "<div class='col-md-7'>" + "<h3>@" + $handle + "</h3>" + "<h4>"+ $date_format +"</h4>" +
                     "<p id='p1'>" + $tweet + "</p>" +
                     "</div></div> <hr/>";
                 $("#main").append($newDiv);
@@ -116,6 +122,8 @@ $(document).ready(function(){
                 $tweet = $result.response.docs[$i].tweet_text;
                 $handle = $result.response.docs[$i].twitter_handle;
                 $sentiment = $result.response.docs[$i].sentiment;
+                $date = new Date($result.response.docs[$i].timestamp);
+                $date_format = $months[$date.getMonth()] + " " + $date.getDate() + ", " + $date.getFullYear() ;
                 if ($sentiment == "positive"){
                     $color = "yellow";
                 }
@@ -126,7 +134,7 @@ $(document).ready(function(){
                     $color = "pink";
                 }
                 $newDiv = "<div style='background-color:"+ $color + "' class='row'>" +
-                    "<div class='col-md-7'>" + "<h3>@" + $handle + "</h3>" + "<h4>10th March 2016</h4>" +
+                    "<div class='col-md-7'>" + "<h3>@" + $handle + "</h3>" + "<h4>"+ $date_format +"</h4>" +
                     "<p id='p1'>" + $tweet + "</p>" +
                     "</div></div> <hr/>";
                 $("#main").append($newDiv);
