@@ -90,7 +90,7 @@
   <!--
      <lib path="../a-jar-that-does-not-exist.jar" />
   -->
-  <lib path="/Users/shantanugupta/liresolr/dist/lire-request-handler.jar" />
+  <lib path="../liresolr/dist/lire-request-handler.jar" />
 
   <!-- Data Directory
 

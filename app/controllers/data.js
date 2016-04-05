@@ -15,7 +15,7 @@ var indexImages = function(url_tweet_mapping) {
 
   for (var i = 0; i < tweet_ids.length; i++) {
     var filename = tweet_ids[i] + '.jpg';
-    var filepath = "/tmp/images/" + filename;
+    var filepath = process.cwd() + "/images/" + filename;
     filenames.push(filepath);
   }
 
@@ -23,16 +23,16 @@ var indexImages = function(url_tweet_mapping) {
   var download_image = function(index) {
     if (index >= filenames.length) {
       console.log("downloaded " + filenames.length + " images");
-      if (fs.existsSync("/tmp/infile.txt"))
-        fs.unlinkSync("/tmp/infile.txt");
-      fs.writeFile("/tmp/infile.txt", filenames_str, function(err) {
+      if (fs.existsSync(process.cwd() + "/images/infile.txt"))
+        fs.unlinkSync(process.cwd() + "/images/infile.txt");
+      fs.writeFile(process.cwd() + "/images/infile.txt", filenames_str, function(err) {
         if (err) {
           console.log("error writing to file");
         }
         console.log("created infile.txt");
 
         console.log("indexing images");
-        shell.execute("sh " + process.cwd() + "/index_images.sh");
+        shell.execute("sh " + process.cwd() + "/index_images.sh" + " " + process.cwd());
       });
       return;
     }

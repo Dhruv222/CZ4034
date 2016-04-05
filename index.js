@@ -45,7 +45,7 @@ server.post('/data/:screen_name/:coordinate', controllers.data.addTwitterHandle)
 
 // Serve static content from the ./frontend directory
 server.get(/images\/?.*/, restify.serveStatic({
-  directory: "/tmp"
+  directory: process.cwd()
 }));
 
 server.get(/.*/, restify.serveStatic({
