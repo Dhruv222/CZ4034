@@ -1,0 +1,313 @@
+2016-03-13 10:31:12.798 INFO  (main) [   ] o.e.j.u.log Logging initialized @236ms
+2016-03-13 10:31:12.939 INFO  (main) [   ] o.e.j.s.Server jetty-9.2.13.v20150730
+2016-03-13 10:31:12.951 WARN  (main) [   ] o.e.j.s.h.RequestLogHandler !RequestLog
+2016-03-13 10:31:12.952 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:/Users/shantanugupta/Downloads/solr-5.5.0/server/contexts/] at interval 0
+2016-03-13 10:31:13.244 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2016-03-13 10:31:13.252 WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@146ba0ac{/solr,file:/Users/shantanugupta/Downloads/solr-5.5.0/server/solr-webapp/webapp/,STARTING}{/Users/shantanugupta/Downloads/solr-5.5.0/server/solr-webapp/webapp} has uncovered http methods for path: /
+2016-03-13 10:31:13.258 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=239465106@e45f292
+2016-03-13 10:31:13.269 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-03-13 10:31:13.270 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr
+2016-03-13 10:31:13.270 INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Users/shantanugupta/Downloads/solr-5.5.0/server/solr'
+2016-03-13 10:31:13.270 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-03-13 10:31:13.270 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr
+2016-03-13 10:31:13.275 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/solr.xml
+2016-03-13 10:31:13.321 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Config-defined core root directory: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr
+2016-03-13 10:31:13.338 INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 477289012
+2016-03-13 10:31:13.338 INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/Users/shantanugupta/Downloads/solr-5.5.0/server/solr]
+2016-03-13 10:31:13.338 WARN  (main) [   ] o.a.s.c.CoreContainer Couldn't add files from /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/lib to classpath: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/lib
+2016-03-13 10:31:13.346 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,
+2016-03-13 10:31:13.474 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2016-03-13 10:31:13.476 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2016-03-13 10:31:13.476 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2016-03-13 10:31:13.477 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2016-03-13 10:31:13.478 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2016-03-13 10:31:13.776 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Looking for core definitions underneath /Users/shantanugupta/Downloads/solr-5.5.0/server/solr
+2016-03-13 10:31:13.784 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=tweets, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data/}
+2016-03-13 10:31:13.784 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core tweets in /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets
+2016-03-13 10:31:13.784 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions
+2016-03-13 10:31:13.788 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets'
+2016-03-13 10:31:13.788 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/Users/shantanugupta/Downloads/solr-5.5.0/server
+2016-03-13 10:31:13.788 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2016-03-13 10:31:13.788 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-03-13 10:31:13.789 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr
+2016-03-13 10:31:13.796 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@146ba0ac{/solr,file:/Users/shantanugupta/Downloads/solr-5.5.0/server/solr-webapp/webapp/,AVAILABLE}{/Users/shantanugupta/Downloads/solr-5.5.0/server/solr-webapp/webapp}
+2016-03-13 10:31:13.808 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@689604d9{HTTP/1.1}{0.0.0.0:8983}
+2016-03-13 10:31:13.808 INFO  (main) [   ] o.e.j.s.Server Started @1249ms
+2016-03-13 10:31:13.823 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2016-03-13 10:31:13.825 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2016-03-13 10:31:13.829 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2016-03-13 10:31:13.829 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2016-03-13 10:31:13.829 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2016-03-13 10:31:13.829 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2016-03-13 10:31:13.830 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2016-03-13 10:31:13.830 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2016-03-13 10:31:13.830 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+2016-03-13 10:31:13.830 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+2016-03-13 10:31:13.830 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/icu4j-54.1.jar' to classloader
+2016-03-13 10:31:13.830 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+2016-03-13 10:31:13.830 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2016-03-13 10:31:13.830 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2016-03-13 10:31:13.830 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+2016-03-13 10:31:13.830 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2016-03-13 10:31:13.830 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2016-03-13 10:31:13.830 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2016-03-13 10:31:13.830 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+2016-03-13 10:31:13.830 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/poi-3.11.jar' to classloader
+2016-03-13 10:31:13.830 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+2016-03-13 10:31:13.830 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+2016-03-13 10:31:13.830 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+2016-03-13 10:31:13.830 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/rome-1.0.jar' to classloader
+2016-03-13 10:31:13.830 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2016-03-13 10:31:13.831 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+2016-03-13 10:31:13.831 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+2016-03-13 10:31:13.831 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+2016-03-13 10:31:13.831 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+2016-03-13 10:31:13.831 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+2016-03-13 10:31:13.831 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+2016-03-13 10:31:13.831 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2016-03-13 10:31:13.831 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2016-03-13 10:31:13.831 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2016-03-13 10:31:13.831 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/xz-1.5.jar' to classloader
+2016-03-13 10:31:13.831 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/dist/solr-cell-5.5.0.jar' to classloader
+2016-03-13 10:31:13.831 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/attributes-binder-1.2.3.jar' to classloader
+2016-03-13 10:31:13.831 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2016-03-13 10:31:13.831 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/carrot2-mini-3.10.4.jar' to classloader
+2016-03-13 10:31:13.831 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2016-03-13 10:31:13.831 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2016-03-13 10:31:13.831 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+2016-03-13 10:31:13.831 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+2016-03-13 10:31:13.831 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2016-03-13 10:31:13.832 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/dist/solr-clustering-5.5.0.jar' to classloader
+2016-03-13 10:31:13.832 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2016-03-13 10:31:13.832 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2016-03-13 10:31:13.832 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/dist/solr-langid-5.5.0.jar' to classloader
+2016-03-13 10:31:13.832 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2016-03-13 10:31:13.832 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/velocity/lib/commons-collections-3.2.2.jar' to classloader
+2016-03-13 10:31:13.832 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2016-03-13 10:31:13.832 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2016-03-13 10:31:13.832 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/dist/solr-velocity-5.5.0.jar' to classloader
+2016-03-13 10:31:13.950 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Beginning with Solr 5.5, <maxMergeDocs> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2016-03-13 10:31:13.951 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Beginning with Solr 5.5, <mergeFactor> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2016-03-13 10:31:13.955 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.5.0
+2016-03-13 10:31:14.034 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2016-03-13 10:31:14.068 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [tweets] Schema name=example-data-driven-schema
+2016-03-13 10:31:14.323 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema unique key field: id
+2016-03-13 10:31:14.394 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-03-13 10:31:14.397 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-03-13 10:31:14.452 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets'
+2016-03-13 10:31:14.452 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'tweets' using configuration from instancedir /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets
+2016-03-13 10:31:14.464 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2016-03-13 10:31:14.472 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.SolrCore [[tweets] ] Opening new SolrCore at [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets], dataDir=[/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/]
+2016-03-13 10:31:14.474 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2016-03-13 10:31:14.476 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.SolrCore [[tweets] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-03-13 10:31:14.476 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.SolrCore [[tweets] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-03-13 10:31:14.478 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2016-03-13 10:31:14.484 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory return new directory for /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data
+2016-03-13 10:31:14.484 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.SolrCore New index directory detected: old=null new=/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index/
+2016-03-13 10:31:14.484 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory return new directory for /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index
+2016-03-13 10:31:14.495 INFO  (OldIndexDirectoryCleanupThreadForCore-tweets) [   x:tweets] o.a.s.c.SolrCore Looking for old index directories to cleanup for core tweets in /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/
+2016-03-13 10:31:14.496 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2016-03-13 10:31:14.498 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-03-13 10:31:14.561 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.u.p.UpdateRequestProcessorChain creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+2016-03-13 10:31:14.594 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2016-03-13 10:31:14.614 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-03-13 10:31:14.616 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-03-13 10:31:14.616 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-03-13 10:31:14.617 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-03-13 10:31:14.625 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2016-03-13 10:31:14.625 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2016-03-13 10:31:14.625 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2016-03-13 10:31:14.626 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2016-03-13 10:31:14.626 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2016-03-13 10:31:14.626 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2016-03-13 10:31:14.626 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2016-03-13 10:31:14.627 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/browse,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/tvrh,/select,/admin/segments,/admin/system,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
+2016-03-13 10:31:14.628 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2016-03-13 10:31:14.634 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-03-13 10:31:14.635 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-03-13 10:31:14.646 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 1000ms; 
+2016-03-13 10:31:14.646 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-03-13 10:31:14.677 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@334a01ba; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_e,generation=14}
+2016-03-13 10:31:14.678 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.SolrDeletionPolicy newest commit generation = 14
+2016-03-13 10:31:14.706 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.s.SolrIndexSearcher Opening Searcher@4637c212[tweets] main
+2016-03-13 10:31:14.710 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf
+2016-03-13 10:31:14.710 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf}
+2016-03-13 10:31:14.716 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf
+2016-03-13 10:31:14.717 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2016-03-13 10:31:14.721 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-03-13 10:31:14.724 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-03-13 10:31:14.725 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2016-03-13 10:31:14.726 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/elevate.xml
+2016-03-13 10:31:14.736 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-03-13 10:31:14.737 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4637c212[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.5.0):C1) Uninverting(_2(5.5.0):C1) Uninverting(_c(5.5.0):C2)))}
+2016-03-13 10:31:14.737 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-03-13 10:31:14.737 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2016-03-13 10:31:14.737 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-03-13 10:31:14.737 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.SolrCore [tweets] Registered new searcher Searcher@4637c212[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.5.0):C1) Uninverting(_2(5.5.0):C1) Uninverting(_c(5.5.0):C2)))}
+2016-03-13 10:31:14.738 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2016-03-13 10:31:14.746 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.u.VersionInfo Found MAX value 1528682286248099840 from Terms for _version_ in index
+2016-03-13 10:31:14.749 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.u.UpdateLog Took 11.0ms to seed version buckets with highest version 1528682286248099840
+2016-03-13 10:31:14.749 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.CoreContainer registering core: tweets
+2016-03-13 10:31:30.004 INFO  (qtp434176574-20) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865089932} hits=4 status=0 QTime=24
+2016-03-13 10:31:30.801 INFO  (qtp434176574-15) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865090798} hits=4 status=0 QTime=0
+2016-03-13 10:31:32.002 INFO  (qtp434176574-17) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865092000} hits=4 status=0 QTime=0
+2016-03-13 10:31:32.202 INFO  (qtp434176574-16) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865092200} hits=4 status=0 QTime=0
+2016-03-13 10:31:49.244 INFO  (qtp434176574-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1457865109240} status=0 QTime=2
+2016-03-13 10:31:49.256 INFO  (qtp434176574-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1457865109253} status=0 QTime=1
+2016-03-13 10:31:50.621 INFO  (qtp434176574-14) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1457865110617} status=0 QTime=1
+2016-03-13 10:31:50.624 ERROR (qtp434176574-17) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.html]
+2016-03-13 10:31:50.624 INFO  (qtp434176574-20) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/replication params={wt=json&command=details&_=1457865110619} status=0 QTime=2
+2016-03-13 10:31:50.625 INFO  (qtp434176574-17) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1457865110621} status=404 QTime=1
+2016-03-13 10:31:50.626 INFO  (qtp434176574-16) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1457865110621} status=503 QTime=0
+2016-03-13 10:31:50.652 INFO  (qtp434176574-15) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/system params={wt=json&_=1457865110620} status=0 QTime=29
+2016-03-13 10:31:53.841 INFO  (qtp434176574-14) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1457865113836} status=0 QTime=3
+2016-03-13 10:31:53.848 INFO  (qtp434176574-20) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1457865113844} status=0 QTime=2
+2016-03-13 10:31:57.614 INFO  (qtp434176574-14) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={wt=json&ts=1457865117611&_=1457865117612} hits=4 status=0 QTime=1
+2016-03-13 10:31:57.615 INFO  (qtp434176574-14) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={wt=json&ts=1457865117611&_=1457865117612} status=0 QTime=1
+2016-03-13 10:31:59.531 INFO  (qtp434176574-17) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={wt=json&ts=1457865119528&_=1457865119529} hits=4 status=0 QTime=0
+2016-03-13 10:31:59.532 INFO  (qtp434176574-17) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={wt=json&ts=1457865119528&_=1457865119529} status=0 QTime=0
+2016-03-13 10:31:59.971 INFO  (qtp434176574-15) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={wt=json&ts=1457865119968&_=1457865119968} hits=4 status=0 QTime=0
+2016-03-13 10:31:59.971 INFO  (qtp434176574-15) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={wt=json&ts=1457865119968&_=1457865119968} status=0 QTime=0
+2016-03-13 10:32:00.147 INFO  (qtp434176574-14) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={wt=json&ts=1457865120144&_=1457865120144} hits=4 status=0 QTime=0
+2016-03-13 10:32:00.147 INFO  (qtp434176574-14) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={wt=json&ts=1457865120144&_=1457865120144} status=0 QTime=0
+2016-03-13 10:32:00.413 INFO  (qtp434176574-20) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={wt=json&ts=1457865120410&_=1457865120410} hits=4 status=0 QTime=0
+2016-03-13 10:32:00.413 INFO  (qtp434176574-20) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={wt=json&ts=1457865120410&_=1457865120410} status=0 QTime=0
+2016-03-13 10:32:00.581 INFO  (qtp434176574-16) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={wt=json&ts=1457865120578&_=1457865120578} hits=4 status=0 QTime=0
+2016-03-13 10:32:00.581 INFO  (qtp434176574-16) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={wt=json&ts=1457865120578&_=1457865120578} status=0 QTime=0
+2016-03-13 10:32:04.054 INFO  (qtp434176574-15) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865124051} hits=4 status=0 QTime=0
+2016-03-13 10:32:17.218 INFO  (qtp434176574-17) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={wt=json}{add=[112983 (1528682394097287168), 112984 (1528682394122452992)]} 0 34
+2016-03-13 10:32:18.218 INFO  (commitScheduler-10-thread-1) [   x:tweets] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-03-13 10:32:18.249 INFO  (commitScheduler-10-thread-1) [   x:tweets] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@334a01ba; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_e,generation=14}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@334a01ba; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_f,generation=15}
+2016-03-13 10:32:18.249 INFO  (commitScheduler-10-thread-1) [   x:tweets] o.a.s.c.SolrDeletionPolicy newest commit generation = 15
+2016-03-13 10:32:18.250 INFO  (commitScheduler-10-thread-1) [   x:tweets] o.a.s.s.SolrIndexSearcher Opening Searcher@156e3327[tweets] realtime
+2016-03-13 10:32:18.251 INFO  (commitScheduler-10-thread-1) [   x:tweets] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-03-13 10:32:31.782 INFO  (qtp434176574-17) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865151780} hits=4 status=0 QTime=0
+2016-03-13 10:32:32.566 INFO  (qtp434176574-14) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865152564} hits=4 status=0 QTime=0
+2016-03-13 10:32:33.080 INFO  (qtp434176574-20) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865153077} hits=4 status=0 QTime=0
+2016-03-13 10:32:33.753 INFO  (qtp434176574-16) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865153751} hits=4 status=0 QTime=0
+2016-03-13 10:32:34.259 INFO  (qtp434176574-17) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865154257} hits=4 status=0 QTime=0
+2016-03-13 10:32:34.549 INFO  (qtp434176574-15) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865154546} hits=4 status=0 QTime=0
+2016-03-13 10:32:34.845 INFO  (qtp434176574-14) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865154843} hits=4 status=0 QTime=0
+2016-03-13 10:32:35.085 INFO  (qtp434176574-20) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865155083} hits=4 status=0 QTime=0
+2016-03-13 10:32:35.269 INFO  (qtp434176574-16) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865155266} hits=4 status=0 QTime=0
+2016-03-13 10:32:35.493 INFO  (qtp434176574-17) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865155491} hits=4 status=0 QTime=0
+2016-03-13 10:32:36.000 INFO  (qtp434176574-15) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865155997} hits=4 status=0 QTime=0
+2016-03-13 10:32:36.351 INFO  (qtp434176574-14) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865156349} hits=4 status=0 QTime=0
+2016-03-13 10:32:36.607 INFO  (qtp434176574-20) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865156605} hits=4 status=0 QTime=0
+2016-03-13 10:32:36.849 INFO  (qtp434176574-16) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865156847} hits=4 status=0 QTime=0
+2016-03-13 10:32:37.065 INFO  (qtp434176574-17) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865157062} hits=4 status=0 QTime=0
+2016-03-13 10:32:37.249 INFO  (qtp434176574-15) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865157247} hits=4 status=0 QTime=0
+2016-03-13 10:32:37.433 INFO  (qtp434176574-14) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865157431} hits=4 status=0 QTime=0
+2016-03-13 10:32:37.594 INFO  (qtp434176574-20) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=*:*&indent=true&wt=json&_=1457865157592} hits=4 status=0 QTime=0
+2016-03-13 10:32:49.466 ERROR (qtp434176574-15) [   ] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Error handling 'status' action 
+	at org.apache.solr.handler.admin.CoreAdminOperation$4.call(CoreAdminOperation.java:192)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:354)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:153)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:155)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:676)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:439)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:225)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:183)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.nio.file.NoSuchFileException: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index/segments_e
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.size(Files.java:2332)
+	at org.apache.lucene.store.FSDirectory.fileLength(FSDirectory.java:210)
+	at org.apache.lucene.store.NRTCachingDirectory.fileLength(NRTCachingDirectory.java:127)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getIndexInfo(LukeRequestHandler.java:592)
+	at org.apache.solr.handler.admin.CoreAdminOperation.getCoreStatus(CoreAdminOperation.java:886)
+	at org.apache.solr.handler.admin.CoreAdminOperation$4.call(CoreAdminOperation.java:180)
+	... 27 more
+
+2016-03-13 10:32:49.466 INFO  (qtp434176574-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1457865169463} status=500 QTime=1
+2016-03-13 10:32:49.467 ERROR (qtp434176574-15) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.common.SolrException: Error handling 'status' action 
+	at org.apache.solr.handler.admin.CoreAdminOperation$4.call(CoreAdminOperation.java:192)
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:354)
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:153)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:155)
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:676)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:439)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:225)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:183)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:577)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:223)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:215)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:110)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:499)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.nio.file.NoSuchFileException: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index/segments_e
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileAttributeViews$Basic.readAttributes(UnixFileAttributeViews.java:55)
+	at sun.nio.fs.UnixFileSystemProvider.readAttributes(UnixFileSystemProvider.java:144)
+	at java.nio.file.Files.readAttributes(Files.java:1737)
+	at java.nio.file.Files.size(Files.java:2332)
+	at org.apache.lucene.store.FSDirectory.fileLength(FSDirectory.java:210)
+	at org.apache.lucene.store.NRTCachingDirectory.fileLength(NRTCachingDirectory.java:127)
+	at org.apache.solr.handler.admin.LukeRequestHandler.getIndexInfo(LukeRequestHandler.java:592)
+	at org.apache.solr.handler.admin.CoreAdminOperation.getCoreStatus(CoreAdminOperation.java:886)
+	at org.apache.solr.handler.admin.CoreAdminOperation$4.call(CoreAdminOperation.java:180)
+	... 27 more
+
+2016-03-13 10:32:51.546 INFO  (qtp434176574-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1457865171544} status=0 QTime=0
+2016-03-13 10:32:51.577 INFO  (qtp434176574-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1457865171564} status=0 QTime=12
+2016-03-13 10:32:53.065 INFO  (qtp434176574-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1457865173063} status=0 QTime=0
+2016-03-13 10:32:53.093 INFO  (qtp434176574-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1457865173081} status=0 QTime=11
+2016-03-13 10:32:53.264 INFO  (qtp434176574-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1457865173263} status=0 QTime=0
+2016-03-13 10:32:53.292 INFO  (qtp434176574-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1457865173279} status=0 QTime=11
+2016-03-13 10:33:04.058 INFO  (ShutdownMonitor) [   ] o.e.j.s.ServerConnector Stopped ServerConnector@689604d9{HTTP/1.1}{0.0.0.0:8983}
+2016-03-13 10:33:04.058 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=477289012
+2016-03-13 10:33:04.059 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.c.SolrCore [tweets]  CLOSING SolrCore org.apache.solr.core.SolrCore@47799aaf
+2016-03-13 10:33:04.060 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.u.DirectUpdateHandler2 closing DirectUpdateHandler2{commits=1,autocommit maxTime=1000ms,autocommits=1,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=2,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=1975,transaction_logs_total_number=10}
+2016-03-13 10:33:04.060 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.u.SolrCoreState Closing SolrCoreState
+2016-03-13 10:33:04.060 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.u.DefaultSolrCoreState SolrCoreState ref count has reached 0 - closing IndexWriter
+2016-03-13 10:33:04.060 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.u.DefaultSolrCoreState closing IndexWriter with IndexWriterCloser
+2016-03-13 10:33:04.061 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.c.SolrCore [tweets] Closing main searcher on request.
+2016-03-13 10:33:04.063 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+2016-03-13 10:33:04.063 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory looking to close /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data [CachedDir<<refCount=0;path=/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data;done=false>>]
+2016-03-13 10:33:04.063 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory Closing directory: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data
+2016-03-13 10:33:04.063 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory looking to close /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index [CachedDir<<refCount=0;path=/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index;done=false>>]
+2016-03-13 10:33:04.063 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory Closing directory: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index
+2016-03-13 10:33:04.065 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@146ba0ac{/solr,file:/Users/shantanugupta/Downloads/solr-5.5.0/server/solr-webapp/webapp/,UNAVAILABLE}{/Users/shantanugupta/Downloads/solr-5.5.0/server/solr-webapp/webapp}

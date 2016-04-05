@@ -1,0 +1,1020 @@
+2016-04-03 06:59:58.854 INFO  (main) [   ] o.e.j.u.log Logging initialized @234ms
+2016-04-03 06:59:58.973 INFO  (main) [   ] o.e.j.s.Server jetty-9.2.13.v20150730
+2016-04-03 06:59:58.983 WARN  (main) [   ] o.e.j.s.h.RequestLogHandler !RequestLog
+2016-04-03 06:59:58.985 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:/Users/shantanugupta/Downloads/solr-5.5.0/server/contexts/] at interval 0
+2016-04-03 06:59:59.261 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2016-04-03 06:59:59.268 WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@146ba0ac{/solr,file:/Users/shantanugupta/Downloads/solr-5.5.0/server/solr-webapp/webapp/,STARTING}{/Users/shantanugupta/Downloads/solr-5.5.0/server/solr-webapp/webapp} has uncovered http methods for path: /
+2016-04-03 06:59:59.274 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=239465106@e45f292
+2016-04-03 06:59:59.285 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-04-03 06:59:59.285 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr
+2016-04-03 06:59:59.286 INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Users/shantanugupta/Downloads/solr-5.5.0/server/solr'
+2016-04-03 06:59:59.286 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-04-03 06:59:59.286 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr
+2016-04-03 06:59:59.290 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/solr.xml
+2016-04-03 06:59:59.338 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Config-defined core root directory: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr
+2016-04-03 06:59:59.354 INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 477289012
+2016-04-03 06:59:59.354 INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/Users/shantanugupta/Downloads/solr-5.5.0/server/solr]
+2016-04-03 06:59:59.355 WARN  (main) [   ] o.a.s.c.CoreContainer Couldn't add files from /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/lib to classpath: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/lib
+2016-04-03 06:59:59.362 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,
+2016-04-03 06:59:59.492 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2016-04-03 06:59:59.494 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2016-04-03 06:59:59.494 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2016-04-03 06:59:59.495 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2016-04-03 06:59:59.496 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2016-04-03 06:59:59.794 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Looking for core definitions underneath /Users/shantanugupta/Downloads/solr-5.5.0/server/solr
+2016-04-03 06:59:59.816 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=images, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data/}
+2016-04-03 06:59:59.816 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core images in /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images
+2016-04-03 06:59:59.823 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=tweets, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data/}
+2016-04-03 06:59:59.823 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core tweets in /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets
+2016-04-03 06:59:59.823 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions
+2016-04-03 06:59:59.826 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/Users/shantanugupta/Downloads/solr-5.5.0/server
+2016-04-03 06:59:59.826 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2016-04-03 06:59:59.826 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images'
+2016-04-03 06:59:59.826 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets'
+2016-04-03 06:59:59.826 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-04-03 06:59:59.826 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-04-03 06:59:59.826 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr
+2016-04-03 06:59:59.826 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr
+2016-04-03 06:59:59.836 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@146ba0ac{/solr,file:/Users/shantanugupta/Downloads/solr-5.5.0/server/solr-webapp/webapp/,AVAILABLE}{/Users/shantanugupta/Downloads/solr-5.5.0/server/solr-webapp/webapp}
+2016-04-03 06:59:59.852 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@18078bef{HTTP/1.1}{0.0.0.0:8983}
+2016-04-03 06:59:59.852 INFO  (main) [   ] o.e.j.s.Server Started @1234ms
+2016-04-03 06:59:59.868 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2016-04-03 06:59:59.868 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2016-04-03 06:59:59.871 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2016-04-03 06:59:59.871 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2016-04-03 06:59:59.875 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2016-04-03 06:59:59.875 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2016-04-03 06:59:59.875 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2016-04-03 06:59:59.875 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2016-04-03 06:59:59.875 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2016-04-03 06:59:59.875 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2016-04-03 06:59:59.875 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+2016-04-03 06:59:59.875 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+2016-04-03 06:59:59.875 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/icu4j-54.1.jar' to classloader
+2016-04-03 06:59:59.875 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+2016-04-03 06:59:59.876 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2016-04-03 06:59:59.876 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2016-04-03 06:59:59.876 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+2016-04-03 06:59:59.876 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2016-04-03 06:59:59.876 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2016-04-03 06:59:59.876 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2016-04-03 06:59:59.876 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+2016-04-03 06:59:59.876 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2016-04-03 06:59:59.876 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/poi-3.11.jar' to classloader
+2016-04-03 06:59:59.876 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2016-04-03 06:59:59.876 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+2016-04-03 06:59:59.876 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2016-04-03 06:59:59.876 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+2016-04-03 06:59:59.876 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2016-04-03 06:59:59.876 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+2016-04-03 06:59:59.876 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2016-04-03 06:59:59.876 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/rome-1.0.jar' to classloader
+2016-04-03 06:59:59.877 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2016-04-03 06:59:59.877 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2016-04-03 06:59:59.877 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+2016-04-03 06:59:59.877 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+2016-04-03 06:59:59.877 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+2016-04-03 06:59:59.877 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/icu4j-54.1.jar' to classloader
+2016-04-03 06:59:59.877 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+2016-04-03 06:59:59.877 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+2016-04-03 06:59:59.877 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+2016-04-03 06:59:59.877 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2016-04-03 06:59:59.877 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+2016-04-03 06:59:59.878 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2016-04-03 06:59:59.878 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+2016-04-03 06:59:59.878 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+2016-04-03 06:59:59.878 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+2016-04-03 06:59:59.878 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2016-04-03 06:59:59.878 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2016-04-03 06:59:59.878 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2016-04-03 06:59:59.878 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2016-04-03 06:59:59.878 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2016-04-03 06:59:59.878 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2016-04-03 06:59:59.879 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+2016-04-03 06:59:59.879 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/poi-3.11.jar' to classloader
+2016-04-03 06:59:59.879 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+2016-04-03 06:59:59.879 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+2016-04-03 06:59:59.879 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+2016-04-03 06:59:59.879 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/rome-1.0.jar' to classloader
+2016-04-03 06:59:59.879 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2016-04-03 06:59:59.879 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+2016-04-03 06:59:59.879 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+2016-04-03 06:59:59.879 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+2016-04-03 06:59:59.879 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+2016-04-03 06:59:59.879 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+2016-04-03 06:59:59.879 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+2016-04-03 06:59:59.879 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2016-04-03 06:59:59.879 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2016-04-03 06:59:59.879 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2016-04-03 06:59:59.879 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/xz-1.5.jar' to classloader
+2016-04-03 06:59:59.879 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/dist/solr-cell-5.5.0.jar' to classloader
+2016-04-03 06:59:59.880 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/attributes-binder-1.2.3.jar' to classloader
+2016-04-03 06:59:59.880 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2016-04-03 06:59:59.880 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/carrot2-mini-3.10.4.jar' to classloader
+2016-04-03 06:59:59.880 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2016-04-03 06:59:59.880 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2016-04-03 06:59:59.880 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+2016-04-03 06:59:59.880 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+2016-04-03 06:59:59.880 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2016-04-03 06:59:59.880 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/dist/solr-clustering-5.5.0.jar' to classloader
+2016-04-03 06:59:59.880 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2016-04-03 06:59:59.880 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2016-04-03 06:59:59.880 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/dist/solr-langid-5.5.0.jar' to classloader
+2016-04-03 06:59:59.880 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2016-04-03 06:59:59.880 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/velocity/lib/commons-collections-3.2.2.jar' to classloader
+2016-04-03 06:59:59.880 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2016-04-03 06:59:59.880 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2016-04-03 06:59:59.880 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/dist/solr-velocity-5.5.0.jar' to classloader
+2016-04-03 06:59:59.880 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/liresolr/dist/lire-request-handler.jar' to classloader
+2016-04-03 06:59:59.879 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/extraction/lib/xz-1.5.jar' to classloader
+2016-04-03 06:59:59.880 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/dist/solr-cell-5.5.0.jar' to classloader
+2016-04-03 06:59:59.881 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/attributes-binder-1.2.3.jar' to classloader
+2016-04-03 06:59:59.881 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2016-04-03 06:59:59.881 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/carrot2-mini-3.10.4.jar' to classloader
+2016-04-03 06:59:59.881 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2016-04-03 06:59:59.881 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2016-04-03 06:59:59.881 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+2016-04-03 06:59:59.881 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+2016-04-03 06:59:59.881 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2016-04-03 06:59:59.881 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/dist/solr-clustering-5.5.0.jar' to classloader
+2016-04-03 06:59:59.881 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2016-04-03 06:59:59.881 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2016-04-03 06:59:59.881 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/dist/solr-langid-5.5.0.jar' to classloader
+2016-04-03 06:59:59.881 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2016-04-03 06:59:59.881 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/velocity/lib/commons-collections-3.2.2.jar' to classloader
+2016-04-03 06:59:59.881 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2016-04-03 06:59:59.881 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2016-04-03 06:59:59.882 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/shantanugupta/Downloads/solr-5.5.0/dist/solr-velocity-5.5.0.jar' to classloader
+2016-04-03 07:00:00.019 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.Config Beginning with Solr 5.5, <maxMergeDocs> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2016-04-03 07:00:00.020 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.Config Beginning with Solr 5.5, <mergeFactor> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2016-04-03 07:00:00.020 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Beginning with Solr 5.5, <maxMergeDocs> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2016-04-03 07:00:00.021 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Beginning with Solr 5.5, <mergeFactor> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2016-04-03 07:00:00.029 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.5.0
+2016-04-03 07:00:00.029 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.5.0
+2016-04-03 07:00:00.107 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2016-04-03 07:00:00.107 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2016-04-03 07:00:00.147 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [images] Schema name=images-schema
+2016-04-03 07:00:00.148 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema [tweets] Schema name=example-data-driven-schema
+2016-04-03 07:00:00.453 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema unique key field: id
+2016-04-03 07:00:00.453 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema unique key field: id
+2016-04-03 07:00:00.507 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-04-03 07:00:00.508 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-04-03 07:00:00.511 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-04-03 07:00:00.511 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-04-03 07:00:00.578 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets'
+2016-04-03 07:00:00.578 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images'
+2016-04-03 07:00:00.578 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.CoreContainer Creating SolrCore 'tweets' using configuration from instancedir /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets
+2016-04-03 07:00:00.578 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'images' using configuration from instancedir /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images
+2016-04-03 07:00:00.590 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2016-04-03 07:00:00.590 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2016-04-03 07:00:00.599 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.SolrCore [[tweets] ] Opening new SolrCore at [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets], dataDir=[/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/]
+2016-04-03 07:00:00.599 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.SolrCore [[images] ] Opening new SolrCore at [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images], dataDir=[/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/data/]
+2016-04-03 07:00:00.600 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2016-04-03 07:00:00.600 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2016-04-03 07:00:00.603 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.SolrCore [[tweets] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-04-03 07:00:00.603 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.SolrCore [[images] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-04-03 07:00:00.604 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.SolrCore [[tweets] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-04-03 07:00:00.604 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.SolrCore [[images] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-04-03 07:00:00.607 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2016-04-03 07:00:00.607 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2016-04-03 07:00:00.616 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.CachingDirectoryFactory return new directory for /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data
+2016-04-03 07:00:00.616 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.CachingDirectoryFactory return new directory for /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/data
+2016-04-03 07:00:00.616 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.SolrCore New index directory detected: old=null new=/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index/
+2016-04-03 07:00:00.616 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.SolrCore New index directory detected: old=null new=/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/data/index/
+2016-04-03 07:00:00.617 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.CachingDirectoryFactory return new directory for /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index
+2016-04-03 07:00:00.617 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.CachingDirectoryFactory return new directory for /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/data/index
+2016-04-03 07:00:00.628 INFO  (OldIndexDirectoryCleanupThreadForCore-tweets) [   x:tweets] o.a.s.c.SolrCore Looking for old index directories to cleanup for core tweets in /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/
+2016-04-03 07:00:00.628 INFO  (OldIndexDirectoryCleanupThreadForCore-images) [   x:images] o.a.s.c.SolrCore Looking for old index directories to cleanup for core images in /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/data/
+2016-04-03 07:00:00.630 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2016-04-03 07:00:00.630 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2016-04-03 07:00:00.633 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-04-03 07:00:00.633 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-04-03 07:00:00.706 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.u.p.UpdateRequestProcessorChain creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+2016-04-03 07:00:00.706 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.u.p.UpdateRequestProcessorChain creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+2016-04-03 07:00:00.754 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2016-04-03 07:00:00.757 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2016-04-03 07:00:00.779 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-03 07:00:00.779 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-03 07:00:00.781 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-03 07:00:00.781 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-03 07:00:00.781 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-03 07:00:00.781 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-03 07:00:00.782 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-03 07:00:00.782 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-03 07:00:00.794 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2016-04-03 07:00:00.794 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2016-04-03 07:00:00.795 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2016-04-03 07:00:00.797 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2016-04-03 07:00:00.797 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2016-04-03 07:00:00.798 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2016-04-03 07:00:00.798 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2016-04-03 07:00:00.798 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/browse,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/tvrh,/select,/admin/segments,/admin/system,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
+2016-04-03 07:00:00.799 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2016-04-03 07:00:00.809 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-04-03 07:00:00.809 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-04-03 07:00:00.826 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 1000ms; 
+2016-04-03 07:00:00.826 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-04-03 07:00:00.856 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2016-04-03 07:00:00.856 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2016-04-03 07:00:00.856 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2016-04-03 07:00:00.857 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2016-04-03 07:00:00.857 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2016-04-03 07:00:00.857 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2016-04-03 07:00:00.857 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2016-04-03 07:00:00.857 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/browse,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/lireq,/analysis/document,/spell,/update/csv,/tvrh,/select,/admin/segments,/admin/system,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
+2016-04-03 07:00:00.858 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2016-04-03 07:00:00.859 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-04-03 07:00:00.859 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-04-03 07:00:00.859 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_t,generation=29}
+2016-04-03 07:00:00.860 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.SolrDeletionPolicy newest commit generation = 29
+2016-04-03 07:00:00.862 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-04-03 07:00:00.862 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-04-03 07:00:00.870 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.s.SolrIndexSearcher Opening Searcher@603f6cf6[tweets] main
+2016-04-03 07:00:00.873 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_c,generation=12}
+2016-04-03 07:00:00.873 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.SolrDeletionPolicy newest commit generation = 12
+2016-04-03 07:00:00.875 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf
+2016-04-03 07:00:00.875 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf}
+2016-04-03 07:00:00.900 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf
+2016-04-03 07:00:00.900 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2016-04-03 07:00:00.908 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-04-03 07:00:00.914 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-04-03 07:00:00.915 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2016-04-03 07:00:00.917 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/elevate.xml
+2016-04-03 07:00:00.922 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.s.SolrIndexSearcher Opening Searcher@703ce5c0[images] main
+2016-04-03 07:00:00.922 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf
+2016-04-03 07:00:00.922 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf}
+2016-04-03 07:00:00.922 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf
+2016-04-03 07:00:00.922 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2016-04-03 07:00:00.923 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-04-03 07:00:00.923 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-04-03 07:00:00.923 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2016-04-03 07:00:00.923 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/elevate.xml
+2016-04-03 07:00:00.931 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-04-03 07:00:00.931 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-04-03 07:00:00.931 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@603f6cf6[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-04-03 07:00:00.931 INFO  (searcherExecutor-8-thread-1-processing-x:images) [   x:images] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@703ce5c0[images] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(5.5.0):C5)))}
+2016-04-03 07:00:00.931 INFO  (searcherExecutor-8-thread-1-processing-x:images) [   x:images] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-03 07:00:00.931 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-03 07:00:00.931 INFO  (searcherExecutor-8-thread-1-processing-x:images) [   x:images] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-04-03 07:00:00.931 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-04-03 07:00:00.931 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.SolrCore [tweets] Registered new searcher Searcher@603f6cf6[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-04-03 07:00:00.931 INFO  (searcherExecutor-8-thread-1-processing-x:images) [   x:images] o.a.s.c.SolrCore [images] Registered new searcher Searcher@703ce5c0[images] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_6(5.5.0):C5)))}
+2016-04-03 07:00:00.932 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2016-04-03 07:00:00.932 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2016-04-03 07:00:00.933 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2016-04-03 07:00:00.933 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2016-04-03 07:00:00.933 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.u.VersionInfo No terms found for _version_, cannot seed version bucket highest value from index
+2016-04-03 07:00:00.937 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.u.UpdateLog Took 4.0ms to seed version buckets with highest version 1530571055411757056
+2016-04-03 07:00:00.938 INFO  (coreLoadExecutor-6-thread-2) [   x:tweets] o.a.s.c.CoreContainer registering core: tweets
+2016-04-03 07:00:00.939 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.u.VersionInfo Found MAX value 1530571221058453504 from Terms for _version_ in index
+2016-04-03 07:00:00.941 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.u.UpdateLog Took 8.0ms to seed version buckets with highest version 1530571221058453504
+2016-04-03 07:00:00.941 INFO  (coreLoadExecutor-6-thread-1) [   x:images] o.a.s.c.CoreContainer registering core: images
+2016-04-03 07:00:08.672 INFO  (qtp434176574-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1459666808662} status=0 QTime=6
+2016-04-03 07:00:08.709 INFO  (qtp434176574-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1459666808685} status=0 QTime=23
+2016-04-03 07:00:08.722 ERROR (qtp434176574-21) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.menu-bottom.html]
+2016-04-03 07:00:08.722 ERROR (qtp434176574-38) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.menu-top.html]
+2016-04-03 07:00:08.722 INFO  (qtp434176574-21) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1459666808719} status=404 QTime=2
+2016-04-03 07:00:08.722 INFO  (qtp434176574-38) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1459666808718} status=404 QTime=2
+2016-04-03 07:00:08.729 INFO  (qtp434176574-17) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459666808724} status=0 QTime=1
+2016-04-03 07:00:08.732 ERROR (qtp434176574-18) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.html]
+2016-04-03 07:00:08.732 INFO  (qtp434176574-15) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/replication params={wt=json&command=details&_=1459666808728} status=0 QTime=2
+2016-04-03 07:00:08.733 INFO  (qtp434176574-18) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459666808729} status=404 QTime=1
+2016-04-03 07:00:08.736 INFO  (qtp434176574-40) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459666808730} status=503 QTime=2
+2016-04-03 07:00:08.747 INFO  (qtp434176574-19) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/system params={wt=json&_=1459666808729} status=0 QTime=17
+2016-04-03 07:00:22.909 INFO  (qtp434176574-15) [   x:images] o.a.s.s.SolrIndexSearcher Opening Searcher@5c0503b8[images] realtime
+2016-04-03 07:00:22.910 INFO  (qtp434176574-15) [   x:images] o.a.s.u.p.LogUpdateProcessorFactory [images]  webapp=/solr path=/update params={wt=json}{deleteByQuery=*:* (-1530571598464024576)} 0 64
+2016-04-03 07:00:29.342 INFO  (qtp434176574-21) [   x:images] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-04-03 07:00:29.347 INFO  (qtp434176574-21) [   x:images] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_c,generation=12}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_d,generation=13}
+2016-04-03 07:00:29.347 INFO  (qtp434176574-21) [   x:images] o.a.s.c.SolrDeletionPolicy newest commit generation = 13
+2016-04-03 07:00:29.348 INFO  (qtp434176574-21) [   x:images] o.a.s.s.SolrIndexSearcher Opening Searcher@307bcf2f[images] main
+2016-04-03 07:00:29.350 INFO  (qtp434176574-21) [   x:images] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-04-03 07:00:29.350 INFO  (searcherExecutor-8-thread-1-processing-x:images) [   x:images] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@307bcf2f[images] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-04-03 07:00:29.350 INFO  (searcherExecutor-8-thread-1-processing-x:images) [   x:images] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-03 07:00:29.350 INFO  (searcherExecutor-8-thread-1-processing-x:images) [   x:images] o.a.s.c.SolrCore [images] Registered new searcher Searcher@307bcf2f[images] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-04-03 07:00:29.353 INFO  (qtp434176574-21) [   x:images] o.a.s.u.p.LogUpdateProcessorFactory [images]  webapp=/solr path=/update params={wt=json}{commit=} 0 11
+2016-04-03 07:00:29.816 INFO  (qtp434176574-18) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459666829814} status=0 QTime=0
+2016-04-03 07:00:29.817 INFO  (qtp434176574-40) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/replication params={wt=json&command=details&_=1459666829815} status=0 QTime=0
+2016-04-03 07:00:29.819 ERROR (qtp434176574-21) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.html]
+2016-04-03 07:00:29.819 INFO  (qtp434176574-21) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459666829817} status=404 QTime=0
+2016-04-03 07:00:29.821 INFO  (qtp434176574-15) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459666829817} status=503 QTime=0
+2016-04-03 07:00:29.829 INFO  (qtp434176574-19) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/system params={wt=json&_=1459666829816} status=0 QTime=11
+2016-04-03 07:00:31.630 INFO  (qtp434176574-40) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459666831628} status=0 QTime=0
+2016-04-03 07:00:31.631 INFO  (qtp434176574-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/replication params={wt=json&command=details&_=1459666831629} status=0 QTime=0
+2016-04-03 07:00:31.633 ERROR (qtp434176574-19) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.html]
+2016-04-03 07:00:31.634 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459666831630} status=404 QTime=0
+2016-04-03 07:00:31.634 INFO  (qtp434176574-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459666831631} status=503 QTime=0
+2016-04-03 07:00:31.643 INFO  (qtp434176574-15) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/system params={wt=json&_=1459666831630} status=0 QTime=11
+2016-04-03 07:00:45.683 INFO  (qtp434176574-21) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={}{add=[716520435085615100 (1530571622339051520), 716517681336356900 (1530571622371557376), 716514436895416300 (1530571622372605952), 716511086837698600 (1530571622373654528), 716508225730973700 (1530571622374703104), 716504804575543300 (1530571622375751680), 716501934212038700 (1530571622375751681), 716498526415556600 (1530571622376800256), 716495204530929700 (1530571622377848832), 716492332791689200 (1530571622378897408)]} 0 41
+2016-04-03 07:00:45.686 INFO  (qtp434176574-19) [   x:tweets] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-04-03 07:00:45.703 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_t,generation=29}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_u,generation=30}
+2016-04-03 07:00:45.704 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.SolrDeletionPolicy newest commit generation = 30
+2016-04-03 07:00:45.705 INFO  (qtp434176574-19) [   x:tweets] o.a.s.s.SolrIndexSearcher Opening Searcher@41860b4c[tweets] main
+2016-04-03 07:00:45.706 INFO  (qtp434176574-19) [   x:tweets] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-04-03 07:00:45.706 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@41860b4c[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_q(5.5.0):C10)))}
+2016-04-03 07:00:45.706 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-03 07:00:45.706 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.SolrCore [tweets] Registered new searcher Searcher@41860b4c[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_q(5.5.0):C10)))}
+2016-04-03 07:00:45.706 INFO  (qtp434176574-19) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={}{commit=} 0 20
+2016-04-03 07:00:57.833 INFO  (qtp434176574-21) [   x:images] o.a.s.u.p.LogUpdateProcessorFactory [images]  webapp=/solr path=/update params={wt=json}{add=[/private/tmp/images/716508225730973700.jpg (1530571635108610048), /private/tmp/images/716514436895416300.jpg (1530571635114901504), /private/tmp/images/716511086837698600.jpg (1530571635116998656), /private/tmp/images/716501934212038700.jpg (1530571635118047232)]} 0 12
+2016-04-03 07:00:57.846 INFO  (qtp434176574-19) [   x:images] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-04-03 07:00:57.868 INFO  (qtp434176574-19) [   x:images] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_d,generation=13}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_e,generation=14}
+2016-04-03 07:00:57.868 INFO  (qtp434176574-19) [   x:images] o.a.s.c.SolrDeletionPolicy newest commit generation = 14
+2016-04-03 07:00:57.871 INFO  (qtp434176574-19) [   x:images] o.a.s.s.SolrIndexSearcher Opening Searcher@75d6568d[images] main
+2016-04-03 07:00:57.872 INFO  (searcherExecutor-8-thread-1-processing-x:images) [   x:images] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@75d6568d[images] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_7(5.5.0):C4)))}
+2016-04-03 07:00:57.872 INFO  (qtp434176574-19) [   x:images] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-04-03 07:00:57.872 INFO  (searcherExecutor-8-thread-1-processing-x:images) [   x:images] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-03 07:00:57.872 INFO  (searcherExecutor-8-thread-1-processing-x:images) [   x:images] o.a.s.c.SolrCore [images] Registered new searcher Searcher@75d6568d[images] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_7(5.5.0):C4)))}
+2016-04-03 07:00:57.872 INFO  (qtp434176574-19) [   x:images] o.a.s.u.p.LogUpdateProcessorFactory [images]  webapp=/solr path=/update params={wt=json}{commit=} 0 26
+2016-04-03 07:01:08.021 INFO  (qtp434176574-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1459666868019} status=0 QTime=0
+2016-04-03 07:01:08.044 INFO  (qtp434176574-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1459666868033} status=0 QTime=10
+2016-04-03 07:01:08.055 ERROR (qtp434176574-40) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.menu-top.html]
+2016-04-03 07:01:08.055 INFO  (qtp434176574-40) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1459666868054} status=404 QTime=0
+2016-04-03 07:01:08.056 ERROR (qtp434176574-45) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.menu-bottom.html]
+2016-04-03 07:01:08.056 INFO  (qtp434176574-45) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1459666868054} status=404 QTime=0
+2016-04-03 07:01:08.062 INFO  (qtp434176574-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459666868059} status=0 QTime=0
+2016-04-03 07:01:08.063 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/replication params={wt=json&command=details&_=1459666868061} status=0 QTime=0
+2016-04-03 07:01:08.065 ERROR (qtp434176574-44) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.html]
+2016-04-03 07:01:08.065 INFO  (qtp434176574-44) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459666868063} status=404 QTime=0
+2016-04-03 07:01:08.066 INFO  (qtp434176574-40) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459666868064} status=503 QTime=0
+2016-04-03 07:01:08.074 INFO  (qtp434176574-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/system params={wt=json&_=1459666868062} status=0 QTime=9
+2016-04-03 07:01:27.919 INFO  (qtp434176574-40) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/lireq params={url=https://pbs.twimg.com/media/CfGSFViUMAAwWNS.jpg} status=0 QTime=1068
+2016-04-03 07:01:27.929 INFO  (qtp434176574-40) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716511086837698600&wt=json} hits=1 status=0 QTime=5
+2016-04-03 07:01:27.929 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716501934212038700&wt=json} hits=1 status=0 QTime=5
+2016-04-03 07:01:27.929 INFO  (qtp434176574-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716514436895416300&wt=json} hits=1 status=0 QTime=5
+2016-04-03 07:01:27.929 INFO  (qtp434176574-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716508225730973700&wt=json} hits=1 status=0 QTime=5
+2016-04-03 07:04:32.618 INFO  (qtp434176574-19) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/lireq params={url=https://pbs.twimg.com/media/CfGSFViUMAAwWNS.jpg} status=0 QTime=1380
+2016-04-03 07:04:32.621 INFO  (qtp434176574-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716514436895416300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:04:32.621 INFO  (qtp434176574-40) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716501934212038700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:04:32.621 INFO  (qtp434176574-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716508225730973700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:04:32.621 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716511086837698600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:04:39.569 INFO  (qtp434176574-18) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/lireq params={url=https://pbs.twimg.com/media/CfGSFViUMAAwWNS.jpg} status=0 QTime=733
+2016-04-03 07:04:39.573 INFO  (qtp434176574-40) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716514436895416300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:04:39.573 INFO  (qtp434176574-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716511086837698600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:04:39.573 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716508225730973700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:04:39.573 INFO  (qtp434176574-44) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716501934212038700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:05:11.384 INFO  (qtp434176574-19) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/lireq params={url=https://pbs.twimg.com/media/CfGSFViUMAAwWNS.jpg} status=0 QTime=73
+2016-04-03 07:05:11.387 INFO  (qtp434176574-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716501934212038700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:05:11.387 INFO  (qtp434176574-40) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716508225730973700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:05:11.387 INFO  (qtp434176574-44) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716514436895416300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:05:11.387 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716511086837698600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:05:35.502 INFO  (qtp434176574-19) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/lireq params={url=https://pbs.twimg.com/media/CfGSFViUMAAwWNS.jpg} status=0 QTime=64
+2016-04-03 07:05:35.506 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716511086837698600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:05:35.506 INFO  (qtp434176574-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716508225730973700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:05:35.506 INFO  (qtp434176574-44) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716514436895416300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:05:35.506 INFO  (qtp434176574-40) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716501934212038700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:06:26.861 INFO  (qtp434176574-21) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/lireq params={url=https://pbs.twimg.com/media/CfGSFViUMAAwWNS.jpg} status=0 QTime=1563
+2016-04-03 07:06:26.865 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716508225730973700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:06:26.865 INFO  (qtp434176574-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716511086837698600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:06:26.865 INFO  (qtp434176574-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716501934212038700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:06:26.865 INFO  (qtp434176574-40) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716514436895416300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:09:32.751 INFO  (qtp434176574-21) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/lireq params={url=https://pbs.twimg.com/media/CfGSFViUMAAwWNS.jpg} status=0 QTime=73
+2016-04-03 07:09:32.761 INFO  (qtp434176574-44) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716508225730973700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:09:32.761 INFO  (qtp434176574-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716501934212038700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:09:32.761 INFO  (qtp434176574-40) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716514436895416300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:09:32.761 INFO  (qtp434176574-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716511086837698600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:10:54.939 INFO  (qtp434176574-21) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/lireq params={url=https://pbs.twimg.com/media/CfGSFViUMAAwWNS.jpg} status=0 QTime=122
+2016-04-03 07:10:54.944 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716514436895416300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:10:54.944 INFO  (qtp434176574-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716508225730973700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:10:54.944 INFO  (qtp434176574-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716511086837698600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:10:54.944 INFO  (qtp434176574-44) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716501934212038700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:11:22.020 INFO  (qtp434176574-18) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/lireq params={url=https://pbs.twimg.com/media/CfGMbyPWsAECVeQ.jpg} status=0 QTime=62
+2016-04-03 07:11:22.024 INFO  (qtp434176574-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716508225730973700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:11:22.024 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716511086837698600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:11:22.024 INFO  (qtp434176574-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716514436895416300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:11:22.024 INFO  (qtp434176574-44) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716501934212038700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:13:06.218 INFO  (qtp434176574-44) [   x:tweets] o.a.s.s.SolrIndexSearcher Opening Searcher@3e6a9e8d[tweets] realtime
+2016-04-03 07:13:06.219 INFO  (qtp434176574-44) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={wt=json}{deleteByQuery=*:* (-1530572398882979840)} 0 3
+2016-04-03 07:13:07.219 INFO  (commitScheduler-12-thread-1) [   x:tweets] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-04-03 07:13:07.221 INFO  (commitScheduler-12-thread-1) [   x:tweets] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_u,generation=30}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_v,generation=31}
+2016-04-03 07:13:07.221 INFO  (commitScheduler-12-thread-1) [   x:tweets] o.a.s.c.SolrDeletionPolicy newest commit generation = 31
+2016-04-03 07:13:07.222 INFO  (commitScheduler-12-thread-1) [   x:tweets] o.a.s.s.SolrIndexSearcher Opening Searcher@4cb708ca[tweets] realtime
+2016-04-03 07:13:07.222 INFO  (commitScheduler-12-thread-1) [   x:tweets] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-04-03 07:13:13.217 INFO  (qtp434176574-44) [   x:tweets] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-04-03 07:13:13.218 INFO  (qtp434176574-44) [   x:tweets] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
+2016-04-03 07:13:13.218 INFO  (qtp434176574-44) [   x:tweets] o.a.s.s.SolrIndexSearcher Opening Searcher@207f0f8b[tweets] main
+2016-04-03 07:13:13.219 INFO  (qtp434176574-44) [   x:tweets] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-04-03 07:13:13.219 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@207f0f8b[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-04-03 07:13:13.219 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-03 07:13:13.219 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.SolrCore [tweets] Registered new searcher Searcher@207f0f8b[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-04-03 07:13:13.221 INFO  (qtp434176574-44) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={wt=json}{commit=} 0 4
+2016-04-03 07:13:15.165 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459667595162} status=0 QTime=0
+2016-04-03 07:13:15.166 INFO  (qtp434176574-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/replication params={wt=json&command=details&_=1459667595164} status=0 QTime=0
+2016-04-03 07:13:15.168 ERROR (qtp434176574-44) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.html]
+2016-04-03 07:13:15.169 INFO  (qtp434176574-44) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459667595166} status=404 QTime=0
+2016-04-03 07:13:15.169 INFO  (qtp434176574-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459667595167} status=503 QTime=0
+2016-04-03 07:13:15.182 INFO  (qtp434176574-40) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/system params={wt=json&_=1459667595165} status=0 QTime=15
+2016-04-03 07:13:17.099 INFO  (qtp434176574-21) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459667597097} status=0 QTime=0
+2016-04-03 07:13:17.101 INFO  (qtp434176574-44) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/replication params={wt=json&command=details&_=1459667597098} status=0 QTime=0
+2016-04-03 07:13:17.103 ERROR (qtp434176574-40) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.html]
+2016-04-03 07:13:17.103 INFO  (qtp434176574-19) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459667597100} status=503 QTime=0
+2016-04-03 07:13:17.103 INFO  (qtp434176574-40) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459667597100} status=404 QTime=0
+2016-04-03 07:13:17.111 INFO  (qtp434176574-18) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/system params={wt=json&_=1459667597099} status=0 QTime=11
+2016-04-03 07:13:24.264 INFO  (qtp434176574-44) [   x:images] o.a.s.s.SolrIndexSearcher Opening Searcher@13c054a6[images] realtime
+2016-04-03 07:13:24.264 INFO  (qtp434176574-44) [   x:images] o.a.s.u.p.LogUpdateProcessorFactory [images]  webapp=/solr path=/update params={wt=json}{deleteByQuery=*:* (-1530572417806630912)} 0 2
+2016-04-03 07:13:30.453 INFO  (qtp434176574-19) [   x:images] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-04-03 07:13:30.455 INFO  (qtp434176574-19) [   x:images] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_e,generation=14}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_f,generation=15}
+2016-04-03 07:13:30.455 INFO  (qtp434176574-19) [   x:images] o.a.s.c.SolrDeletionPolicy newest commit generation = 15
+2016-04-03 07:13:30.456 INFO  (qtp434176574-19) [   x:images] o.a.s.s.SolrIndexSearcher Opening Searcher@6ed3f036[images] main
+2016-04-03 07:13:30.457 INFO  (searcherExecutor-8-thread-1-processing-x:images) [   x:images] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6ed3f036[images] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-04-03 07:13:30.457 INFO  (searcherExecutor-8-thread-1-processing-x:images) [   x:images] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-03 07:13:30.457 INFO  (qtp434176574-19) [   x:images] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-04-03 07:13:30.457 INFO  (searcherExecutor-8-thread-1-processing-x:images) [   x:images] o.a.s.c.SolrCore [images] Registered new searcher Searcher@6ed3f036[images] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-04-03 07:13:30.459 INFO  (qtp434176574-19) [   x:images] o.a.s.u.p.LogUpdateProcessorFactory [images]  webapp=/solr path=/update params={wt=json}{commit=} 0 6
+2016-04-03 07:13:31.121 INFO  (qtp434176574-18) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459667611118} status=0 QTime=0
+2016-04-03 07:13:31.121 INFO  (qtp434176574-21) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/replication params={wt=json&command=details&_=1459667611120} status=0 QTime=0
+2016-04-03 07:13:31.124 ERROR (qtp434176574-19) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.html]
+2016-04-03 07:13:31.124 INFO  (qtp434176574-40) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459667611122} status=503 QTime=0
+2016-04-03 07:13:31.124 INFO  (qtp434176574-19) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459667611121} status=404 QTime=0
+2016-04-03 07:13:31.132 INFO  (qtp434176574-44) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/system params={wt=json&_=1459667611120} status=0 QTime=11
+2016-04-03 07:14:19.466 INFO  (qtp434176574-19) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={}{add=[716523769590849500 (1530572475434270720), 716520435085615100 (1530572475436367872), 716517681336356900 (1530572475436367873), 716514436895416300 (1530572475437416448), 716511086837698600 (1530572475438465024), 716508225730973700 (1530572475438465025), 716504804575543300 (1530572475439513600), 716501934212038700 (1530572475439513601), 716498526415556600 (1530572475440562176), 716495204530929700 (1530572475440562177), ... (1000 adds)]} 0 246
+2016-04-03 07:14:19.470 INFO  (qtp434176574-21) [   x:tweets] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-04-03 07:14:19.509 INFO  (qtp434176574-21) [   x:tweets] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_v,generation=31}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_w,generation=32}
+2016-04-03 07:14:19.509 INFO  (qtp434176574-21) [   x:tweets] o.a.s.c.SolrDeletionPolicy newest commit generation = 32
+2016-04-03 07:14:19.511 INFO  (qtp434176574-21) [   x:tweets] o.a.s.s.SolrIndexSearcher Opening Searcher@5975d5cd[tweets] main
+2016-04-03 07:14:19.512 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5975d5cd[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_r(5.5.0):C1000/3:delGen=1)))}
+2016-04-03 07:14:19.512 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-03 07:14:19.512 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.SolrCore [tweets] Registered new searcher Searcher@5975d5cd[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_r(5.5.0):C1000/3:delGen=1)))}
+2016-04-03 07:14:19.513 INFO  (qtp434176574-21) [   x:tweets] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-04-03 07:14:19.513 INFO  (qtp434176574-21) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={}{commit=} 0 44
+2016-04-03 07:27:59.166 INFO  (qtp434176574-40) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={}{add=[716526617938509800 (1530573335112450048), 716523769590849500 (1530573335114547200), 716520435085615100 (1530573335114547201), 716517681336356900 (1530573335114547202), 716514436895416300 (1530573335114547203), 716511086837698600 (1530573335114547204), 716508225730973700 (1530573335115595776), 716504804575543300 (1530573335115595777), 716501934212038700 (1530573335115595778), 716498526415556600 (1530573335115595779), ... (1000 adds)]} 0 93
+2016-04-03 07:27:59.170 INFO  (qtp434176574-44) [   x:tweets] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-04-03 07:27:59.212 INFO  (qtp434176574-44) [   x:tweets] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_w,generation=32}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_x,generation=33}
+2016-04-03 07:27:59.212 INFO  (qtp434176574-44) [   x:tweets] o.a.s.c.SolrDeletionPolicy newest commit generation = 33
+2016-04-03 07:27:59.213 INFO  (qtp434176574-44) [   x:tweets] o.a.s.s.SolrIndexSearcher Opening Searcher@44602d7e[tweets] main
+2016-04-03 07:27:59.214 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@44602d7e[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_s(5.5.0):C1000/2:delGen=1)))}
+2016-04-03 07:27:59.214 INFO  (qtp434176574-44) [   x:tweets] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-04-03 07:27:59.214 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-03 07:27:59.214 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.SolrCore [tweets] Registered new searcher Searcher@44602d7e[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_s(5.5.0):C1000/2:delGen=1)))}
+2016-04-03 07:27:59.216 INFO  (qtp434176574-44) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={}{commit=} 0 46
+2016-04-03 07:29:12.958 INFO  (qtp434176574-106) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1459668552956} status=0 QTime=0
+2016-04-03 07:29:12.991 INFO  (qtp434176574-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1459668552971} status=0 QTime=18
+2016-04-03 07:29:13.004 ERROR (qtp434176574-105) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.menu-top.html]
+2016-04-03 07:29:13.004 ERROR (qtp434176574-21) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.menu-bottom.html]
+2016-04-03 07:29:13.004 INFO  (qtp434176574-105) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1459668553002} status=404 QTime=0
+2016-04-03 07:29:13.004 INFO  (qtp434176574-21) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1459668553002} status=404 QTime=0
+2016-04-03 07:29:13.010 INFO  (qtp434176574-19) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459668553007} status=0 QTime=0
+2016-04-03 07:29:13.010 INFO  (qtp434176574-40) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/replication params={wt=json&command=details&_=1459668553009} status=0 QTime=0
+2016-04-03 07:29:13.012 ERROR (qtp434176574-18) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.html]
+2016-04-03 07:29:13.013 INFO  (qtp434176574-18) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459668553010} status=404 QTime=0
+2016-04-03 07:29:13.013 INFO  (qtp434176574-44) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459668553011} status=503 QTime=0
+2016-04-03 07:29:13.023 INFO  (qtp434176574-106) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/system params={wt=json&_=1459668553010} status=0 QTime=11
+2016-04-03 07:29:15.806 INFO  (qtp434176574-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459668555804} status=0 QTime=0
+2016-04-03 07:29:15.807 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/replication params={wt=json&command=details&_=1459668555805} status=0 QTime=0
+2016-04-03 07:29:15.809 ERROR (qtp434176574-18) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.html]
+2016-04-03 07:29:15.810 INFO  (qtp434176574-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459668555807} status=404 QTime=0
+2016-04-03 07:29:15.810 INFO  (qtp434176574-44) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459668555808} status=503 QTime=0
+2016-04-03 07:29:15.820 INFO  (qtp434176574-40) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/system params={wt=json&_=1459668555806} status=0 QTime=10
+2016-04-03 07:29:17.147 INFO  (qtp434176574-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1459668557145} status=0 QTime=0
+2016-04-03 07:29:17.172 INFO  (qtp434176574-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1459668557161} status=0 QTime=9
+2016-04-03 07:29:17.183 ERROR (qtp434176574-106) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.menu-top.html]
+2016-04-03 07:29:17.183 ERROR (qtp434176574-19) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.menu-bottom.html]
+2016-04-03 07:29:17.183 INFO  (qtp434176574-106) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1459668557182} status=404 QTime=0
+2016-04-03 07:29:17.183 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1459668557182} status=404 QTime=0
+2016-04-03 07:29:17.188 INFO  (qtp434176574-21) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459668557185} status=0 QTime=0
+2016-04-03 07:29:17.189 INFO  (qtp434176574-105) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/replication params={wt=json&command=details&_=1459668557187} status=0 QTime=0
+2016-04-03 07:29:17.191 ERROR (qtp434176574-18) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.html]
+2016-04-03 07:29:17.191 INFO  (qtp434176574-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459668557189} status=404 QTime=0
+2016-04-03 07:29:17.191 INFO  (qtp434176574-44) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459668557190} status=503 QTime=0
+2016-04-03 07:29:17.201 INFO  (qtp434176574-40) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/system params={wt=json&_=1459668557188} status=0 QTime=10
+2016-04-03 07:30:04.128 INFO  (qtp434176574-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1459668604126} status=0 QTime=0
+2016-04-03 07:30:04.149 INFO  (qtp434176574-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1459668604137} status=0 QTime=10
+2016-04-03 07:30:04.159 ERROR (qtp434176574-44) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.menu-top.html]
+2016-04-03 07:30:04.159 ERROR (qtp434176574-111) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.menu-bottom.html]
+2016-04-03 07:30:04.159 INFO  (qtp434176574-44) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1459668604157} status=404 QTime=0
+2016-04-03 07:30:04.159 INFO  (qtp434176574-111) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1459668604157} status=404 QTime=0
+2016-04-03 07:30:04.164 INFO  (qtp434176574-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459668604161} status=0 QTime=0
+2016-04-03 07:30:04.165 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/replication params={wt=json&command=details&_=1459668604164} status=0 QTime=0
+2016-04-03 07:30:04.167 ERROR (qtp434176574-112) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.html]
+2016-04-03 07:30:04.167 INFO  (qtp434176574-44) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459668604166} status=503 QTime=0
+2016-04-03 07:30:04.168 INFO  (qtp434176574-112) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459668604165} status=404 QTime=0
+2016-04-03 07:30:04.176 INFO  (qtp434176574-40) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/system params={wt=json&_=1459668604165} status=0 QTime=9
+2016-04-03 07:30:05.911 INFO  (qtp434176574-18) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459668605908} status=0 QTime=0
+2016-04-03 07:30:05.911 INFO  (qtp434176574-19) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/replication params={wt=json&command=details&_=1459668605910} status=0 QTime=0
+2016-04-03 07:30:05.914 ERROR (qtp434176574-112) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.html]
+2016-04-03 07:30:05.914 INFO  (qtp434176574-40) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459668605912} status=503 QTime=0
+2016-04-03 07:30:05.914 INFO  (qtp434176574-112) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459668605911} status=404 QTime=0
+2016-04-03 07:30:05.924 INFO  (qtp434176574-44) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/system params={wt=json&_=1459668605910} status=0 QTime=10
+2016-04-03 07:30:07.626 INFO  (qtp434176574-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459668607624} status=0 QTime=0
+2016-04-03 07:30:07.628 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/replication params={wt=json&command=details&_=1459668607626} status=0 QTime=0
+2016-04-03 07:30:07.630 ERROR (qtp434176574-112) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.html]
+2016-04-03 07:30:07.630 INFO  (qtp434176574-112) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459668607627} status=404 QTime=0
+2016-04-03 07:30:07.631 INFO  (qtp434176574-44) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459668607629} status=503 QTime=0
+2016-04-03 07:30:07.640 INFO  (qtp434176574-40) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/system params={wt=json&_=1459668607627} status=0 QTime=10
+2016-04-03 07:30:08.696 INFO  (qtp434176574-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1459668608694} status=0 QTime=0
+2016-04-03 07:30:08.715 INFO  (qtp434176574-111) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1459668608705} status=0 QTime=9
+2016-04-03 07:30:08.725 ERROR (qtp434176574-112) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.menu-top.html]
+2016-04-03 07:30:08.725 ERROR (qtp434176574-40) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.menu-bottom.html]
+2016-04-03 07:30:08.725 INFO  (qtp434176574-112) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1459668608723} status=404 QTime=0
+2016-04-03 07:30:08.725 INFO  (qtp434176574-40) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1459668608723} status=404 QTime=0
+2016-04-03 07:30:08.729 INFO  (qtp434176574-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459668608727} status=0 QTime=0
+2016-04-03 07:30:08.731 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/replication params={wt=json&command=details&_=1459668608729} status=0 QTime=0
+2016-04-03 07:30:08.732 ERROR (qtp434176574-44) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.html]
+2016-04-03 07:30:08.732 INFO  (qtp434176574-44) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459668608731} status=404 QTime=0
+2016-04-03 07:30:08.733 INFO  (qtp434176574-40) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459668608732} status=503 QTime=0
+2016-04-03 07:30:08.743 INFO  (qtp434176574-111) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/system params={wt=json&_=1459668608730} status=0 QTime=10
+2016-04-03 07:30:26.427 INFO  (qtp434176574-18) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={}{add=[716526617938509800 (1530573489553014784), 716523769590849500 (1530573489555111936), 716520435085615100 (1530573489555111937), 716517681336356900 (1530573489555111938), 716514436895416300 (1530573489555111939), 716511086837698600 (1530573489555111940), 716508225730973700 (1530573489555111941), 716504804575543300 (1530573489555111942), 716501934212038700 (1530573489555111943), 716498526415556600 (1530573489555111944), ... (1000 adds)]} 0 67
+2016-04-03 07:30:26.431 INFO  (qtp434176574-44) [   x:tweets] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-04-03 07:30:26.460 INFO  (qtp434176574-44) [   x:tweets] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_x,generation=33}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_y,generation=34}
+2016-04-03 07:30:26.460 INFO  (qtp434176574-44) [   x:tweets] o.a.s.c.SolrDeletionPolicy newest commit generation = 34
+2016-04-03 07:30:26.460 INFO  (qtp434176574-44) [   x:tweets] o.a.s.s.SolrIndexSearcher Opening Searcher@238da3e2[tweets] main
+2016-04-03 07:30:26.461 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@238da3e2[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_t(5.5.0):C1000/2:delGen=1)))}
+2016-04-03 07:30:26.461 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-03 07:30:26.461 INFO  (qtp434176574-44) [   x:tweets] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-04-03 07:30:26.461 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.SolrCore [tweets] Registered new searcher Searcher@238da3e2[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_t(5.5.0):C1000/2:delGen=1)))}
+2016-04-03 07:30:26.463 INFO  (qtp434176574-44) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={}{commit=} 0 32
+2016-04-03 07:37:11.709 INFO  (qtp434176574-123) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1459669031707} status=0 QTime=0
+2016-04-03 07:37:11.737 INFO  (qtp434176574-111) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1459669031724} status=0 QTime=12
+2016-04-03 07:37:11.747 ERROR (qtp434176574-40) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.menu-top.html]
+2016-04-03 07:37:11.748 ERROR (qtp434176574-19) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.menu-bottom.html]
+2016-04-03 07:37:11.748 INFO  (qtp434176574-40) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1459669031746} status=404 QTime=0
+2016-04-03 07:37:11.748 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1459669031746} status=404 QTime=0
+2016-04-03 07:37:11.753 INFO  (qtp434176574-125) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459669031750} status=0 QTime=0
+2016-04-03 07:37:11.755 INFO  (qtp434176574-117) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/replication params={wt=json&command=details&_=1459669031753} status=0 QTime=1
+2016-04-03 07:37:11.757 ERROR (qtp434176574-111) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.html]
+2016-04-03 07:37:11.757 INFO  (qtp434176574-116) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459669031755} status=503 QTime=0
+2016-04-03 07:37:11.757 INFO  (qtp434176574-111) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459669031754} status=404 QTime=0
+2016-04-03 07:37:11.765 INFO  (qtp434176574-123) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/system params={wt=json&_=1459669031753} status=0 QTime=9
+2016-04-03 07:37:12.419 INFO  (qtp434176574-116) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1459669032418} status=0 QTime=0
+2016-04-03 07:37:12.441 INFO  (qtp434176574-123) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1459669032430} status=0 QTime=10
+2016-04-03 07:37:12.453 ERROR (qtp434176574-117) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.menu-bottom.html]
+2016-04-03 07:37:12.453 ERROR (qtp434176574-111) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.menu-top.html]
+2016-04-03 07:37:12.454 INFO  (qtp434176574-117) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1459669032452} status=404 QTime=0
+2016-04-03 07:37:12.454 INFO  (qtp434176574-111) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1459669032452} status=404 QTime=0
+2016-04-03 07:37:12.459 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459669032456} status=0 QTime=0
+2016-04-03 07:37:12.460 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/replication params={wt=json&command=details&_=1459669032459} status=0 QTime=0
+2016-04-03 07:37:12.462 ERROR (qtp434176574-123) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.html]
+2016-04-03 07:37:12.462 INFO  (qtp434176574-123) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459669032460} status=404 QTime=0
+2016-04-03 07:37:12.462 INFO  (qtp434176574-125) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459669032461} status=503 QTime=0
+2016-04-03 07:37:12.471 INFO  (qtp434176574-116) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/system params={wt=json&_=1459669032460} status=0 QTime=9
+2016-04-03 07:37:12.636 INFO  (qtp434176574-123) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1459669032635} status=0 QTime=0
+2016-04-03 07:37:12.660 INFO  (qtp434176574-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1459669032648} status=0 QTime=11
+2016-04-03 07:37:12.669 ERROR (qtp434176574-117) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.menu-top.html]
+2016-04-03 07:37:12.670 INFO  (qtp434176574-117) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1459669032668} status=404 QTime=0
+2016-04-03 07:37:12.670 ERROR (qtp434176574-125) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.menu-bottom.html]
+2016-04-03 07:37:12.670 INFO  (qtp434176574-125) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1459669032669} status=404 QTime=0
+2016-04-03 07:37:12.676 INFO  (qtp434176574-111) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459669032673} status=0 QTime=0
+2016-04-03 07:37:12.677 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/replication params={wt=json&command=details&_=1459669032675} status=0 QTime=0
+2016-04-03 07:37:12.678 ERROR (qtp434176574-40) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.html]
+2016-04-03 07:37:12.678 INFO  (qtp434176574-40) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459669032677} status=404 QTime=0
+2016-04-03 07:37:12.680 INFO  (qtp434176574-117) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459669032677} status=503 QTime=0
+2016-04-03 07:37:12.687 INFO  (qtp434176574-123) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/system params={wt=json&_=1459669032676} status=0 QTime=9
+2016-04-03 07:37:28.345 INFO  (qtp434176574-19) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={}{add=[716529838941675500 (1530573931982880768), 716526617938509800 (1530573931983929344), 716523769590849500 (1530573931983929345), 716520435085615100 (1530573931983929346), 716517681336356900 (1530573931983929347), 716514436895416300 (1530573931983929348), 716511086837698600 (1530573931983929349), 716508225730973700 (1530573931983929350), 716504804575543300 (1530573931983929351), 716501934212038700 (1530573931983929352), ... (1000 adds)]} 0 52
+2016-04-03 07:37:28.348 INFO  (qtp434176574-117) [   x:tweets] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-04-03 07:37:28.373 INFO  (qtp434176574-117) [   x:tweets] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_y,generation=34}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_z,generation=35}
+2016-04-03 07:37:28.373 INFO  (qtp434176574-117) [   x:tweets] o.a.s.c.SolrDeletionPolicy newest commit generation = 35
+2016-04-03 07:37:28.374 INFO  (qtp434176574-117) [   x:tweets] o.a.s.s.SolrIndexSearcher Opening Searcher@aafcce[tweets] main
+2016-04-03 07:37:28.375 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@aafcce[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_t(5.5.0):C1000/999:delGen=2) Uninverting(_u(5.5.0):C1000/2:delGen=1)))}
+2016-04-03 07:37:28.375 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-03 07:37:28.375 INFO  (qtp434176574-117) [   x:tweets] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-04-03 07:37:28.375 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.SolrCore [tweets] Registered new searcher Searcher@aafcce[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_t(5.5.0):C1000/999:delGen=2) Uninverting(_u(5.5.0):C1000/2:delGen=1)))}
+2016-04-03 07:37:28.375 INFO  (qtp434176574-117) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={}{commit=} 0 27
+2016-04-03 07:44:22.242 INFO  (qtp434176574-137) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1459669462241} status=0 QTime=0
+2016-04-03 07:44:22.269 INFO  (qtp434176574-136) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1459669462255} status=0 QTime=13
+2016-04-03 07:44:22.280 ERROR (qtp434176574-117) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.menu-top.html]
+2016-04-03 07:44:22.280 ERROR (qtp434176574-128) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.menu-bottom.html]
+2016-04-03 07:44:22.280 INFO  (qtp434176574-117) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1459669462278} status=404 QTime=0
+2016-04-03 07:44:22.280 INFO  (qtp434176574-128) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1459669462279} status=404 QTime=0
+2016-04-03 07:44:22.288 INFO  (qtp434176574-138) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459669462284} status=0 QTime=0
+2016-04-03 07:44:22.290 ERROR (qtp434176574-136) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.html]
+2016-04-03 07:44:22.291 INFO  (qtp434176574-136) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459669462289} status=404 QTime=0
+2016-04-03 07:44:22.291 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/replication params={wt=json&command=details&_=1459669462287} status=0 QTime=2
+2016-04-03 07:44:22.291 INFO  (qtp434176574-117) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459669462290} status=503 QTime=0
+2016-04-03 07:44:22.300 INFO  (qtp434176574-137) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/system params={wt=json&_=1459669462288} status=0 QTime=10
+2016-04-03 07:44:23.799 INFO  (qtp434176574-111) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459669463797} status=0 QTime=0
+2016-04-03 07:44:23.800 INFO  (qtp434176574-138) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/replication params={wt=json&command=details&_=1459669463798} status=0 QTime=0
+2016-04-03 07:44:23.802 ERROR (qtp434176574-19) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.html]
+2016-04-03 07:44:23.802 INFO  (qtp434176574-117) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459669463800} status=503 QTime=0
+2016-04-03 07:44:23.802 INFO  (qtp434176574-19) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459669463800} status=404 QTime=0
+2016-04-03 07:44:23.812 INFO  (qtp434176574-136) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/system params={wt=json&_=1459669463799} status=0 QTime=10
+2016-04-03 07:44:25.391 INFO  (qtp434176574-128) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459669465388} status=0 QTime=0
+2016-04-03 07:44:25.392 INFO  (qtp434176574-111) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/replication params={wt=json&command=details&_=1459669465390} status=0 QTime=0
+2016-04-03 07:44:25.394 ERROR (qtp434176574-117) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.html]
+2016-04-03 07:44:25.394 INFO  (qtp434176574-117) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459669465392} status=404 QTime=0
+2016-04-03 07:44:25.395 INFO  (qtp434176574-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459669465393} status=503 QTime=0
+2016-04-03 07:44:25.405 INFO  (qtp434176574-138) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/system params={wt=json&_=1459669465391} status=0 QTime=11
+2016-04-03 07:44:40.058 INFO  (qtp434176574-117) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={}{add=[716529838941675500 (1530574384664674304), 716526617938509800 (1530574384666771456), 716523769590849500 (1530574384666771457), 716520435085615100 (1530574384666771458), 716517681336356900 (1530574384666771459), 716514436895416300 (1530574384666771460), 716511086837698600 (1530574384666771461), 716508225730973700 (1530574384666771462), 716504804575543300 (1530574384666771463), 716501934212038700 (1530574384667820032), ... (1000 adds)]} 0 54
+2016-04-03 07:44:40.062 INFO  (qtp434176574-128) [   x:tweets] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-04-03 07:44:40.087 INFO  (qtp434176574-128) [   x:tweets] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_z,generation=35}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_10,generation=36}
+2016-04-03 07:44:40.087 INFO  (qtp434176574-128) [   x:tweets] o.a.s.c.SolrDeletionPolicy newest commit generation = 36
+2016-04-03 07:44:40.088 INFO  (qtp434176574-128) [   x:tweets] o.a.s.s.SolrIndexSearcher Opening Searcher@4f6c7d54[tweets] main
+2016-04-03 07:44:40.089 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4f6c7d54[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_t(5.5.0):C1000/999:delGen=2) Uninverting(_v(5.5.0):C1000/2:delGen=1)))}
+2016-04-03 07:44:40.089 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-03 07:44:40.089 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.SolrCore [tweets] Registered new searcher Searcher@4f6c7d54[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_t(5.5.0):C1000/999:delGen=2) Uninverting(_v(5.5.0):C1000/2:delGen=1)))}
+2016-04-03 07:44:40.089 INFO  (qtp434176574-128) [   x:tweets] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-04-03 07:44:40.091 INFO  (qtp434176574-128) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={}{commit=} 0 29
+2016-04-03 07:46:13.150 INFO  (qtp434176574-111) [   x:images] o.a.s.u.p.LogUpdateProcessorFactory [images]  webapp=/solr path=/update params={wt=json}{add=[/private/tmp/images/715724133166891000.jpg (1530574482318557184), /private/tmp/images/715731926519255000.jpg (1530574482320654336), /private/tmp/images/715748188494438400.jpg (1530574482321702912), /private/tmp/images/715796116420366300.jpg (1530574482321702913), /private/tmp/images/715719353086386200.jpg (1530574482322751488), /private/tmp/images/715716827377176600.jpg (1530574482322751489), /private/tmp/images/715706771185279000.jpg (1530574482323800064), /private/tmp/images/715696702301319200.jpg (1530574482323800065), /private/tmp/images/715682865758003200.jpg (1530574482324848640), /private/tmp/images/715679084941090800.jpg (1530574482325897216), ... (38 adds)]} 0 16
+2016-04-03 07:46:13.162 INFO  (qtp434176574-19) [   x:images] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-04-03 07:46:13.177 INFO  (qtp434176574-19) [   x:images] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_f,generation=15}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_g,generation=16}
+2016-04-03 07:46:13.177 INFO  (qtp434176574-19) [   x:images] o.a.s.c.SolrDeletionPolicy newest commit generation = 16
+2016-04-03 07:46:13.179 INFO  (qtp434176574-19) [   x:images] o.a.s.s.SolrIndexSearcher Opening Searcher@4b438b24[images] main
+2016-04-03 07:46:13.179 INFO  (searcherExecutor-8-thread-1-processing-x:images) [   x:images] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4b438b24[images] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_8(5.5.0):C38)))}
+2016-04-03 07:46:13.179 INFO  (searcherExecutor-8-thread-1-processing-x:images) [   x:images] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-03 07:46:13.179 INFO  (qtp434176574-19) [   x:images] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-04-03 07:46:13.179 INFO  (searcherExecutor-8-thread-1-processing-x:images) [   x:images] o.a.s.c.SolrCore [images] Registered new searcher Searcher@4b438b24[images] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_8(5.5.0):C38)))}
+2016-04-03 07:46:13.180 INFO  (qtp434176574-19) [   x:images] o.a.s.u.p.LogUpdateProcessorFactory [images]  webapp=/solr path=/update params={wt=json}{commit=} 0 18
+2016-04-03 07:46:55.539 INFO  (qtp434176574-111) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459669615537} status=0 QTime=0
+2016-04-03 07:46:55.541 INFO  (qtp434176574-138) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/replication params={wt=json&command=details&_=1459669615539} status=0 QTime=0
+2016-04-03 07:46:55.543 ERROR (qtp434176574-128) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.html]
+2016-04-03 07:46:55.543 INFO  (qtp434176574-117) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459669615540} status=503 QTime=0
+2016-04-03 07:46:55.543 INFO  (qtp434176574-128) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459669615540} status=404 QTime=0
+2016-04-03 07:46:55.554 INFO  (qtp434176574-19) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/system params={wt=json&_=1459669615539} status=0 QTime=11
+2016-04-03 07:46:56.807 INFO  (qtp434176574-128) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1459669616806} status=0 QTime=0
+2016-04-03 07:46:56.827 INFO  (qtp434176574-147) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1459669616817} status=0 QTime=9
+2016-04-03 07:46:56.837 ERROR (qtp434176574-148) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.menu-top.html]
+2016-04-03 07:46:56.837 INFO  (qtp434176574-148) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1459669616836} status=404 QTime=0
+2016-04-03 07:46:56.837 ERROR (qtp434176574-138) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.menu-bottom.html]
+2016-04-03 07:46:56.837 INFO  (qtp434176574-138) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1459669616836} status=404 QTime=0
+2016-04-03 07:46:56.844 INFO  (qtp434176574-111) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459669616841} status=0 QTime=0
+2016-04-03 07:46:56.845 INFO  (qtp434176574-19) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/replication params={wt=json&command=details&_=1459669616843} status=0 QTime=0
+2016-04-03 07:46:56.847 ERROR (qtp434176574-147) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.html]
+2016-04-03 07:46:56.847 INFO  (qtp434176574-147) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459669616845} status=404 QTime=0
+2016-04-03 07:46:56.849 INFO  (qtp434176574-148) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459669616846} status=503 QTime=0
+2016-04-03 07:46:56.858 INFO  (qtp434176574-128) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/system params={wt=json&_=1459669616844} status=0 QTime=11
+2016-04-03 07:46:57.409 INFO  (qtp434176574-128) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1459669617407} status=0 QTime=0
+2016-04-03 07:46:57.426 INFO  (qtp434176574-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1459669617417} status=0 QTime=8
+2016-04-03 07:46:57.435 ERROR (qtp434176574-138) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.menu-bottom.html]
+2016-04-03 07:46:57.435 ERROR (qtp434176574-148) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.menu-top.html]
+2016-04-03 07:46:57.435 INFO  (qtp434176574-138) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1459669617434} status=404 QTime=0
+2016-04-03 07:46:57.435 INFO  (qtp434176574-148) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1459669617434} status=404 QTime=0
+2016-04-03 07:46:57.439 INFO  (qtp434176574-111) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459669617437} status=0 QTime=0
+2016-04-03 07:46:57.440 INFO  (qtp434176574-146) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/replication params={wt=json&command=details&_=1459669617439} status=0 QTime=0
+2016-04-03 07:46:57.442 ERROR (qtp434176574-19) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.html]
+2016-04-03 07:46:57.442 INFO  (qtp434176574-19) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459669617440} status=404 QTime=0
+2016-04-03 07:46:57.442 INFO  (qtp434176574-147) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459669617441} status=503 QTime=0
+2016-04-03 07:46:57.451 INFO  (qtp434176574-128) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/system params={wt=json&_=1459669617439} status=0 QTime=9
+2016-04-03 07:46:57.607 INFO  (qtp434176574-128) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1459669617606} status=0 QTime=0
+2016-04-03 07:46:57.632 INFO  (qtp434176574-148) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1459669617621} status=0 QTime=10
+2016-04-03 07:46:57.642 ERROR (qtp434176574-147) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.menu-top.html]
+2016-04-03 07:46:57.642 ERROR (qtp434176574-146) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.menu-bottom.html]
+2016-04-03 07:46:57.642 INFO  (qtp434176574-147) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1459669617640} status=404 QTime=0
+2016-04-03 07:46:57.642 INFO  (qtp434176574-146) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1459669617641} status=404 QTime=0
+2016-04-03 07:46:57.647 INFO  (qtp434176574-111) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459669617644} status=0 QTime=0
+2016-04-03 07:46:57.648 INFO  (qtp434176574-138) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/replication params={wt=json&command=details&_=1459669617646} status=0 QTime=0
+2016-04-03 07:46:57.650 ERROR (qtp434176574-148) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.html]
+2016-04-03 07:46:57.650 INFO  (qtp434176574-19) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459669617649} status=503 QTime=0
+2016-04-03 07:46:57.650 INFO  (qtp434176574-148) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459669617648} status=404 QTime=0
+2016-04-03 07:46:57.659 INFO  (qtp434176574-128) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/system params={wt=json&_=1459669617647} status=0 QTime=9
+2016-04-03 07:48:21.189 INFO  (qtp434176574-138) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459669701186} status=0 QTime=0
+2016-04-03 07:48:21.191 ERROR (qtp434176574-148) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.html]
+2016-04-03 07:48:21.191 INFO  (qtp434176574-148) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459669701190} status=404 QTime=0
+2016-04-03 07:48:21.192 INFO  (qtp434176574-151) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459669701190} status=503 QTime=0
+2016-04-03 07:48:21.192 INFO  (qtp434176574-152) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/replication params={wt=json&command=details&_=1459669701188} status=0 QTime=1
+2016-04-03 07:48:21.201 INFO  (qtp434176574-111) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/system params={wt=json&_=1459669701189} status=0 QTime=9
+2016-04-03 07:48:22.478 INFO  (qtp434176574-155) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1459669702476} status=0 QTime=0
+2016-04-03 07:48:22.499 INFO  (qtp434176574-151) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1459669702489} status=0 QTime=9
+2016-04-03 07:48:22.508 ERROR (qtp434176574-154) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.menu-top.html]
+2016-04-03 07:48:22.508 INFO  (qtp434176574-154) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1459669702506} status=404 QTime=0
+2016-04-03 07:48:22.508 ERROR (qtp434176574-111) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.menu-bottom.html]
+2016-04-03 07:48:22.508 INFO  (qtp434176574-111) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1459669702507} status=404 QTime=0
+2016-04-03 07:48:22.515 INFO  (qtp434176574-148) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459669702512} status=0 QTime=0
+2016-04-03 07:48:22.516 INFO  (qtp434176574-152) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/replication params={wt=json&command=details&_=1459669702514} status=0 QTime=0
+2016-04-03 07:48:22.518 ERROR (qtp434176574-151) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.html]
+2016-04-03 07:48:22.518 INFO  (qtp434176574-154) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459669702517} status=503 QTime=0
+2016-04-03 07:48:22.519 INFO  (qtp434176574-151) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459669702516} status=404 QTime=0
+2016-04-03 07:48:22.528 INFO  (qtp434176574-155) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/system params={wt=json&_=1459669702515} status=0 QTime=9
+2016-04-03 07:48:26.867 INFO  (qtp434176574-111) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={}{add=[716529838941675500 (1530574622498488320), 716526617938509800 (1530574622499536896), 716523769590849500 (1530574622499536897), 716520435085615100 (1530574622499536898), 716517681336356900 (1530574622499536899), 716514436895416300 (1530574622499536900), 716511086837698600 (1530574622499536901), 716508225730973700 (1530574622500585472), 716504804575543300 (1530574622500585473), 716501934212038700 (1530574622500585474), ... (1000 adds)]} 0 47
+2016-04-03 07:48:26.870 INFO  (qtp434176574-148) [   x:tweets] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-04-03 07:48:26.893 INFO  (qtp434176574-148) [   x:tweets] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_10,generation=36}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_11,generation=37}
+2016-04-03 07:48:26.893 INFO  (qtp434176574-148) [   x:tweets] o.a.s.c.SolrDeletionPolicy newest commit generation = 37
+2016-04-03 07:48:26.894 INFO  (qtp434176574-148) [   x:tweets] o.a.s.s.SolrIndexSearcher Opening Searcher@59a9ceb8[tweets] main
+2016-04-03 07:48:26.895 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@59a9ceb8[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_t(5.5.0):C1000/999:delGen=2) Uninverting(_w(5.5.0):C1000/2:delGen=1)))}
+2016-04-03 07:48:26.895 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-03 07:48:26.895 INFO  (qtp434176574-148) [   x:tweets] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-04-03 07:48:26.895 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.SolrCore [tweets] Registered new searcher Searcher@59a9ceb8[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_t(5.5.0):C1000/999:delGen=2) Uninverting(_w(5.5.0):C1000/2:delGen=1)))}
+2016-04-03 07:48:26.897 INFO  (qtp434176574-148) [   x:tweets] o.a.s.u.p.LogUpdateProcessorFactory [tweets]  webapp=/solr path=/update params={}{commit=} 0 27
+2016-04-03 07:50:28.269 INFO  (qtp434176574-154) [   x:images] o.a.s.u.p.LogUpdateProcessorFactory [images]  webapp=/solr path=/update params={wt=json}{add=[/private/tmp/images/716514436895416300.jpg (1530574749767303168), /private/tmp/images/716511086837698600.jpg (1530574749769400320), /private/tmp/images/716523769590849500.jpg (1530574749769400321), /private/tmp/images/716526617938509800.jpg (1530574749769400322), /private/tmp/images/716508225730973700.jpg (1530574749769400323), /private/tmp/images/716501934212038700.jpg (1530574749769400324), /private/tmp/images/716488970234957800.jpg (1530574749770448896), /private/tmp/images/716477637116444700.jpg (1530574749770448897), /private/tmp/images/716474065968623600.jpg (1530574749770448898), /private/tmp/images/716470961739022300.jpg (1530574749770448899), ... (500 adds)]} 0 76
+2016-04-03 07:50:28.280 INFO  (qtp434176574-148) [   x:images] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-04-03 07:50:28.319 INFO  (qtp434176574-148) [   x:images] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_g,generation=16}
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@3a71668b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_h,generation=17}
+2016-04-03 07:50:28.319 INFO  (qtp434176574-148) [   x:images] o.a.s.c.SolrDeletionPolicy newest commit generation = 17
+2016-04-03 07:50:28.320 INFO  (qtp434176574-148) [   x:images] o.a.s.s.SolrIndexSearcher Opening Searcher@4f9037b6[images] main
+2016-04-03 07:50:28.321 INFO  (searcherExecutor-8-thread-1-processing-x:images) [   x:images] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4f9037b6[images] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_9(5.5.0):C500)))}
+2016-04-03 07:50:28.321 INFO  (searcherExecutor-8-thread-1-processing-x:images) [   x:images] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-03 07:50:28.321 INFO  (searcherExecutor-8-thread-1-processing-x:images) [   x:images] o.a.s.c.SolrCore [images] Registered new searcher Searcher@4f9037b6[images] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_9(5.5.0):C500)))}
+2016-04-03 07:50:28.323 INFO  (qtp434176574-148) [   x:images] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-04-03 07:50:28.323 INFO  (qtp434176574-148) [   x:images] o.a.s.u.p.LogUpdateProcessorFactory [images]  webapp=/solr path=/update params={wt=json}{commit=} 0 43
+2016-04-03 07:51:19.744 INFO  (qtp434176574-152) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1459669879743} status=0 QTime=0
+2016-04-03 07:51:19.764 INFO  (qtp434176574-154) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1459669879754} status=0 QTime=8
+2016-04-03 07:51:19.774 ERROR (qtp434176574-155) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.menu-top.html]
+2016-04-03 07:51:19.774 ERROR (qtp434176574-167) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.menu-bottom.html]
+2016-04-03 07:51:19.774 INFO  (qtp434176574-155) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1459669879772} status=404 QTime=0
+2016-04-03 07:51:19.774 INFO  (qtp434176574-167) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1459669879772} status=404 QTime=0
+2016-04-03 07:51:19.780 INFO  (qtp434176574-148) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459669879777} status=0 QTime=0
+2016-04-03 07:51:19.782 INFO  (qtp434176574-169) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/replication params={wt=json&command=details&_=1459669879779} status=0 QTime=1
+2016-04-03 07:51:19.782 ERROR (qtp434176574-154) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/conf/admin-extra.html]
+2016-04-03 07:51:19.782 INFO  (qtp434176574-154) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459669879781} status=404 QTime=0
+2016-04-03 07:51:19.784 INFO  (qtp434176574-168) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459669879782} status=503 QTime=0
+2016-04-03 07:51:19.791 INFO  (qtp434176574-152) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/system params={wt=json&_=1459669879780} status=0 QTime=9
+2016-04-03 07:51:21.371 INFO  (qtp434176574-167) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459669881369} status=0 QTime=0
+2016-04-03 07:51:21.372 INFO  (qtp434176574-148) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/replication params={wt=json&command=details&_=1459669881371} status=0 QTime=0
+2016-04-03 07:51:21.374 ERROR (qtp434176574-154) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.html]
+2016-04-03 07:51:21.374 INFO  (qtp434176574-154) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459669881372} status=404 QTime=0
+2016-04-03 07:51:21.374 INFO  (qtp434176574-168) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459669881373} status=503 QTime=0
+2016-04-03 07:51:21.385 INFO  (qtp434176574-169) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/system params={wt=json&_=1459669881371} status=0 QTime=10
+2016-04-03 07:51:22.584 INFO  (qtp434176574-169) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1459669882582} status=0 QTime=0
+2016-04-03 07:51:22.603 INFO  (qtp434176574-148) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1459669882593} status=0 QTime=8
+2016-04-03 07:51:22.611 ERROR (qtp434176574-155) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.menu-bottom.html]
+2016-04-03 07:51:22.611 ERROR (qtp434176574-152) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.menu-top.html]
+2016-04-03 07:51:22.612 INFO  (qtp434176574-155) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1459669882610} status=404 QTime=0
+2016-04-03 07:51:22.612 INFO  (qtp434176574-152) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1459669882610} status=404 QTime=0
+2016-04-03 07:51:22.616 INFO  (qtp434176574-168) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1459669882613} status=0 QTime=0
+2016-04-03 07:51:22.617 INFO  (qtp434176574-154) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/replication params={wt=json&command=details&_=1459669882616} status=0 QTime=0
+2016-04-03 07:51:22.619 ERROR (qtp434176574-148) [   x:images] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/conf/admin-extra.html]
+2016-04-03 07:51:22.619 INFO  (qtp434176574-148) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1459669882617} status=404 QTime=0
+2016-04-03 07:51:22.619 INFO  (qtp434176574-167) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1459669882618} status=503 QTime=0
+2016-04-03 07:51:22.628 INFO  (qtp434176574-169) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/admin/system params={wt=json&_=1459669882616} status=0 QTime=8
+2016-04-03 07:51:58.214 INFO  (qtp434176574-168) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/lireq params={url=https://pbs.twimg.com/media/CfFqiwAWsAQsF0z.jpg} status=0 QTime=490
+2016-04-03 07:51:58.235 INFO  (qtp434176574-154) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715832560442544100&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:51:58.237 INFO  (qtp434176574-169) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715583442088493000&wt=json} hits=1 status=0 QTime=3
+2016-04-03 07:51:58.237 INFO  (qtp434176574-167) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715349398335701000&wt=json} hits=1 status=0 QTime=3
+2016-04-03 07:51:58.237 INFO  (qtp434176574-168) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715048684526895100&wt=json} hits=1 status=0 QTime=4
+2016-04-03 07:51:58.237 INFO  (qtp434176574-148) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716470961739022300&wt=json} hits=1 status=0 QTime=4
+2016-04-03 07:51:58.237 INFO  (qtp434176574-173) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716466220330037200&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:51:58.238 INFO  (qtp434176574-154) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716064120655712300&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:51:58.239 INFO  (qtp434176574-169) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716091810259583000&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.240 INFO  (qtp434176574-169) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715501227761672200&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.240 INFO  (qtp434176574-174) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714763123971002400&wt=json} hits=1 status=0 QTime=3
+2016-04-03 07:51:58.241 INFO  (qtp434176574-173) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716158740077088800&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.241 INFO  (qtp434176574-168) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715762127752007700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.241 INFO  (qtp434176574-148) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714969414882484200&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.241 INFO  (qtp434176574-169) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716276811164946400&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.241 INFO  (qtp434176574-174) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715748188494438400&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.241 INFO  (qtp434176574-167) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715045435874873300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.241 INFO  (qtp434176574-173) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714712582138028000&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.242 INFO  (qtp434176574-148) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715121625109278700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.242 INFO  (qtp434176574-168) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714724658554253300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.242 INFO  (qtp434176574-169) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716037927978070000&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.243 INFO  (qtp434176574-182) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715512740857692200&wt=json} hits=1 status=0 QTime=3
+2016-04-03 07:51:58.243 INFO  (qtp434176574-183) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715780998282285000&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:51:58.243 INFO  (qtp434176574-154) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716009751763689500&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.244 INFO  (qtp434176574-169) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714215448649277400&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.244 INFO  (qtp434176574-154) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714949273377501200&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.244 INFO  (qtp434176574-183) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716196500397809700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.242 INFO  (qtp434176574-173) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715549253024747500&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.242 INFO  (qtp434176574-167) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716462054698147800&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.245 INFO  (qtp434176574-169) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715849316192100400&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.245 INFO  (qtp434176574-154) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715034823505625100&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.245 INFO  (qtp434176574-183) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716164610370453500&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.245 INFO  (qtp434176574-167) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715916864648585200&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.245 INFO  (qtp434176574-173) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715664233124507600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.245 INFO  (qtp434176574-169) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714469485164544000&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.244 INFO  (qtp434176574-182) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715012356473008100&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.246 INFO  (qtp434176574-167) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714824451779596300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.246 INFO  (qtp434176574-173) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714504849996587000&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.246 INFO  (qtp434176574-169) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714457292599648300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.247 INFO  (qtp434176574-168) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714197840801763300&wt=json} hits=1 status=0 QTime=4
+2016-04-03 07:51:58.247 INFO  (qtp434176574-173) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714446652405391400&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.246 INFO  (qtp434176574-154) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714674961701539800&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.247 INFO  (qtp434176574-169) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713825283351117800&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.246 INFO  (qtp434176574-183) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714265763591413800&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.247 INFO  (qtp434176574-168) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713836313414340600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.245 INFO  (qtp434176574-148) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715565576459067400&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:51:58.247 INFO  (qtp434176574-167) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714371029263654900&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.246 INFO  (qtp434176574-182) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714653573079019500&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:51:58.248 INFO  (qtp434176574-179) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716244056293175300&wt=json} hits=1 status=0 QTime=10
+2016-04-03 07:51:58.249 INFO  (qtp434176574-176) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715938076498006000&wt=json} hits=1 status=0 QTime=12
+2016-04-03 07:51:58.251 INFO  (qtp434176574-186) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715913574946881500&wt=json} hits=1 status=0 QTime=6
+2016-04-03 07:51:58.251 INFO  (qtp434176574-174) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716315154443542500&wt=json} hits=1 status=0 QTime=9
+2016-04-03 07:51:58.249 INFO  (qtp434176574-177) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714814423064567800&wt=json} hits=1 status=0 QTime=12
+2016-04-03 07:51:58.251 INFO  (qtp434176574-185) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715256743496925200&wt=json} hits=1 status=0 QTime=7
+2016-04-03 07:51:58.252 INFO  (qtp434176574-178) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716345728147304400&wt=json} hits=1 status=0 QTime=14
+2016-04-03 07:51:58.252 INFO  (qtp434176574-181) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715811204934053900&wt=json} hits=1 status=0 QTime=11
+2016-04-03 07:51:58.252 INFO  (qtp434176574-188) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716017328555757600&wt=json} hits=1 status=0 QTime=4
+2016-04-03 07:51:58.252 INFO  (qtp434176574-180) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715479579427647500&wt=json} hits=1 status=0 QTime=11
+2016-04-03 07:51:58.252 INFO  (qtp434176574-184) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715512055814557700&wt=json} hits=1 status=0 QTime=11
+2016-04-03 07:51:58.252 INFO  (qtp434176574-175) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714791988957167600&wt=json} hits=1 status=0 QTime=13
+2016-04-03 07:51:58.252 INFO  (qtp434176574-187) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715938644486447100&wt=json} hits=1 status=0 QTime=5
+2016-04-03 07:52:40.466 INFO  (qtp434176574-190) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/lireq params={url=http://static6.businessinsider.com/image/55918b77ecad04a3465a0a63/nbc-fires-donald-trump-after-he-calls-mexicans-rapists-and-drug-runners.jpg} status=0 QTime=1040
+2016-04-03 07:52:40.485 INFO  (qtp434176574-167) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716183739471110100&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:52:40.485 INFO  (qtp434176574-188) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715731926519255000&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:52:40.485 INFO  (qtp434176574-180) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714502340439633900&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:52:40.487 INFO  (qtp434176574-179) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713989354167861200&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.485 INFO  (qtp434176574-187) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714048004257407000&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:52:40.487 INFO  (qtp434176574-185) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715689140600324100&wt=json} hits=1 status=0 QTime=4
+2016-04-03 07:52:40.485 INFO  (qtp434176574-184) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716357045876834300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.487 INFO  (qtp434176574-173) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715910820903972900&wt=json} hits=1 status=0 QTime=4
+2016-04-03 07:52:40.487 INFO  (qtp434176574-148) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715919754888921100&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.487 INFO  (qtp434176574-192) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715714319401529300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.487 INFO  (qtp434176574-169) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716119486865215500&wt=json} hits=1 status=0 QTime=3
+2016-04-03 07:52:40.489 INFO  (qtp434176574-187) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714271618936225800&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.487 INFO  (qtp434176574-190) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715019750682837000&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:52:40.489 INFO  (qtp434176574-169) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714156154658680800&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.489 INFO  (qtp434176574-167) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715117314895659000&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.489 INFO  (qtp434176574-179) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715508544632709100&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:52:40.490 INFO  (qtp434176574-185) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714639729384362000&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.490 INFO  (qtp434176574-187) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716081736359223300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.490 INFO  (qtp434176574-190) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713986184867930100&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.490 INFO  (qtp434176574-169) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713872681553289200&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.486 INFO  (qtp434176574-178) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716349998489870300&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:52:40.490 INFO  (qtp434176574-173) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714118543890128900&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.486 INFO  (qtp434176574-177) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715767169146097700&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:52:40.486 INFO  (qtp434176574-182) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715568117380984800&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:52:40.490 INFO  (qtp434176574-185) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715836306874634200&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.490 INFO  (qtp434176574-179) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714084569771810800&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.490 INFO  (qtp434176574-184) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715208327114924000&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.491 INFO  (qtp434176574-173) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714483513391714300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.490 INFO  (qtp434176574-188) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715897775435685900&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:52:40.491 INFO  (qtp434176574-185) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714772861995630600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.489 INFO  (qtp434176574-148) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714074569074741200&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.492 INFO  (qtp434176574-179) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716451731169796100&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.489 INFO  (qtp434176574-180) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714181472974979100&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.489 INFO  (qtp434176574-192) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716338179419336700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.493 INFO  (qtp434176574-194) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715079489424924700&wt=json} hits=1 status=0 QTime=4
+2016-04-03 07:52:40.492 INFO  (qtp434176574-188) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714355537404698600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.494 INFO  (qtp434176574-167) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716052791333138400&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.492 INFO  (qtp434176574-193) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715940553465192400&wt=json} hits=1 status=0 QTime=4
+2016-04-03 07:52:40.492 INFO  (qtp434176574-184) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714683427988107300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.494 INFO  (qtp434176574-188) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716281566952099800&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.491 INFO  (qtp434176574-178) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713797678438723600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.495 INFO  (qtp434176574-184) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716413676358656000&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.494 INFO  (qtp434176574-185) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715679084941090800&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:52:40.494 INFO  (qtp434176574-194) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716290756403728400&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.494 INFO  (qtp434176574-192) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713780081139826700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.494 INFO  (qtp434176574-179) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714088362479644700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.493 INFO  (qtp434176574-195) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714607018066231300&wt=json} hits=1 status=0 QTime=4
+2016-04-03 07:52:40.496 INFO  (qtp434176574-177) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714201602022891500&wt=json} hits=1 status=0 QTime=5
+2016-04-03 07:52:40.495 INFO  (qtp434176574-167) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714205379551473700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.495 INFO  (qtp434176574-180) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714933807783215100&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.498 INFO  (qtp434176574-197) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715522916994138100&wt=json} hits=1 status=0 QTime=4
+2016-04-03 07:52:40.498 INFO  (qtp434176574-190) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715605851415961600&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:52:40.498 INFO  (qtp434176574-188) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713735783098818600&wt=json} hits=1 status=0 QTime=3
+2016-04-03 07:52:40.498 INFO  (qtp434176574-196) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715806633536929800&wt=json} hits=1 status=0 QTime=7
+2016-04-03 07:52:40.495 INFO  (qtp434176574-193) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714860689605673000&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:52:40.498 INFO  (qtp434176574-199) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716173839923806200&wt=json} hits=1 status=0 QTime=3
+2016-04-03 07:52:40.497 INFO  (qtp434176574-169) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715977073001689100&wt=json} hits=1 status=0 QTime=6
+2016-04-03 07:52:40.497 INFO  (qtp434176574-187) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714123583765758000&wt=json} hits=1 status=0 QTime=7
+2016-04-03 07:52:40.497 INFO  (qtp434176574-198) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713982945766322200&wt=json} hits=1 status=0 QTime=3
+2016-04-03 07:52:40.497 INFO  (qtp434176574-200) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713979321409544200&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:53:22.836 INFO  (qtp434176574-196) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/lireq params={url=http://graphics8.nytimes.com/images/2015/09/16/opinion/16downesWEB/16downesWEB-blog480.jpg} status=0 QTime=615
+2016-04-03 07:53:22.849 INFO  (qtp434176574-200) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716119486865215500&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:22.849 INFO  (qtp434176574-202) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716183739471110100&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:22.850 INFO  (qtp434176574-198) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716349998489870300&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:22.849 INFO  (qtp434176574-177) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715940553465192400&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:22.850 INFO  (qtp434176574-194) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715919754888921100&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.851 INFO  (qtp434176574-178) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713800207377559600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.851 INFO  (qtp434176574-199) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714212917869154300&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:53:22.851 INFO  (qtp434176574-179) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714074569074741200&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.851 INFO  (qtp434176574-177) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713865665975857200&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.851 INFO  (qtp434176574-194) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715905329809244200&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.851 INFO  (qtp434176574-199) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713989354167861200&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.851 INFO  (qtp434176574-179) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714123583765758000&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.852 INFO  (qtp434176574-167) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714607018066231300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.849 INFO  (qtp434176574-187) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714860689605673000&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:22.852 INFO  (qtp434176574-200) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714720258616066000&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.852 INFO  (qtp434176574-199) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714118543890128900&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.852 INFO  (qtp434176574-187) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714502340439633900&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.852 INFO  (qtp434176574-177) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715679084941090800&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.853 INFO  (qtp434176574-196) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716357045876834300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.853 INFO  (qtp434176574-199) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716081736359223300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.853 INFO  (qtp434176574-177) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714355537404698600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.853 INFO  (qtp434176574-199) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713797678438723600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.852 INFO  (qtp434176574-194) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714084569771810800&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.854 INFO  (qtp434176574-177) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715836306874634200&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.851 INFO  (qtp434176574-178) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715508544632709100&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.854 INFO  (qtp434176574-194) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713872681553289200&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.854 INFO  (qtp434176574-177) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714512491041177600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.854 INFO  (qtp434176574-194) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715806633536929800&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.854 INFO  (qtp434176574-178) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713864135587532800&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.851 INFO  (qtp434176574-169) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713839604726685700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.855 INFO  (qtp434176574-194) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713780081139826700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.855 INFO  (qtp434176574-178) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715079489424924700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.855 INFO  (qtp434176574-169) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715977073001689100&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.851 INFO  (qtp434176574-182) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716071672579821600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.856 INFO  (qtp434176574-178) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714525340685742100&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.856 INFO  (qtp434176574-182) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714772861995630600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.856 INFO  (qtp434176574-178) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716338179419336700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.850 INFO  (qtp434176574-185) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715731926519255000&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:22.857 INFO  (qtp434176574-204) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713982945766322200&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:22.857 INFO  (qtp434176574-178) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714055399410942000&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.857 INFO  (qtp434176574-205) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714683427988107300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.857 INFO  (qtp434176574-185) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714205379551473700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.857 INFO  (qtp434176574-204) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716413676358656000&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.857 INFO  (qtp434176574-192) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715714319401529300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.857 INFO  (qtp434176574-194) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715522916994138100&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:22.857 INFO  (qtp434176574-182) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714933807783215100&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.855 INFO  (qtp434176574-177) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716281566952099800&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.854 INFO  (qtp434176574-184) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715285136233857000&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.854 INFO  (qtp434176574-199) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716290756403728400&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.853 INFO  (qtp434176574-196) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713986184867930100&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.853 INFO  (qtp434176574-187) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715605851415961600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.852 INFO  (qtp434176574-167) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716173839923806200&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.852 INFO  (qtp434176574-198) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716052791333138400&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.852 INFO  (qtp434176574-179) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714679989959045100&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.859 INFO  (qtp434176574-206) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716451731169796100&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.858 INFO  (qtp434176574-205) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714858416158744600&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:22.858 INFO  (qtp434176574-201) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714542765137403900&wt=json} hits=1 status=0 QTime=9
+2016-04-03 07:53:22.857 INFO  (qtp434176574-178) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713735783098818600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.857 INFO  (qtp434176574-202) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713979321409544200&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:22.857 INFO  (qtp434176574-169) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716084253944115200&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:55.170 INFO  (qtp434176574-178) [   x:images] o.a.s.c.S.Request [images]  webapp=/solr path=/lireq params={url=https://pbs.twimg.com/media/CfFFOrKUMAE2lR1.jpg} status=0 QTime=108
+2016-04-03 07:53:55.184 INFO  (qtp434176574-179) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714181472974979100&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.185 INFO  (qtp434176574-199) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715406120769052700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.185 INFO  (qtp434176574-167) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716207317017034800&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:55.185 INFO  (qtp434176574-185) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713947005618425900&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:55.185 INFO  (qtp434176574-194) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716132064005865500&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:55.185 INFO  (qtp434176574-182) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714231921564328000&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:53:55.185 INFO  (qtp434176574-207) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715949383666311200&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:53:55.186 INFO  (qtp434176574-200) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714271618936225800&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:55.186 INFO  (qtp434176574-178) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715291957845688300&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:55.186 INFO  (qtp434176574-205) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716429935473213400&wt=json} hits=1 status=0 QTime=3
+2016-04-03 07:53:55.187 INFO  (qtp434176574-184) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714839568042836000&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:53:55.187 INFO  (qtp434176574-196) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716162020182200300&wt=json} hits=1 status=0 QTime=3
+2016-04-03 07:53:55.186 INFO  (qtp434176574-211) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714007691958607900&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:55.186 INFO  (qtp434176574-187) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715228368002805800&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:53:55.189 INFO  (qtp434176574-184) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715612147645091800&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.189 INFO  (qtp434176574-194) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715714319401529300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.189 INFO  (qtp434176574-185) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715508544632709100&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.189 INFO  (qtp434176574-211) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714945491151224800&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.186 INFO  (qtp434176574-202) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716074189220929500&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:55.189 INFO  (qtp434176574-194) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714123583765758000&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.189 INFO  (qtp434176574-211) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713780081139826700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.189 INFO  (qtp434176574-184) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714048004257407000&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.190 INFO  (qtp434176574-202) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714483513391714300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.190 INFO  (qtp434176574-211) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715977073001689100&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.189 INFO  (qtp434176574-187) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714933807783215100&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.190 INFO  (qtp434176574-184) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715058309598986200&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.190 INFO  (qtp434176574-202) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715726901747302400&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.190 INFO  (qtp434176574-187) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714201602022891500&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.190 INFO  (qtp434176574-211) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715563078180585500&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.191 INFO  (qtp434176574-184) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715836306874634200&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.191 INFO  (qtp434176574-202) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715522916994138100&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.188 INFO  (qtp434176574-210) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714070733719281700&wt=json} hits=1 status=0 QTime=3
+2016-04-03 07:53:55.192 INFO  (qtp434176574-194) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714994575828496400&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:53:55.188 INFO  (qtp434176574-205) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716338179419336700&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.192 INFO  (qtp434176574-199) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713989354167861200&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:53:55.188 INFO  (qtp434176574-207) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714798781594730500&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.188 INFO  (qtp434176574-200) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713757470318018600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.188 INFO  (qtp434176574-178) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714295181990895600&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.188 INFO  (qtp434176574-182) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716357045876834300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.187 INFO  (qtp434176574-204) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716213855920267300&wt=json} hits=1 status=0 QTime=4
+2016-04-03 07:53:55.191 INFO  (qtp434176574-187) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714683427988107300&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.189 INFO  (qtp434176574-185) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713982945766322200&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.193 INFO  (qtp434176574-207) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716281566952099800&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.193 INFO  (qtp434176574-216) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714118543890128900&wt=json} hits=1 status=0 QTime=0
+2016-04-03 07:53:55.193 INFO  (qtp434176574-210) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714502340439633900&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:55.193 INFO  (qtp434176574-215) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713735783098818600&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:55.193 INFO  (qtp434176574-214) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714205379551473700&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:55.193 INFO  (qtp434176574-202) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713979321409544200&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:55.193 INFO  (qtp434176574-213) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715452928891424800&wt=json} hits=1 status=0 QTime=5
+2016-04-03 07:53:55.193 INFO  (qtp434176574-211) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716426846779416600&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:53:55.194 INFO  (qtp434176574-179) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715170036349026300&wt=json} hits=1 status=0 QTime=7
+2016-04-03 07:53:55.194 INFO  (qtp434176574-199) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716081736359223300&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:55.194 INFO  (qtp434176574-212) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:713936715539472400&wt=json} hits=1 status=0 QTime=6
+2016-04-03 07:53:55.194 INFO  (qtp434176574-194) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715605851415961600&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:53:55.195 INFO  (qtp434176574-167) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714772861995630600&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:53:55.195 INFO  (qtp434176574-205) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716451731169796100&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:53:55.195 INFO  (qtp434176574-196) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715079489424924700&wt=json} hits=1 status=0 QTime=6
+2016-04-03 07:53:55.195 INFO  (qtp434176574-217) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:715806633536929800&wt=json} hits=1 status=0 QTime=1
+2016-04-03 07:53:55.195 INFO  (qtp434176574-200) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:716052791333138400&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:53:55.195 INFO  (qtp434176574-178) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/select params={q=id:714610793489244200&wt=json} hits=1 status=0 QTime=2
+2016-04-03 07:54:55.470 INFO  (ShutdownMonitor) [   ] o.e.j.s.ServerConnector Stopped ServerConnector@18078bef{HTTP/1.1}{0.0.0.0:8983}
+2016-04-03 07:54:55.470 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=477289012
+2016-04-03 07:54:55.489 INFO  (coreCloseExecutor-17-thread-1) [   x:tweets] o.a.s.c.SolrCore [tweets]  CLOSING SolrCore org.apache.solr.core.SolrCore@17ce0a00
+2016-04-03 07:54:55.490 INFO  (coreCloseExecutor-17-thread-1) [   x:tweets] o.a.s.u.DirectUpdateHandler2 closing DirectUpdateHandler2{commits=9,autocommit maxTime=1000ms,autocommits=1,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=6010,cumulative_deletesById=0,cumulative_deletesByQuery=1,cumulative_errors=0,transaction_logs_total_size=184188,transaction_logs_total_number=1}
+2016-04-03 07:54:55.490 INFO  (coreCloseExecutor-17-thread-1) [   x:tweets] o.a.s.u.SolrCoreState Closing SolrCoreState
+2016-04-03 07:54:55.490 INFO  (coreCloseExecutor-17-thread-1) [   x:tweets] o.a.s.u.DefaultSolrCoreState SolrCoreState ref count has reached 0 - closing IndexWriter
+2016-04-03 07:54:55.490 INFO  (coreCloseExecutor-17-thread-1) [   x:tweets] o.a.s.u.DefaultSolrCoreState closing IndexWriter with IndexWriterCloser
+2016-04-03 07:54:55.491 INFO  (coreCloseExecutor-17-thread-1) [   x:tweets] o.a.s.c.SolrCore [tweets] Closing main searcher on request.
+2016-04-03 07:54:55.491 INFO  (coreCloseExecutor-17-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+2016-04-03 07:54:55.492 INFO  (coreCloseExecutor-17-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory looking to close /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index [CachedDir<<refCount=0;path=/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index;done=false>>]
+2016-04-03 07:54:55.492 INFO  (coreCloseExecutor-17-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory Closing directory: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data/index
+2016-04-03 07:54:55.492 INFO  (coreCloseExecutor-17-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory looking to close /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data [CachedDir<<refCount=0;path=/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data;done=false>>]
+2016-04-03 07:54:55.492 INFO  (coreCloseExecutor-17-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory Closing directory: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/tweets/data
+2016-04-03 07:54:55.492 INFO  (coreCloseExecutor-18-thread-1) [   x:images] o.a.s.c.SolrCore [images]  CLOSING SolrCore org.apache.solr.core.SolrCore@e36f373
+2016-04-03 07:54:55.492 INFO  (coreCloseExecutor-18-thread-1) [   x:images] o.a.s.u.DirectUpdateHandler2 closing DirectUpdateHandler2{commits=5,autocommit maxTime=15000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=542,cumulative_deletesById=0,cumulative_deletesByQuery=2,cumulative_errors=0,transaction_logs_total_size=1158195,transaction_logs_total_number=1}
+2016-04-03 07:54:55.492 INFO  (coreCloseExecutor-18-thread-1) [   x:images] o.a.s.u.SolrCoreState Closing SolrCoreState
+2016-04-03 07:54:55.493 INFO  (coreCloseExecutor-18-thread-1) [   x:images] o.a.s.u.DefaultSolrCoreState SolrCoreState ref count has reached 0 - closing IndexWriter
+2016-04-03 07:54:55.493 INFO  (coreCloseExecutor-18-thread-1) [   x:images] o.a.s.u.DefaultSolrCoreState closing IndexWriter with IndexWriterCloser
+2016-04-03 07:54:55.493 INFO  (coreCloseExecutor-18-thread-1) [   x:images] o.a.s.c.SolrCore [images] Closing main searcher on request.
+2016-04-03 07:54:55.493 INFO  (coreCloseExecutor-18-thread-1) [   x:images] o.a.s.c.CachingDirectoryFactory Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+2016-04-03 07:54:55.493 INFO  (coreCloseExecutor-18-thread-1) [   x:images] o.a.s.c.CachingDirectoryFactory looking to close /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/data [CachedDir<<refCount=0;path=/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/data;done=false>>]
+2016-04-03 07:54:55.493 INFO  (coreCloseExecutor-18-thread-1) [   x:images] o.a.s.c.CachingDirectoryFactory Closing directory: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/data
+2016-04-03 07:54:55.494 INFO  (coreCloseExecutor-18-thread-1) [   x:images] o.a.s.c.CachingDirectoryFactory looking to close /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/data/index [CachedDir<<refCount=0;path=/Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/data/index;done=false>>]
+2016-04-03 07:54:55.494 INFO  (coreCloseExecutor-18-thread-1) [   x:images] o.a.s.c.CachingDirectoryFactory Closing directory: /Users/shantanugupta/Downloads/solr-5.5.0/server/solr/images/data/index
+2016-04-03 07:54:55.495 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@146ba0ac{/solr,file:/Users/shantanugupta/Downloads/solr-5.5.0/server/solr-webapp/webapp/,UNAVAILABLE}{/Users/shantanugupta/Downloads/solr-5.5.0/server/solr-webapp/webapp}
