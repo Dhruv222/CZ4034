@@ -15,7 +15,7 @@ This will install all the requisite `Node.js` dependencies.
 
 In the cloned repo you will a `solr-5.5.0` directory. This has `Solr` set up with configuration files and schema files for two cores, namely `tweets` and `images`. You should run your `Solr` instance from this directory or use the configuration files (`solrconfig.xml` and `schema.xml`) from this directory.
 
-This application also utilises the [LIRE Plugin for Solr](https://bitbucket.org/dermotte/liresolr) in order to support image search. All the necessary files are included in the `liresolr` directory of the repo. The `solr` directory is already preconfigured to work with this `liresolr` directory. The plugin will be automatically called from this directory by the application while indexing and searching images.
+This application also utilises the [LIRE Plugin for Solr](https://bitbucket.org/dermotte/liresolr) in order to support image search. All the necessary files are included in the `liresolr` directory of the repo. The `solr-5.5.0` directory is already preconfigured to work with this `liresolr` directory. The plugin will be automatically called from this directory by the application while indexing and searching images.
 
 Finally, a `.env` file is required for this application to run. This `.env` file is supposed to contain Twitter API credentials which will be used by the application to fetch the tweets. Refer to the `.env.sample` to understand the format of the `.env ` file. After cloning the repo, create a `.env` file under the root of the application and populate according to the `.env.sample` file.
 
