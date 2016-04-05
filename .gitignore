@@ -5,3 +5,5 @@ node_modules/*
 .env
 solr-5.5.0/server/solr/tweets/data/*
 solr-5.5.0/server/solr/images/data/*
+.DS_Store
+solr-5.5.0/.DS_Store
