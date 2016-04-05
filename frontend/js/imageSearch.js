@@ -39,8 +39,14 @@ $(document).ready(function(){
             }
             $result = data;
             $("#time").html(($t2 - $t1)/1000);
+            $("#num_results").html($result.length);
             $("#results").show();
-            for($i = 0; $i < $result.length; $i++){
+            for($i = 0; $i < $result.length && $i < 10; $i++){
+                if ($result[$i]) {
+
+                } else {
+                  continue;
+                }
                 $id = $result[$i].id;
                 $tweet = $result[$i].tweet_text;
                 $handle = $result[$i].twitter_handle;
@@ -55,7 +61,7 @@ $(document).ready(function(){
                     "</div></div> <hr/>";
                 $("#main").append($newDiv);
             }
-            if($result.response.numFound > 10)
+            if($result.length > 10)
                 $(".next").show();
         }, "json");
     });

@@ -50,7 +50,7 @@ $(document).ready(function(){
                 $date = new Date($result.response.docs[$i].timestamp);
                 $date_format = $months[$date.getMonth()] + " " + $date.getDate() + ", " + $date.getFullYear() ;
                 if ($sentiment == "positive"){
-                    $color = "green";
+                    $color = "lightgreen";
                 }
                 else if ($sentiment == "neutral") {
                     $color = "lightblue";
@@ -86,7 +86,7 @@ $(document).ready(function(){
                 $date = new Date($result.response.docs[$i].timestamp);
                 $date_format = $months[$date.getMonth()] + " " + $date.getDate() + ", " + $date.getFullYear() ;
                 if ($sentiment == "positive"){
-                    $color = "green";
+                    $color = "lightgreen";
                 }
                 else if ($sentiment == "neutral") {
                     $color = "lightblue";
@@ -125,7 +125,7 @@ $(document).ready(function(){
                 $date = new Date($result.response.docs[$i].timestamp);
                 $date_format = $months[$date.getMonth()] + " " + $date.getDate() + ", " + $date.getFullYear() ;
                 if ($sentiment == "positive"){
-                    $color = "green";
+                    $color = "lightgreen";
                 }
                 else if ($sentiment == "neutral") {
                     $color = "lightblue";
