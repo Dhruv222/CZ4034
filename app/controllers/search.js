@@ -7,13 +7,11 @@ exports.doSearch = function(req, res, next) {
   var filler = "";
 
   var qText = "tweet_text:" + encodeURIComponent(req.params.q).replace(/%20/g, '+') + " AND sentiment:\"" + encodeURIComponent(req.params.sentiment).replace(/%20/g, '+') + "\"" ;
-  console.log(qText);
   var page = parseInt(req.params.page);
   page = isNaN(page) ? 1 : page;
   var page_size = parseInt(req.params.page_size);
   page_size = isNaN(page_size) ? 10 : page_size;
 
-  console.log(req.params.location);
   if (req.params.location === "1"){
   var  obj = {
       start: (page - 1) * page_size,
@@ -33,7 +31,6 @@ exports.doSearch = function(req, res, next) {
 
 
   solrClient.query(qText, obj, function(err, result) {
-    console.log(result);
     if (err) {
       res.send(500, err);
     } else {
@@ -112,17 +109,16 @@ exports.sortByParam = function(req, res, next) {
 
 exports.retrieveQueries = function(req, res, next) {
 
-  var query = solrClient.createQuery()
-          .q('*:*')
-          .start(0)
-          .rows(3103)
-          .fl('tweet_text,sentiment');
-
-  solrClient.search(query,function(err,obj){
+  var query = solrClient.query("*:*", {
+    start: 0,
+    rows: 15000,
+    fl: 'tweet_text,sentiment'
+  }, function(err,obj){
     if(err){
       res.send(err);
     }
     else {
+      obj = JSON.parse(obj);
       var tweets = obj.response.docs;
       var tweets = JSON.stringify(tweets);
 
@@ -131,7 +127,7 @@ exports.retrieveQueries = function(req, res, next) {
         console.log('file saved');
       });
     }
-    res.send(obj.response.docs);
+    res.send("Text file created!");
   });
 };
 
