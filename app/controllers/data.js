@@ -16,7 +16,9 @@ var indexImages = function(url_tweet_mapping) {
   for (var i = 0; i < tweet_ids.length; i++) {
     var filename = tweet_ids[i] + '.jpg';
     var filepath = process.cwd() + "/images/" + filename;
-    filenames.push(filepath);
+    if (!fs.existsSync(filepath)) {
+      filenames.push(filepath);
+    }
   }
 
   console.log("starting download");

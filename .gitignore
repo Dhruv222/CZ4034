@@ -3,8 +3,8 @@ node_modules/*
 *.swp
 *.swo
 .env
-solr-5.5.0/server/solr/images/data/*
-solr-5.5.0/server/solr/logs/*
+solr-5.5.0/server/logs/*
+solr-5.5.0/bin/*.pid
 .DS_Store
 solr-5.5.0/.DS_Store
 images/*.jpg
