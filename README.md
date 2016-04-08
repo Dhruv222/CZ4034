@@ -29,6 +29,8 @@ Note:
 The application assumes that your Solr instance runs on host 'localhost' and port '8983'. In order to change this default configuration, the file 'lib/solr.js' will need to be changed.
 ```
 
+This repo already has more than 13000 tweets indexed in Solr. So as soon you run the application, these tweets will be searchable.
+
 The above steps should be sufficient to get the user up and running with this application.
 
 ### Running the application
