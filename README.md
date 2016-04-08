@@ -29,7 +29,9 @@ Note:
 The application assumes that your Solr instance runs on host 'localhost' and port '8983'. In order to change this default configuration, the file 'lib/solr.js' will need to be changed.
 ```
 
-This repo already has more than 13000 tweets indexed in Solr. So as soon you run the application, these tweets will be searchable.
+This repo already has more than 14500 tweets indexed in Solr. So as soon you run the application, these tweets will be searchable.
+
+There is another Solr core in this project called `images`. This core stores image data in order to facilitate image search. The core is this repo currently contains data for around 1000 images. So the image search will also work when the project is run. However, in order to serve the actual images on the web app UI, the image files need to be downloaded. They can be found [here](https://drive.google.com/open?id=0Bw7LHT0aHoAReEM2RXlQMUhTTDA). This is a zip file containing the image files. Unzip this files, extract the images and place those image files under the `images` directory of the repo. Once this is done, the image search will also work.
 
 The above steps should be sufficient to get the user up and running with this application.
 
