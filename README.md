@@ -33,6 +33,8 @@ The above steps should be sufficient to get the user up and running with this ap
 
 ### Running the application
 
+This repo already has more than 13000 tweets indexed in Solr. So as soon you run the application, these tweets will be searcheable.
+
 First, start your `Solr` instance using the following command:
 ```
 <path_to_repo>/solr-5.5.0/bin/solr restart
