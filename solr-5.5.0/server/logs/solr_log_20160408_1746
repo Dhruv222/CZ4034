@@ -1,0 +1,339 @@
+2016-04-08 09:45:03.789 INFO  (main) [   ] o.e.j.u.log Logging initialized @345ms
+2016-04-08 09:45:04.014 INFO  (main) [   ] o.e.j.s.Server jetty-9.2.13.v20150730
+2016-04-08 09:45:04.032 WARN  (main) [   ] o.e.j.s.h.RequestLogHandler !RequestLog
+2016-04-08 09:45:04.035 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:/home/shantanu/CZ4034/solr-5.5.0/server/contexts/] at interval 0
+2016-04-08 09:45:04.553 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2016-04-08 09:45:04.573 WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@245ea8af{/solr,file:/home/shantanu/CZ4034/solr-5.5.0/server/solr-webapp/webapp/,STARTING}{/home/shantanu/CZ4034/solr-5.5.0/server/solr-webapp/webapp} has uncovered http methods for path: /
+2016-04-08 09:45:04.584 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=1804215529@6b8a24e9
+2016-04-08 09:45:04.604 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-04-08 09:45:04.605 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /home/shantanu/CZ4034/solr-5.5.0/server/solr
+2016-04-08 09:45:04.606 INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/shantanu/CZ4034/solr-5.5.0/server/solr'
+2016-04-08 09:45:04.606 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-04-08 09:45:04.606 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /home/shantanu/CZ4034/solr-5.5.0/server/solr
+2016-04-08 09:45:04.613 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/shantanu/CZ4034/solr-5.5.0/server/solr/solr.xml
+2016-04-08 09:45:04.707 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Config-defined core root directory: /home/shantanu/CZ4034/solr-5.5.0/server/solr
+2016-04-08 09:45:04.736 INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 281965659
+2016-04-08 09:45:04.736 INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/home/shantanu/CZ4034/solr-5.5.0/server/solr]
+2016-04-08 09:45:04.737 WARN  (main) [   ] o.a.s.c.CoreContainer Couldn't add files from /home/shantanu/CZ4034/solr-5.5.0/server/solr/lib to classpath: /home/shantanu/CZ4034/solr-5.5.0/server/solr/lib
+2016-04-08 09:45:04.750 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,
+2016-04-08 09:45:05.045 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2016-04-08 09:45:05.048 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2016-04-08 09:45:05.049 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2016-04-08 09:45:05.051 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2016-04-08 09:45:05.051 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2016-04-08 09:45:05.090 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Looking for core definitions underneath /home/shantanu/CZ4034/solr-5.5.0/server/solr
+2016-04-08 09:45:05.110 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=tweets, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data/}
+2016-04-08 09:45:05.110 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core tweets in /home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets
+2016-04-08 09:45:05.112 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=images, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data/}
+2016-04-08 09:45:05.113 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core images in /home/shantanu/CZ4034/solr-5.5.0/server/solr/images
+2016-04-08 09:45:05.113 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions
+2016-04-08 09:45:05.117 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/home/shantanu/CZ4034/solr-5.5.0/server
+2016-04-08 09:45:05.118 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2016-04-08 09:45:05.118 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets'
+2016-04-08 09:45:05.118 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-04-08 09:45:05.118 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /home/shantanu/CZ4034/solr-5.5.0/server/solr
+2016-04-08 09:45:05.120 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/home/shantanu/CZ4034/solr-5.5.0/server/solr/images'
+2016-04-08 09:45:05.120 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-04-08 09:45:05.120 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /home/shantanu/CZ4034/solr-5.5.0/server/solr
+2016-04-08 09:45:05.137 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@245ea8af{/solr,file:/home/shantanu/CZ4034/solr-5.5.0/server/solr-webapp/webapp/,AVAILABLE}{/home/shantanu/CZ4034/solr-5.5.0/server/solr-webapp/webapp}
+2016-04-08 09:45:05.156 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@83bf56f{HTTP/1.1}{0.0.0.0:8983}
+2016-04-08 09:45:05.157 INFO  (main) [   ] o.e.j.s.Server Started @1715ms
+2016-04-08 09:45:05.227 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2016-04-08 09:45:05.227 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2016-04-08 09:45:05.238 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2016-04-08 09:45:05.239 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2016-04-08 09:45:05.246 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+2016-04-08 09:45:05.246 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+2016-04-08 09:45:05.247 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2016-04-08 09:45:05.247 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2016-04-08 09:45:05.247 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2016-04-08 09:45:05.247 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2016-04-08 09:45:05.247 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+2016-04-08 09:45:05.247 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2016-04-08 09:45:05.247 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+2016-04-08 09:45:05.247 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2016-04-08 09:45:05.247 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2016-04-08 09:45:05.248 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/icu4j-54.1.jar' to classloader
+2016-04-08 09:45:05.248 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2016-04-08 09:45:05.248 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2016-04-08 09:45:05.248 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+2016-04-08 09:45:05.248 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/poi-3.11.jar' to classloader
+2016-04-08 09:45:05.248 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2016-04-08 09:45:05.248 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/rome-1.0.jar' to classloader
+2016-04-08 09:45:05.249 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2016-04-08 09:45:05.249 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2016-04-08 09:45:05.249 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2016-04-08 09:45:05.249 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+2016-04-08 09:45:05.249 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+2016-04-08 09:45:05.249 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+2016-04-08 09:45:05.249 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+2016-04-08 09:45:05.249 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+2016-04-08 09:45:05.250 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2016-04-08 09:45:05.250 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2016-04-08 09:45:05.250 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+2016-04-08 09:45:05.250 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+2016-04-08 09:45:05.250 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+2016-04-08 09:45:05.250 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+2016-04-08 09:45:05.251 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+2016-04-08 09:45:05.250 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2016-04-08 09:45:05.251 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/xz-1.5.jar' to classloader
+2016-04-08 09:45:05.251 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+2016-04-08 09:45:05.251 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/dist/solr-cell-5.5.0.jar' to classloader
+2016-04-08 09:45:05.251 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2016-04-08 09:45:05.251 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2016-04-08 09:45:05.251 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2016-04-08 09:45:05.251 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2016-04-08 09:45:05.251 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2016-04-08 09:45:05.251 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2016-04-08 09:45:05.252 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/clustering/lib/attributes-binder-1.2.3.jar' to classloader
+2016-04-08 09:45:05.252 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+2016-04-08 09:45:05.252 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/clustering/lib/carrot2-mini-3.10.4.jar' to classloader
+2016-04-08 09:45:05.252 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2016-04-08 09:45:05.252 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+2016-04-08 09:45:05.252 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+2016-04-08 09:45:05.252 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2016-04-08 09:45:05.252 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2016-04-08 09:45:05.252 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+2016-04-08 09:45:05.252 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2016-04-08 09:45:05.253 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/dist/solr-clustering-5.5.0.jar' to classloader
+2016-04-08 09:45:05.253 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/icu4j-54.1.jar' to classloader
+2016-04-08 09:45:05.253 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2016-04-08 09:45:05.253 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2016-04-08 09:45:05.253 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2016-04-08 09:45:05.253 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2016-04-08 09:45:05.253 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/dist/solr-langid-5.5.0.jar' to classloader
+2016-04-08 09:45:05.253 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+2016-04-08 09:45:05.253 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2016-04-08 09:45:05.253 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/poi-3.11.jar' to classloader
+2016-04-08 09:45:05.254 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/velocity/lib/commons-collections-3.2.2.jar' to classloader
+2016-04-08 09:45:05.254 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2016-04-08 09:45:05.254 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2016-04-08 09:45:05.254 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/rome-1.0.jar' to classloader
+2016-04-08 09:45:05.254 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2016-04-08 09:45:05.254 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2016-04-08 09:45:05.254 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/dist/solr-velocity-5.5.0.jar' to classloader
+2016-04-08 09:45:05.254 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2016-04-08 09:45:05.254 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2016-04-08 09:45:05.254 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+2016-04-08 09:45:05.255 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+2016-04-08 09:45:05.255 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+2016-04-08 09:45:05.255 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2016-04-08 09:45:05.255 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2016-04-08 09:45:05.255 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+2016-04-08 09:45:05.255 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+2016-04-08 09:45:05.255 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+2016-04-08 09:45:05.255 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+2016-04-08 09:45:05.255 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+2016-04-08 09:45:05.255 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/xz-1.5.jar' to classloader
+2016-04-08 09:45:05.256 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+2016-04-08 09:45:05.256 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/dist/solr-cell-5.5.0.jar' to classloader
+2016-04-08 09:45:05.256 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2016-04-08 09:45:05.256 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2016-04-08 09:45:05.256 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2016-04-08 09:45:05.256 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/clustering/lib/attributes-binder-1.2.3.jar' to classloader
+2016-04-08 09:45:05.256 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/clustering/lib/carrot2-mini-3.10.4.jar' to classloader
+2016-04-08 09:45:05.256 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+2016-04-08 09:45:05.256 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2016-04-08 09:45:05.256 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+2016-04-08 09:45:05.257 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/dist/solr-clustering-5.5.0.jar' to classloader
+2016-04-08 09:45:05.257 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2016-04-08 09:45:05.257 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2016-04-08 09:45:05.257 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/dist/solr-langid-5.5.0.jar' to classloader
+2016-04-08 09:45:05.257 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2016-04-08 09:45:05.257 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/velocity/lib/commons-collections-3.2.2.jar' to classloader
+2016-04-08 09:45:05.257 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2016-04-08 09:45:05.257 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2016-04-08 09:45:05.257 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/home/shantanu/CZ4034/solr-5.5.0/dist/solr-velocity-5.5.0.jar' to classloader
+2016-04-08 09:45:05.646 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.Config Beginning with Solr 5.5, <maxMergeDocs> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2016-04-08 09:45:05.647 WARN  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.Config Beginning with Solr 5.5, <mergeFactor> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2016-04-08 09:45:05.647 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Beginning with Solr 5.5, <maxMergeDocs> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2016-04-08 09:45:05.647 WARN  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Beginning with Solr 5.5, <mergeFactor> is deprecated, configure it on the relevant <mergePolicyFactory> instead.
+2016-04-08 09:45:05.682 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.5.0
+2016-04-08 09:45:05.690 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.5.0
+2016-04-08 09:45:06.079 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2016-04-08 09:45:06.079 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2016-04-08 09:45:06.223 INFO  (coreLoadExecutor-6-thread-2) [   ] o.a.s.s.IndexSchema [images] Schema name=images-schema
+2016-04-08 09:45:06.223 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [tweets] Schema name=example-data-driven-schema
+2016-04-08 09:45:06.320 ERROR (coreLoadExecutor-6-thread-2) [   ] o.a.s.c.CoreContainer Error creating core [images]: Could not load conf for core images: Can't load schema /home/shantanu/CZ4034/solr-5.5.0/server/solr/images/conf/schema.xml: Plugin init failure for [schema.xml] fieldType "binaryDV": Error loading class 'net.semanticmetadata.lire.solr.BinaryDocValuesField'
+org.apache.solr.common.SolrException: Could not load conf for core images: Can't load schema /home/shantanu/CZ4034/solr-5.5.0/server/solr/images/conf/schema.xml: Plugin init failure for [schema.xml] fieldType "binaryDV": Error loading class 'net.semanticmetadata.lire.solr.BinaryDocValuesField'
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:84)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:812)
+	at org.apache.solr.core.CoreContainer.access$000(CoreContainer.java:87)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:467)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:458)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor$1.run(ExecutorUtil.java:231)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Can't load schema /home/shantanu/CZ4034/solr-5.5.0/server/solr/images/conf/schema.xml: Plugin init failure for [schema.xml] fieldType "binaryDV": Error loading class 'net.semanticmetadata.lire.solr.BinaryDocValuesField'
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:577)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:159)
+	at org.apache.solr.schema.IndexSchemaFactory.create(IndexSchemaFactory.java:56)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:108)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:79)
+	... 9 more
+Caused by: org.apache.solr.common.SolrException: Plugin init failure for [schema.xml] fieldType "binaryDV": Error loading class 'net.semanticmetadata.lire.solr.BinaryDocValuesField'
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:178)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:470)
+	... 14 more
+Caused by: org.apache.solr.common.SolrException: Error loading class 'net.semanticmetadata.lire.solr.BinaryDocValuesField'
+	at org.apache.solr.core.SolrResourceLoader.findClass(SolrResourceLoader.java:558)
+	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:627)
+	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:592)
+	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:585)
+	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:90)
+	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:53)
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:152)
+	... 15 more
+Caused by: java.lang.ClassNotFoundException: net.semanticmetadata.lire.solr.BinaryDocValuesField
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:793)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:278)
+	at org.apache.solr.core.SolrResourceLoader.findClass(SolrResourceLoader.java:542)
+	... 21 more
+2016-04-08 09:45:06.947 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema unique key field: id
+2016-04-08 09:45:07.066 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-04-08 09:45:07.080 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-04-08 09:45:07.257 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets'
+2016-04-08 09:45:07.258 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'tweets' using configuration from instancedir /home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets
+2016-04-08 09:45:07.283 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2016-04-08 09:45:07.295 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.SolrCore [[tweets] ] Opening new SolrCore at [/home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets], dataDir=[/home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets/data/]
+2016-04-08 09:45:07.296 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2016-04-08 09:45:07.300 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.SolrCore [[tweets] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-04-08 09:45:07.300 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.SolrCore [[tweets] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-04-08 09:45:07.304 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2016-04-08 09:45:07.312 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory return new directory for /home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets/data
+2016-04-08 09:45:07.313 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.SolrCore New index directory detected: old=null new=/home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets/data/index/
+2016-04-08 09:45:07.313 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory return new directory for /home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets/data/index
+2016-04-08 09:45:07.340 INFO  (OldIndexDirectoryCleanupThreadForCore-tweets) [   x:tweets] o.a.s.c.SolrCore Looking for old index directories to cleanup for core tweets in /home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets/data/
+2016-04-08 09:45:07.345 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2016-04-08 09:45:07.349 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-04-08 09:45:07.455 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.u.p.UpdateRequestProcessorChain creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+2016-04-08 09:45:07.529 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2016-04-08 09:45:07.559 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-08 09:45:07.561 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-08 09:45:07.562 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-08 09:45:07.562 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-08 09:45:07.576 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2016-04-08 09:45:07.577 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2016-04-08 09:45:07.577 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2016-04-08 09:45:07.579 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2016-04-08 09:45:07.579 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2016-04-08 09:45:07.579 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2016-04-08 09:45:07.579 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2016-04-08 09:45:07.579 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.RequestHandlers Registered paths: /admin/logging,/admin/plugins,/admin/system,/admin/segments,/admin/file,/admin/luke,/update,/terms,/admin/threads,/schema,/query,/replication,/analysis/field,/browse,/admin/ping,/update/json/docs,/analysis/document,/select,/admin/mbeans,/update/csv,/elevate,/get,/update/json,/export,/update/extract,/admin/properties,/tvrh,/spell,/config,/debug/dump
+2016-04-08 09:45:07.582 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2016-04-08 09:45:07.591 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-04-08 09:45:07.591 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-04-08 09:45:07.609 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 1000ms; 
+2016-04-08 09:45:07.609 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-04-08 09:45:07.671 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@679dc5ee; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1v,generation=67}
+2016-04-08 09:45:07.671 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.SolrDeletionPolicy newest commit generation = 67
+2016-04-08 09:45:07.737 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.s.SolrIndexSearcher Opening Searcher@2e5094f3[tweets] main
+2016-04-08 09:45:07.743 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets/conf
+2016-04-08 09:45:07.743 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets/conf}
+2016-04-08 09:45:07.752 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets/conf
+2016-04-08 09:45:07.753 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2016-04-08 09:45:07.759 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-04-08 09:45:07.766 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-04-08 09:45:07.767 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2016-04-08 09:45:07.769 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets/conf/elevate.xml
+2016-04-08 09:45:07.789 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-04-08 09:45:07.790 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@2e5094f3[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1e(5.5.0):C2000/1995:delGen=2) Uninverting(_1f(5.5.0):C2000/3:delGen=1) Uninverting(_1g(5.5.0):C2000/4:delGen=1) Uninverting(_1h(5.5.0):C2000/5:delGen=1) Uninverting(_1i(5.5.0):C2000/2:delGen=1) Uninverting(_1j(5.5.0):C2000/4:delGen=1) Uninverting(_1k(5.5.0):C2000/4:delGen=1) Uninverting(_1l(5.5.0):C2000/4:delGen=1)))}
+2016-04-08 09:45:07.790 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-08 09:45:07.790 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-04-08 09:45:07.790 INFO  (searcherExecutor-7-thread-1-processing-x:tweets) [   x:tweets] o.a.s.c.SolrCore [tweets] Registered new searcher Searcher@2e5094f3[tweets] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_1e(5.5.0):C2000/1995:delGen=2) Uninverting(_1f(5.5.0):C2000/3:delGen=1) Uninverting(_1g(5.5.0):C2000/4:delGen=1) Uninverting(_1h(5.5.0):C2000/5:delGen=1) Uninverting(_1i(5.5.0):C2000/2:delGen=1) Uninverting(_1j(5.5.0):C2000/4:delGen=1) Uninverting(_1k(5.5.0):C2000/4:delGen=1) Uninverting(_1l(5.5.0):C2000/4:delGen=1)))}
+2016-04-08 09:45:07.792 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2016-04-08 09:45:07.794 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2016-04-08 09:45:07.826 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.u.VersionInfo Found MAX value 1530675026833965058 from Terms for _version_ in index
+2016-04-08 09:45:07.831 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.u.UpdateLog Took 38.0ms to seed version buckets with highest version 1530675026833965058
+2016-04-08 09:45:07.832 INFO  (coreLoadExecutor-6-thread-1) [   x:tweets] o.a.s.c.CoreContainer registering core: tweets
+2016-04-08 09:45:07.832 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be created
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [images]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.util.concurrent.FutureTask.get(FutureTask.java:188)
+	at org.apache.solr.core.CoreContainer$2.run(CoreContainer.java:496)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor$1.run(ExecutorUtil.java:231)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.solr.common.SolrException: Unable to create core [images]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:828)
+	at org.apache.solr.core.CoreContainer.access$000(CoreContainer.java:87)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:467)
+	at org.apache.solr.core.CoreContainer$1.call(CoreContainer.java:458)
+	... 5 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core images: Can't load schema /home/shantanu/CZ4034/solr-5.5.0/server/solr/images/conf/schema.xml: Plugin init failure for [schema.xml] fieldType "binaryDV": Error loading class 'net.semanticmetadata.lire.solr.BinaryDocValuesField'
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:84)
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:812)
+	... 8 more
+Caused by: org.apache.solr.common.SolrException: Can't load schema /home/shantanu/CZ4034/solr-5.5.0/server/solr/images/conf/schema.xml: Plugin init failure for [schema.xml] fieldType "binaryDV": Error loading class 'net.semanticmetadata.lire.solr.BinaryDocValuesField'
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:577)
+	at org.apache.solr.schema.IndexSchema.<init>(IndexSchema.java:159)
+	at org.apache.solr.schema.IndexSchemaFactory.create(IndexSchemaFactory.java:56)
+	at org.apache.solr.schema.IndexSchemaFactory.buildIndexSchema(IndexSchemaFactory.java:70)
+	at org.apache.solr.core.ConfigSetService.createIndexSchema(ConfigSetService.java:108)
+	at org.apache.solr.core.ConfigSetService.getConfig(ConfigSetService.java:79)
+	... 9 more
+Caused by: org.apache.solr.common.SolrException: Plugin init failure for [schema.xml] fieldType "binaryDV": Error loading class 'net.semanticmetadata.lire.solr.BinaryDocValuesField'
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:178)
+	at org.apache.solr.schema.IndexSchema.readSchema(IndexSchema.java:470)
+	... 14 more
+Caused by: org.apache.solr.common.SolrException: Error loading class 'net.semanticmetadata.lire.solr.BinaryDocValuesField'
+	at org.apache.solr.core.SolrResourceLoader.findClass(SolrResourceLoader.java:558)
+	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:627)
+	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:592)
+	at org.apache.solr.core.SolrResourceLoader.newInstance(SolrResourceLoader.java:585)
+	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:90)
+	at org.apache.solr.schema.FieldTypePluginLoader.create(FieldTypePluginLoader.java:53)
+	at org.apache.solr.util.plugin.AbstractPluginLoader.load(AbstractPluginLoader.java:152)
+	... 15 more
+Caused by: java.lang.ClassNotFoundException: net.semanticmetadata.lire.solr.BinaryDocValuesField
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:793)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:278)
+	at org.apache.solr.core.SolrResourceLoader.findClass(SolrResourceLoader.java:542)
+	... 21 more
+2016-04-08 09:45:11.822 INFO  (qtp2018127198-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&_=1460108711804&wt=json} status=0 QTime=11
+2016-04-08 09:45:11.929 INFO  (qtp2018127198-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={_=1460108711909&wt=json} status=0 QTime=16
+2016-04-08 09:45:12.037 ERROR (qtp2018127198-15) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [/home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets/conf/admin-extra.menu-top.html]
+2016-04-08 09:45:12.037 INFO  (qtp2018127198-15) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&_=1460108712022&contentType=text/html;charset%3Dutf-8} status=404 QTime=2
+2016-04-08 09:45:12.050 ERROR (qtp2018127198-16) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [/home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets/conf/admin-extra.menu-bottom.html]
+2016-04-08 09:45:12.050 INFO  (qtp2018127198-16) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&_=1460108712029&contentType=text/html;charset%3Dutf-8} status=404 QTime=0
+2016-04-08 09:45:12.120 INFO  (qtp2018127198-20) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/luke params={numTerms=0&_=1460108712091&show=index&wt=json} status=0 QTime=2
+2016-04-08 09:45:12.135 INFO  (qtp2018127198-15) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/replication params={command=details&_=1460108712116&wt=json} status=0 QTime=6
+2016-04-08 09:45:12.136 ERROR (qtp2018127198-18) [   x:tweets] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets/conf/admin-extra.html]
+2016-04-08 09:45:12.137 INFO  (qtp2018127198-18) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/file params={file=admin-extra.html&_=1460108712129} status=404 QTime=0
+2016-04-08 09:45:12.141 INFO  (qtp2018127198-16) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/system params={_=1460108712123&wt=json} status=0 QTime=11
+2016-04-08 09:45:12.158 INFO  (qtp2018127198-19) [   x:tweets] o.a.s.c.S.Request [tweets]  webapp=/solr path=/admin/ping params={action=status&_=1460108712136&wt=json} status=503 QTime=1
+2016-04-08 09:46:53.572 INFO  (ShutdownMonitor) [   ] o.e.j.s.ServerConnector Stopped ServerConnector@83bf56f{HTTP/1.1}{0.0.0.0:8983}
+2016-04-08 09:46:53.573 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=281965659
+2016-04-08 09:46:53.574 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.c.SolrCore [tweets]  CLOSING SolrCore org.apache.solr.core.SolrCore@4554a2b2
+2016-04-08 09:46:53.575 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.u.DirectUpdateHandler2 closing DirectUpdateHandler2{commits=0,autocommit maxTime=1000ms,autocommits=0,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=474356,transaction_logs_total_number=1}
+2016-04-08 09:46:53.575 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.u.SolrCoreState Closing SolrCoreState
+2016-04-08 09:46:53.575 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.u.DefaultSolrCoreState SolrCoreState ref count has reached 0 - closing IndexWriter
+2016-04-08 09:46:53.575 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.u.DefaultSolrCoreState closing IndexWriter with IndexWriterCloser
+2016-04-08 09:46:53.586 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.c.SolrCore [tweets] Closing main searcher on request.
+2016-04-08 09:46:53.590 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory Closing NRTCachingDirectoryFactory - 2 directories currently being tracked
+2016-04-08 09:46:53.590 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory looking to close /home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets/data [CachedDir<<refCount=0;path=/home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets/data;done=false>>]
+2016-04-08 09:46:53.590 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory Closing directory: /home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets/data
+2016-04-08 09:46:53.591 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory looking to close /home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets/data/index [CachedDir<<refCount=0;path=/home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets/data/index;done=false>>]
+2016-04-08 09:46:53.591 INFO  (coreCloseExecutor-12-thread-1) [   x:tweets] o.a.s.c.CachingDirectoryFactory Closing directory: /home/shantanu/CZ4034/solr-5.5.0/server/solr/tweets/data/index
+2016-04-08 09:46:53.593 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@245ea8af{/solr,file:/home/shantanu/CZ4034/solr-5.5.0/server/solr-webapp/webapp/,UNAVAILABLE}{/home/shantanu/CZ4034/solr-5.5.0/server/solr-webapp/webapp}
